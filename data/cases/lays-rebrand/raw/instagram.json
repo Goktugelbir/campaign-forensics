@@ -1,0 +1,33 @@
+{
+  "note": "apify/instagram-comment-scraper. Owner fields removed. Emoji-only, spam, customer-service, @-tag, celebrity-fan and political/boycott comments dropped; one @mention and phone number redacted.",
+  "runs": [
+    {
+      "runId": "DQTx28aaQIsLGhq0B",
+      "posts": ["https://www.instagram.com/p/DPl-KUjEcxq/", "https://www.instagram.com/reel/DP6L9QDDbJ5/"],
+      "items_returned": 28,
+      "kept": [
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/18079759717989777","timestamp":"2025-10-10T12:13:58Z","text":"So, previously they are not made by real potatoes? 🤔"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/17866229310393245","timestamp":"2025-10-10T09:36:41Z","text":"You know the standard of health in the US when the highlight is “real potatoes”"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/18069798899213226","timestamp":"2025-10-15T06:26:10Z","text":"Love how “made with real potatoes” is a flex"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/18045788381387757","timestamp":"2025-10-10T16:19:20Z","text":"New Logo, wow. Same product?"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/17901694656148163","timestamp":"2025-10-10T19:31:50Z","text":"Wtf happened to standing out"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/18121510819512906","timestamp":"2025-10-14T22:29:51Z","text":"This is beautiful fr"},
+        {"commentUrl":"https://www.instagram.com/p/DPl-KUjEcxq/c/17978163728923719","timestamp":"2025-10-11T02:28:08Z","text":"Nahhhhh if they taste diff imma riot"},
+        {"commentUrl":"https://www.instagram.com/p/DP6L9QDDbJ5/c/18057207629233342","timestamp":"2025-10-17T12:28:01Z","text":"Every body knows that potato ships came from potatos"}
+      ]
+    },
+    {
+      "runId": "srWkj1J4KzSMHC50U",
+      "posts": ["https://www.instagram.com/reel/DV-4vGOCGis/", "https://www.instagram.com/reel/DV_kApmjOH7/"],
+      "items_returned": 27,
+      "kept": [
+        {"commentUrl":"https://www.instagram.com/p/DV_kApmjOH7/c/18264669118305772","timestamp":"2026-09-08T16:39:19Z","text":"Abla seni severiz ama bize ayşe teyze lazım 😂"},
+        {"commentUrl":"https://www.instagram.com/p/DV-4vGOCGis/c/18095174305844894","timestamp":"2026-04-03T18:49:40Z","text":"Kaşık cips geri gelsiiiin 🙏🥹"},
+        {"commentUrl":"https://www.instagram.com/p/DV-4vGOCGis/c/17971692209864400","timestamp":"2026-03-24T18:36:47Z","text":"Lütfen cacıklı cipsi tekrar getirir misiniz teşekürler"},
+        {"commentUrl":"https://www.instagram.com/p/DV-4vGOCGis/c/17956394433084066","timestamp":"2026-03-25T11:57:24Z","text":"Lays zeytinyağlı cipsi geri getirme ricanız var mı"},
+        {"commentUrl":"https://www.instagram.com/p/DV-4vGOCGis/c/17919557028128307","timestamp":"2026-03-30T22:58:11Z","text":"Lay's en sevdiğim cips markası"},
+        {"commentUrl":"https://www.instagram.com/p/DV-4vGOCGis/c/17873917242571298","timestamp":"2026-04-02T19:32:30Z","text":"[@mention removed] Arka paketteki yazı fontu alışkanlıktan kaldırılmasıyla ilgili firmanıza bol mesaj attım beni aradınız [phone number removed] firma numarasından söyledim çalışanlarınıza"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "Campaign key visual. Concept: the craft of redrawing one letter so a name reads at a glance. Message: it still feels the same, and now it reads right. Audience: young everyday social media users. Tone: confident, warm, a little self-aware. Visual direction: extreme close-up of a black brush-pen drawing a single smooth curved stroke on warm off-white paper on a wooden desk, morning window light, tactile paper texture, shallow depth of field, a subtle warm magenta-orange glow in the background bokeh. Photographic, natural light, simple composition, one clear focal point, negative space for a headline. No text, no letters, no logos, no watermarks.",
+  "negative_prompt": "text, letters, words, typography, logo, watermark, signature, hands with extra fingers, distorted hands",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

@@ -1,0 +1,24 @@
+{
+  "model": "fal-ai/ideogram/v3",
+  "requestId": "01a12f24-459f-71a2-89d8-7eb123c0f322",
+  "created_at": "2026-10-12T08:04:40.566Z",
+  "seconds": 13,
+  "input": {
+    "prompt": "Clean brand identity concept sheet for a wordmark reading exactly \"Instagram\". Problem to fix: in the current design a single cursive 'r' joined to the 'a' is misread as a different letter. Design direction: a bold, simple, modern script wordmark with one consistent joining rule; the 'r' has a clear print-style stem and shoulder and is unmistakably an 'r'; every letter is legible at a glance. Tone: confident, warm, crafted. Show the wordmark large in black on a plain warm-white background, plus the same wordmark at small app-header size underneath to prove legibility. Flat vector style, high contrast, no mockup clutter, no logos, no icons, no extra text besides the wordmark.",
+    "negative_prompt": "letter z, misspelling, extra letters, camera icon, gradient icon, mockup, phone, watermark, signature, additional text",
+    "rendering_speed": "BALANCED",
+    "style": "DESIGN",
+    "expand_prompt": false,
+    "num_images": 1,
+    "image_size": "landscape_16_9"
+  },
+  "output": {
+    "seed": 1144955841,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0edb/d-VSqGNmhW3XVhuxeWgC0_GYlg7fQW.png"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/wordmark-v1.png"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "model": "fal-ai/lyria2",
+  "requestId": "01a12f4c-12cc-7bf0-b399-5d4309c86dfb",
+  "created_at": "2026-10-12T08:49:00.855Z",
+  "seconds": 65,
+  "input": {
+    "prompt": "Bright, upbeat, playful instrumental for a 20-second snack commercial: snappy finger-snap and hand-clap percussion, bouncy bass, plucky ukulele and a sunny brass hook, feel-good summer energy, crisp and punchy, ending on a clean final hit. No vocals.",
+    "negative_prompt": "vocals, singing, lyrics, slow, sad, distortion, low quality"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fe4/vUzVfdVvPxse2zkNmkRFG_output.wav"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/music-v1.wav"
+  ]
+}

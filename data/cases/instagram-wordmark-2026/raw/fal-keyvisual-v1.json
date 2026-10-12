@@ -1,0 +1,24 @@
+{
+  "model": "fal-ai/ideogram/v3",
+  "requestId": "01a12f25-a0ac-7033-b884-c259954fe465",
+  "created_at": "2026-10-12T08:06:13.952Z",
+  "seconds": 17,
+  "input": {
+    "prompt": "Campaign key visual. Concept: the craft of redrawing one letter so a name reads at a glance. Message: it still feels the same, and now it reads right. Audience: young everyday social media users. Tone: confident, warm, a little self-aware. Visual direction: extreme close-up of a black brush-pen drawing a single smooth curved stroke on warm off-white paper on a wooden desk, morning window light, tactile paper texture, shallow depth of field, a subtle warm magenta-orange glow in the background bokeh. Photographic, natural light, simple composition, one clear focal point, negative space for a headline. No text, no letters, no logos, no watermarks.",
+    "negative_prompt": "text, letters, words, typography, logo, watermark, signature, hands with extra fingers, distorted hands",
+    "rendering_speed": "BALANCED",
+    "style": "REALISTIC",
+    "expand_prompt": false,
+    "num_images": 1,
+    "image_size": "landscape_16_9"
+  },
+  "output": {
+    "seed": 264811776,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0ee4/tOj2ZeqLbNDjo4t9p8rDT_o8XjK46z.png"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/keyvisual-v1.png"
+  ]
+}

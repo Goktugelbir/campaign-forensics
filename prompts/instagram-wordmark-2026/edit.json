@@ -1,0 +1,60 @@
+{
+  "output": "/cases/instagram-wordmark-2026/relaunch-v2.mp4",
+  "size": [1280, 720],
+  "fps": 30,
+  "music": { "file": "/cases/instagram-wordmark-2026/music-v1.wav", "volume": 0.22 },
+  "segments": [
+    {
+      "kind": "card",
+      "duration": 2.5,
+      "vo": "/cases/instagram-wordmark-2026/vo-1.mp3",
+      "texts": [
+        { "text": "13 AUG 2026  ·  INSTAGRAM", "font": "consola.ttf", "size": 24, "color": "0xf5a623", "y": 290 },
+        { "text": "Instagram changed its wordmark.", "font": "georgia.ttf", "size": 58, "color": "white", "y": 345 }
+      ]
+    },
+    {
+      "kind": "card",
+      "duration": 3.9,
+      "vo": "/cases/instagram-wordmark-2026/vo-2.mp3",
+      "texts": [
+        { "text": "Millions read it as", "font": "georgia.ttf", "size": 44, "color": "0x9a9a9a", "y": 230 },
+        { "text": "Instagzam", "font": "segoescb.ttf", "size": 130, "color": "white", "y": 300 },
+        { "text": "THE CURSIVE ‘r’ READS AS A ‘z’", "font": "consola.ttf", "size": 24, "color": "0xf5a623", "y": 500 }
+      ]
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/instagram-wordmark-2026/relaunch-v1.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/instagram-wordmark-2026/vo-3.mp3",
+      "texts": [
+        { "text": "Not taste. One letter.", "font": "georgia.ttf", "size": 52, "color": "white", "y": 560 },
+        { "text": "An ‘r’ that looks like a ‘z’.", "font": "segoeui.ttf", "size": 30, "color": "0xdddddd", "y": 630 }
+      ]
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/instagram-wordmark-2026/relaunch-v1.mp4",
+      "start": 5,
+      "duration": 5,
+      "vo": "/cases/instagram-wordmark-2026/vo-4.mp3",
+      "texts": [
+        { "text": "So we redrew it.", "font": "georgia.ttf", "size": 52, "color": "white", "y": 560 },
+        { "text": "Same script. A clear, print-style ‘r’.", "font": "segoeui.ttf", "size": 30, "color": "0xdddddd", "y": 630 }
+      ]
+    },
+    {
+      "kind": "image",
+      "source": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "duration": 3.5,
+      "vo": "/cases/instagram-wordmark-2026/vo-5.mp3",
+      "texts": [
+        { "text": "Now it reads like Instagram.", "font": "georgia.ttf", "size": 40, "color": "0x111111", "y": 70 },
+        { "text": "UPDATE THE APP — SEE THE NEW ‘r’", "font": "consola.ttf", "size": 24, "color": "0x111111", "y": 650 },
+        { "text": "Concept based on diagnosis — not an official Instagram design.", "font": "segoeui.ttf", "size": 16, "color": "0x555555", "y": 690 }
+      ]
+    }
+  ]
+}

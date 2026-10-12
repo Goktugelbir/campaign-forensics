@@ -1,0 +1,8 @@
+{
+  "prompt": "The creator keeps sketching flowing abstract swirls with the brush pen, smiling slightly, sunlight flickering through the cafe window. Slow, steady camera movement. Warm, confident, optimistic mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+  "start_image_url": "/cases/instagram-wordmark-2026/kv-ideas.png",
+  "duration": "5",
+  "generate_audio": false,
+  "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+  "cfg_scale": 0.5
+}

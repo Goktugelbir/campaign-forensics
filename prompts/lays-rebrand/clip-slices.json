@@ -1,0 +1,8 @@
+{
+  "prompt": "The golden potato slices keep tumbling and spinning through the warm backlight in smooth slow motion, oil droplets glinting. Slow, steady camera push-in. Joyful, appetising mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+  "start_image_url": "/cases/lays-rebrand/kv-slices.png",
+  "duration": "5",
+  "generate_audio": false,
+  "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distortion, flicker, blur, low quality",
+  "cfg_scale": 0.5
+}

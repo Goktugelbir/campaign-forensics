@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f36-6932-7810-b5c2-d44a3ea1999c",
+  "created_at": "2026-10-12T08:24:21.635Z",
+  "seconds": 5,
+  "input": {
+    "text": "Every moment is better with your people.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f51/ARx5qyP5EDlOwHuletzUn_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo3-2.mp3"
+  ]
+}

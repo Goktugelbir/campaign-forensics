@@ -1,0 +1,57 @@
+{
+  "note": "Excerpts of article text fetched with apify/web-fetch (markdown). Navigation, ads and related-story blocks removed; quoted passages kept verbatim.",
+  "pages": [
+    {
+      "url": "https://www.meta.com/design-at-meta/blog/the-new-instagram-brand-identity/",
+      "title": "Built to celebrate creativity: the new Instagram brand identity",
+      "published": "2026-08-13",
+      "excerpts": [
+        "It’s been over 10 years since we refreshed our brand identity.",
+        "It was important to craft a mark that still makes Instagram feel like Instagram, while introducing something to carry us into the future.",
+        "The team explored hundreds of directions: from all-caps, to camera concepts, to literal handwriting. We kept coming back to what’s always been special about Instagram: the magic of crafted script.",
+        "“Script reflects individuality, so referencing that felt right. The new wordmark is bolder and simpler, with touches of unexpectedness. It cues individual expression, a personal voice, both of which have always been core to Instagram,” said Jasmine Probst, Director of Product Design, Instagram.",
+        "There is also new typography to extend the language: an updated Instagram Sans; a new handwriting typeface, Instagram Pen; and a new Instagram Mono font.",
+        "The refreshed Instagram wordmark is now rolling out globally, with the full brand identity following through 2026 and beyond."
+      ]
+    },
+    {
+      "url": "https://variety.com/2026/digital/news/instagram-designer-explains-new-logo-responds-to-critics-1236836340/",
+      "title": "Instagram Head of Product Design Explains Thinking Behind That New Logo and Responds to Critics",
+      "published": "2026-08-17",
+      "excerpts": [
+        "One of the top criticisms was that the cursive-style “r” in the updated wordmark confusingly looks like a “z,” leading to a flood of jokes about the new “Instagzam.”",
+        "“It’s been 10 years, and the platform has evolved enormously — it was time for a refresh,” Probst said.",
+        "Asked about complaints about the readability of the new wordmark, Probst was diplomatic: “We’ve truly enjoyed seeing the response from people and other brands — whether it’s memes, someone updating their wordmark to connect with ours, or user reactions. We’re proud of our work here and glad it’s out in the world.”",
+        "Instagram went through several rounds to gather external feedback, Probst says, “and we very much take input to heart.” That said, she adds, “It’s also important to balance research with creative conviction, and the feedback helped us build clarity in the choices we made.”",
+        "Across Meta, “the wordmarks all aim to reflect both individual apps, and work comfortably as a larger brand family.”"
+      ]
+    },
+    {
+      "url": "https://www.domusweb.it/en/news/2026/08/22/instagram-new-wordmark-meme-brands-instagzam.html",
+      "title": "“Instagzam”: Instagram’s new logo has become a meme",
+      "published": "2026-08-22",
+      "excerpts": [
+        "For many users, the new “r” is simply unreadable and looks more like a “z.” Instagram has therefore become “Instagzam,” turning what was supposed to be a new typographic solution into one of the first jokes about the rebrand. Within days, the wordmark was being reinterpreted, distorted and turned into memes.",
+        "McDonald’s, KitKat, Canva, ChatGPT and Uber are just some of the brands that have posted versions of their own logos on Instagram, reworked in the style of the platform’s new design and made almost impossible to read.",
+        "In 2016, when the platform replaced its old three-dimensional camera with a minimalist icon built around a pink, orange and purple gradient, the reaction was immediate. The new logo was criticized for being too simple, generic and disconnected from the app’s photographic identity. Around the same time, Instagram was also introducing an algorithmic feed, replacing the chronological one and changing the way users saw content.",
+        "The difference today is that the 2016 redesign represented a much more radical break with the past. This time, Instagram is actually trying to bring back some of the elements of its original identity."
+      ]
+    },
+    {
+      "url": "https://www.theverge.com/tech/979583/this-is-instagrams-new-logo",
+      "title": "This is Instagram’s new logo | The Verge",
+      "published": "2026-08-13",
+      "excerpts": [
+        "Instagram has unveiled a new wordmark, moving away from the recognizable cursive typeface it’s used over the last decade. (meta description)"
+      ]
+    },
+    {
+      "url": "https://www.donanimhaber.com/instagram-in-yeni-logosu-dalga-konusu-oldu-instagzam--209292",
+      "title": "Instagram’ın yeni logosu dalga konusu oldu: “Instagzam” | DonanımHaber",
+      "published": "2026-08-14",
+      "excerpts": [
+        "Instagram, 10 yılın ardından metin temelli logosunu yeniledi. Yeni tasarım daha modern bir görünüm sunarken “r” harfinin şekli sosyal medyada “Instagzam” esprilerine yol açtı. (meta description)"
+      ]
+    }
+  ]
+}

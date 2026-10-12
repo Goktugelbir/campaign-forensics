@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f2e-adf1-7583-a63c-c03e91c74eff",
+  "created_at": "2026-10-12T08:15:54.455Z",
+  "seconds": 4,
+  "input": {
+    "text": "Instagram changed its wordmark.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f1f/XjRSY7eKmq1ur2_xYXAt3_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo-1.mp3"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f36-3d4e-7060-b656-42235ab652c5",
+  "created_at": "2026-10-12T08:27:39.494Z",
+  "seconds": 214,
+  "input": {
+    "prompt": "The creator pins one more colourful photo to the wall, steps back and looks at the arrangement with a quiet proud smile. Slow, steady camera movement. Warm, confident, optimistic mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0f50/VuUufhKxJuo4-a01b9BsY_1791793443057.png",
+    "duration": "5",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f65/SsPGdYDWQ2xtOTqzQwCRx_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/clip-voice.mp4"
+  ]
+}

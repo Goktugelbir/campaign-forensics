@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f26-b159-7750-9582-c9e618667f14",
+  "created_at": "2026-10-12T08:09:49.188Z",
+  "seconds": 162,
+  "input": {
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0eea/SCVTljHZDMbuZXGQARhOf_1791792424533.png",
+    "multi_prompt": [
+      {
+        "prompt": "The pen glides and finishes the single smooth ink stroke on the paper, ink catching the morning light. Slow, steady camera push-in. Warm, confident mood. Keep the subject and composition consistent with the input image. No on-screen text, no letters, no fast cuts, no distortion.",
+        "duration": "5"
+      },
+      {
+        "prompt": "Cut to a calm designer's desk: several blank printed proof sheets of different sizes pinned to a cork board, slow lateral camera move, shallow depth of field, warm morning light, a subtle magenta-orange glow. Nothing legible on the sheets. No on-screen text, no logos, no distortion.",
+        "duration": "5"
+      },
+      {
+        "prompt": "Cut to golden hour outdoors: over-the-shoulder shot of a young person holding a phone, the screen not visible to the camera, hair moving gently in the breeze, relaxed and smiling posture. Slow, steady camera. Warm, self-aware mood. No on-screen text, no logos, no visible face details, no distortion.",
+        "duration": "5"
+      }
+    ],
+    "duration": "15",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, logo, watermark, subtitles, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0efa/VXRL2cDN8FdDwlz4tY26-_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/relaunch-v1.mp4"
+  ]
+}

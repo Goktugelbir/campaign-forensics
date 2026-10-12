@@ -1,0 +1,28 @@
+{
+  "slug": "instagram-wordmark-2026",
+  "case_code": "CF-0413",
+  "brand": "Instagram",
+  "campaign": "New wordmark / brand refresh",
+  "campaign_type": "rebrand",
+  "launch_date": "2026-08-13",
+  "summary": "On 13 August 2026 Instagram replaced the cursive wordmark it had used since 2016 with a bolder, simpler script that mixes cursive and print, alongside new typefaces (Instagram Pen, Instagram Mono, updated Instagram Sans). Within hours the cursive-style 'r' was being read as a 'z' and 'Instagzam' became a meme across Reddit, Instagram and the press; brands such as McDonald's, KitKat, Canva and Uber remixed their own logos in the same style. The app icon itself did not change.",
+  "claim": "\"Sharper and more modern\" — a bolder, simpler script that \"still makes Instagram feel like Instagram\" and cues individual expression; \"the wordmark at the top of the app hasn't changed in 10 years, so it was time for a refresh.\"",
+  "comparison_targets": [
+    "Instagram 2016 icon and wordmark change (backlash, later accepted)",
+    "Twitter → X rebrand (2023)",
+    "Cracker Barrel logo change (2025) — backlash amplified by automated accounts",
+    "Meta / Threads / Facebook wordmarks (brand-family alignment)"
+  ],
+  "key_questions": [
+    "Instagram's 2016 logo change was also mocked and then accepted. What is different this time?",
+    "Is the 'Instagzam' objection a matter of taste, or a measurable legibility / design defect?",
+    "Who is objecting — the design community or everyday users? Does the reaction differ across Reddit, YouTube, Instagram and the press?",
+    "Was the organic nature of supportive reactions questioned on social media?"
+  ],
+  "assets": [
+    { "label": "Official announcement — Design at Meta", "url": "https://www.meta.com/design-at-meta/blog/the-new-instagram-brand-identity/" },
+    { "label": "Announcement post by Instagram's head", "url": "https://www.instagram.com/p/Db-x8_oRDAN/" },
+    { "label": "@design launch post", "url": "https://www.instagram.com/p/Db_HEdzmyDi/" }
+  ],
+  "status": "done"
+}

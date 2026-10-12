@@ -1,0 +1,19 @@
+{
+  "case_slug": "demo-mock",
+  "assets": [
+    {
+      "kind": "image",
+      "label": "Revised wordmark concept",
+      "path": "/cases/demo-mock/concept-v1.svg",
+      "prompt_used": "Placeholder for Phase 4 — generated from creative_brief with prompts/fal_from_brief.md (rebrand template).",
+      "tool": "manus"
+    },
+    {
+      "kind": "video",
+      "label": "Relaunch video",
+      "path": "",
+      "prompt_used": "Placeholder for Phase 4 — image-to-video from the approved concept, one clip per scene.",
+      "tool": "fal"
+    }
+  ]
+}

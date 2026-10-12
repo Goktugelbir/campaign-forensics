@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f4b-e9fb-73c1-99ec-0ba6c5a4d7a6",
+  "created_at": "2026-10-12T08:47:50.000Z",
+  "seconds": 4,
+  "input": {
+    "text": "And then... that crunch.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fde/DeMK37LDGlLnY5om9BOYA_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/vo-3.mp3"
+  ]
+}

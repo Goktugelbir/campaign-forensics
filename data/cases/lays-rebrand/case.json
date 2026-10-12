@@ -1,0 +1,28 @@
+{
+  "slug": "lays-rebrand",
+  "case_code": "CF-0414",
+  "brand": "Lay's",
+  "campaign": "Global rebrand — \"Made with real potatoes\"",
+  "campaign_type": "rebrand",
+  "launch_date": "2025-10-09",
+  "summary": "On 9 October 2025 PepsiCo announced the largest redesign in Lay's nearly 100-year history: a warmer sun logo with \"Lay's Rays\", matte bags with a wood-grain, potato-crate look, a \"Made with real potatoes\" claim and recipes without artificial flavors or colors in the U.S. The trigger was research that roughly 42% of consumers didn't know the chips are made from potatoes. In Turkey the new pack launched with TBWA\\Istanbul's \"Tam da Lay'slik\" film (March 2026). Reactions are mixed: the design itself is mostly accepted, but the potato claim, a pack that resembles Lay's Baked and a perceived taste change dominate the conversation.",
+  "claim": "\"Every chip is rooted in real potatoes, real people and real joy\" — the redesign should make sure people know Lay's are made with real, farm-grown potatoes, with \"the same unbeatable taste.\"",
+  "comparison_targets": [
+    "Lay's Baked (matte pack, 50% less fat) — the brand's own better-for-you line",
+    "Earlier Lay's identities (2007 slices-to-chip, 1965 logo, 2019 refresh)",
+    "Lay's Super Bowl LX ad \"Last Harvest\" (Feb 2026) and TR film \"Tam da Lay'slik\" (Mar 2026)",
+    "Shrinkflation context — earlier Lay's pack-size reductions"
+  ],
+  "key_questions": [
+    "The brand found it was not associated with natural ingredients. Did this rebrand fix that?",
+    "Are people talking about the message — or about price, pack size and taste?",
+    "Is the design itself the problem, or what the design is saying?",
+    "Does the reaction in Turkey differ from the U.S.?"
+  ],
+  "assets": [
+    { "label": "Official announcement — PepsiCo newsroom", "url": "https://www.pepsico.com/en/newsroom/stories/2025/from-potato-to-chip-the-next-chapter-of-lays" },
+    { "label": "Super Bowl LX ad \"Last Harvest\"", "url": "https://www.youtube.com/watch?v=D4EkP55njL4" },
+    { "label": "TR film \"Tam da Lay'slik\" (Lay's Türkiye reel)", "url": "https://www.instagram.com/reel/DV-4vGOCGis/" }
+  ],
+  "status": "done"
+}

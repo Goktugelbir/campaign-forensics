@@ -1,0 +1,23 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f4b-94c3-7f00-b041-2af7e5610c8c",
+  "created_at": "2026-10-12T08:51:16.078Z",
+  "seconds": 232,
+  "input": {
+    "prompt": "Golden potato chips keep cascading into the bowl in slow motion, bouncing slightly, salt crystals sparkling as they fall. Slow, steady camera movement. Joyful, appetising mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0fdc/Hwh5hnr_DqpxwFOJZOvF0_1791794840925.png",
+    "duration": "5",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distortion, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0ff1/yJE6ZcXmbKIIZIRMMDlav_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/clip-pour.mp4"
+  ]
+}

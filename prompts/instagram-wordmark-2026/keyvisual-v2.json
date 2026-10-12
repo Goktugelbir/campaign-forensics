@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph, extreme close-up: the tip of a black brush pen resting on a sheet of warm off-white paper on a wooden desk, a single fresh abstract ink swoosh beside it, morning window light, tactile paper texture, shallow depth of field, soft warm magenta and orange bokeh in the background. Calm, crafted, editorial product photography, one clear focal point, empty negative space in the upper left. The paper is blank apart from the one abstract curved line.",
+  "negative_prompt": "text, letters, words, numbers, writing, typography, caption, headline, logo, watermark, signature, handwriting, calligraphy letters",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

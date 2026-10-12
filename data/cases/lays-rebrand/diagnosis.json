@@ -1,0 +1,113 @@
+{
+  "case_slug": "lays-rebrand",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "name": "Positioning",
+      "status": "uncertain",
+      "confidence": 50,
+      "evidence_ids": ["ev_005", "ev_016", "ev_049", "ev_029"],
+      "reasoning": "The redesign moves Lay's toward 'natural / simple ingredients' cues in a 'MAHA era' framing, and several readers interpret it as an attempt to look like healthier brands. Some call it healthwashing, others think it will work 'for a period' — the shift colours the reaction but is not rejected outright."
+    },
+    {
+      "id": "H2",
+      "name": "Target Audience",
+      "status": "uncertain",
+      "confidence": 42,
+      "evidence_ids": ["ev_009", "ev_015", "ev_056", "ev_057"],
+      "reasoning": "The message was built for the ~42% who didn't know chips are potatoes, but the people reacting are regular buyers who did know and felt talked down to. In Turkey, fans under the new film ask for discontinued flavours and the familiar local character instead. No demographic data confirms the split."
+    },
+    {
+      "id": "H3",
+      "name": "Differentiation",
+      "status": "rejected",
+      "confidence": 30,
+      "evidence_ids": ["ev_037", "ev_007", "ev_052"],
+      "reasoning": "The sun, ribbon and colour remain identifiable and design press calls it a subtle, clear reinvention. A few comments ask what happened to 'standing out', but the dominant complaints are about what the pack says and resembles, not that it looks like competitors."
+    },
+    {
+      "id": "H4",
+      "name": "Message",
+      "status": "confirmed",
+      "confidence": 84,
+      "evidence_ids": ["ev_001", "ev_015", "ev_018", "ev_048", "ev_028"],
+      "reasoning": "'Made with real potatoes' answers a question loyal buyers never had, so it reads as an admission: the most-upvoted reactions mock the research premise (4,450) and ask 'what were the old ones made of then?' (808). The claim invites skepticism ('with' vs 'from') instead of appetite."
+    },
+    {
+      "id": "H5",
+      "name": "Creative Execution",
+      "status": "confirmed",
+      "confidence": 70,
+      "evidence_ids": ["ev_002", "ev_020", "ev_022", "ev_023", "ev_026"],
+      "reasoning": "The Classic bag went matte with a wood-grain, farmhouse look — the cues Lay's Baked has always used. Shoppers report buying the wrong product and not being able to tell Baked from Classic at a glance; a designer says it looks like 'the new look for baked lays'."
+    },
+    {
+      "id": "H6",
+      "name": "Competition",
+      "status": "rejected",
+      "confidence": 12,
+      "evidence_ids": ["ev_031", "ev_062", "ev_064"],
+      "reasoning": "No rival launch or comparison drives the conversation. The surrounding context is internal — suspicion of smaller bags and earlier pack-size cuts — and category data shows Lay's still growing on menus."
+    }
+  ],
+  "diagnosis": {
+    "main_cause": "Leading the biggest redesign with 'Made with real potatoes' answered a question loyal buyers never had, so it read as an admission ('what were the old ones made of then?') — and it arrived on a matte, wood-grain bag that looks like Lay's Baked, so shoppers expected a diet chip and blamed the taste.",
+    "explanation": "The official rationale is that 'many people are not aware that Lay's are made from real potatoes' (ev_001, ev_009). Among people actually reacting, the premise itself became the joke: the top reply on a 5,567-upvote thread mocks the research (ev_015), and the next asks what the old chips were made of (ev_018, ev_048). The pack carries the claim on matte, wood-grain stock that Lay's Baked has always used, so shoppers report picking up the wrong product (ev_020, ev_022, ev_023, ev_026). Arriving together with a recipe change, the new bag became the signal for 'tastes different' (ev_017, ev_019, ev_042). The design itself is mostly accepted (ev_021, ev_024, ev_007) — what people reject is what it says and what it resembles.",
+    "secondary_causes": [
+      "The matte, farmhouse Classic bag borrowed the cues of Lay's Baked, so the two lines are hard to tell apart on shelf.",
+      "A simultaneous recipe change (no artificial flavours or colours) made the new pack the scapegoat for any perceived taste difference.",
+      "Earlier pack-size cuts made 'new design' read as a distraction from smaller bags.",
+      "In Turkey, fans respond to flavours and a familiar local voice more than to provenance stories."
+    ],
+    "surprising_finding": "People like how the new Lay's looks and reject what it says. Design-led comments are largely positive ('looks a lot more appealing', 297; 'I personally like it', 469), yet the single most-upvoted reaction in the sample (4,450) ignores the design and mocks the research behind the claim. And in Turkey, comments under the new farm-to-table film skip the potato story entirely and ask for discontinued flavours to come back.",
+    "surprising_evidence_ids": ["ev_021", "ev_024", "ev_015", "ev_057", "ev_058"],
+    "evidence_ids": ["ev_015", "ev_018", "ev_020", "ev_023"]
+  },
+  "prescription": [
+    {
+      "change": "Retire 'Made with real potatoes' as the headline. Lead with appetite and craft instead — e.g. 'only 10 of 4,000 potato varieties make the cut' — and let the crunch prove the rest.",
+      "why": "The proof-of-potato claim reads as an admission to the people who buy Lay's; a confident craft fact and sensory appeal don't.",
+      "evidence_ids": ["ev_001", "ev_015", "ev_018", "ev_028"]
+    },
+    {
+      "change": "Give Classic back a glossy, bright-gold bag and reserve the matte finish for Baked, so the two lines read differently at a glance.",
+      "why": "Shoppers can't tell Classic from Baked and buy the wrong one.",
+      "evidence_ids": ["ev_020", "ev_022", "ev_023", "ev_065"]
+    },
+    {
+      "change": "Make taste the hero of the relaunch: crunch-first creative and in-store taste tests to answer 'it doesn't taste the same'.",
+      "why": "The taste conversation is louder than the logo conversation; showing the crunch addresses it directly.",
+      "evidence_ids": ["ev_017", "ev_019", "ev_054"]
+    },
+    {
+      "change": "In Turkey, pair the new pack with fan-requested flavour comebacks and the familiar local voice.",
+      "why": "Comments under the new film ask for discontinued flavours and the old character, not provenance.",
+      "evidence_ids": ["ev_056", "ev_057", "ev_058", "ev_059"]
+    }
+  ],
+  "creative_brief": {
+    "concept": "\"The crunch says it all.\" A sensory, confident relaunch that never explains what chips are made of — it shows golden slices, the crunch and the moment, and ends on a glossy gold Classic pack.",
+    "message": "Only the best potatoes make it into a bag of Lay's — and you can hear it.",
+    "audience": "Existing Lay's fans in the U.S. and Turkey who know chips are potatoes and want the taste, not a lecture.",
+    "tone": "Joyful, confident, appetising — never defensive.",
+    "scenes": [
+      "Macro: thin golden potato slices tumbling in slow motion through warm light, glistening.",
+      "Golden chips cascading into a bowl in slow motion, salt crystals sparkling.",
+      "Friends on a sunny rooftop sharing chips from a bowl and laughing — the crunch moment.",
+      "End card: the revised glossy gold Classic pack concept with 'The crunch says it all.' and 'Classic in gold. Baked in matte.'"
+    ],
+    "visual_direction": "Warm golden-hour light, glossy bright yellow and red accents, macro food photography with slow-motion movement. No fake packaging text in generated footage; supers and the pack concept are added in the edit.",
+    "cta": "Grab the gold bag."
+  },
+  "before_after": [
+    { "dimension": "Headline", "before": "\"Made with real potatoes\"", "after": "\"The crunch says it all\"" },
+    { "dimension": "Classic pack", "before": "Matte, wood-grain — looks like Lay's Baked", "after": "Glossy bright gold; matte reserved for Baked" },
+    { "dimension": "Proof", "before": "Proves the obvious (it's potatoes)", "after": "Shows craft ('only 10 varieties make the cut') and the crunch" },
+    { "dimension": "Taste", "before": "New bag = 'doesn't taste the same'", "after": "Crunch-first creative and taste tests" },
+    { "dimension": "Turkey", "before": "Farm-to-table nostalgia film", "after": "Fan-requested flavour comebacks with the local voice" }
+  ],
+  "generic_check": {
+    "passed": true,
+    "note": "Names the specific claim ('Made with real potatoes'), the specific misreading ('what were the old ones made of?'), the specific pack cue (matte wood-grain shared with Lay's Baked) and its consequence (wrong-product purchases, taste blame). It would not fit another brand unchanged."
+  }
+}

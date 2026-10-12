@@ -1,0 +1,24 @@
+{
+  "model": "fal-ai/ideogram/v3",
+  "requestId": "01a12f4a-e9fb-71f1-956f-1b5f23b7e57d",
+  "created_at": "2026-10-12T08:46:54.642Z",
+  "seconds": 14,
+  "input": {
+    "prompt": "Product packaging concept, studio packshot: a single glossy, bright golden-yellow potato chip bag standing upright, front view, with shiny foil highlights, on a warm sunny yellow background with a soft shadow. On the bag: a round yellow sun emblem with radiating rays, a red ribbon banner across the emblem with the word \"Lay's\" in bold white letters, the small word \"CLASSIC\" below, and a close-up photo of golden potato chips on the lower half. Clean, premium, high contrast. No other text.",
+    "negative_prompt": "matte finish, wood grain, misspelling, extra text, watermark, signature, multiple bags",
+    "rendering_speed": "BALANCED",
+    "style": "DESIGN",
+    "expand_prompt": false,
+    "num_images": 1,
+    "image_size": "landscape_16_9"
+  },
+  "output": {
+    "seed": 628553252,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fd9/5BXYWMps8Q09Muro-8sen_sICpx6nL.png"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/pack-v1.png"
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Revised Northwind wordmark concept with separated r and t and a small-size cut">
+  <rect width="800" height="450" fill="#111111"/>
+  <g fill="#f3ebdd" font-family="'Arial Narrow', 'Helvetica Neue', Arial, sans-serif" font-weight="700">
+    <text x="400" y="225" text-anchor="middle" font-size="120" letter-spacing="2">NORTHWIND</text>
+  </g>
+  <g transform="translate(330 300)">
+    <rect width="64" height="64" rx="14" fill="#f3ebdd"/>
+    <text x="32" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="10.5" letter-spacing="0.4" fill="#111">NORTHWIND</text>
+  </g>
+  <g transform="translate(410 310)">
+    <rect width="44" height="44" rx="10" fill="#f3ebdd"/>
+    <text x="22" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="20" fill="#111">NW</text>
+  </g>
+</svg>

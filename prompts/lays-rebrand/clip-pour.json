@@ -1,0 +1,8 @@
+{
+  "prompt": "Golden potato chips keep cascading into the bowl in slow motion, bouncing slightly, salt crystals sparkling as they fall. Slow, steady camera movement. Joyful, appetising mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+  "start_image_url": "/cases/lays-rebrand/kv-pour.png",
+  "duration": "5",
+  "generate_audio": false,
+  "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distortion, flicker, blur, low quality",
+  "cfg_scale": 0.5
+}

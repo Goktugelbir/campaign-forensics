@@ -1,0 +1,104 @@
+{
+  "note": "Organic results (title, url, date, snippet) from apify/google-search-scraper, US/en, 1 page per query. Results that are personal Instagram/Facebook posts are listed by URL only.",
+  "queries": [
+    {
+      "term": "Instagram wordmark Mosseri new logo",
+      "results": [
+        {"title":"Instagram changes its wordmark logo after over a decade","url":"https://www.thehindu.com/sci-tech/technology/internet/instagram-changes-its-wordmark-logo-after-over-a-decade/article71342724.ece","date":"2026-08-14","description":"Meta introduced a refreshed Instagram wordmark logo on Thursday (August 13, 2026). The change was announced by Instagram head Adam Mosseri ..."},
+        {"title":"This is Instagram's new logo","url":"https://www.theverge.com/tech/979583/this-is-instagrams-new-logo","date":"2026-08-13","description":"The updated wordmark is a strange mix of half-cursive, half-print that's somehow less legible than its predecessor. Like, that totally says “ ..."},
+        {"title":"Instagram unveils new logo wordmark for the first time ...","url":"https://www.nbclosangeles.com/news/national-international/instagram-new-logo-workmark/3929083/","date":"2026-08-13","description":"The wordmark at the top of the app hasn't changed in 10 years, so it was time for a refresh,\" Instagram head Adam Mosseri said."},
+        {"title":"Instagram new logo sparks buzz as platform changes ...","url":"https://www.moneycontrol.com/technology/instagram-new-logo-sparks-buzz-as-platform-changes-wordmark-after-10-years-article-14005048.html","date":"2026-08-14","description":"Mosseri described the new design as “sharper and more modern”, while saying it still references Instagram's original identity and retains the ..."},
+        {"url":"https://www.instagram.com/p/Db-x8_oRDAN/"},
+        {"url":"https://www.instagram.com/p/DcBxk-XCyyU/"},
+        {"url":"https://www.instagram.com/p/Db_D4UwMo15/"}
+      ]
+    },
+    {
+      "term": "Instagram yeni logo Instagzam",
+      "results": [
+        {"title":"“Instagzam”: Instagram's new logo has become a meme","url":"https://www.domusweb.it/en/news/2026/08/22/instagram-new-wordmark-meme-brands-instagzam.html","date":"2026-08-22","description":"McDonald's, KitKat, Canva, ChatGPT and Uber are redesigning their logos to mimic Instagram's new wordmark, which many users say looks like it ..."},
+        {"title":"Instagram'ın yeni logosu dalga konusu oldu: “Instagzam”","url":"https://www.donanimhaber.com/instagram-in-yeni-logosu-dalga-konusu-oldu-instagzam--209292","date":"2026-08-14","description":"Instagram, 10 yılın ardından metin temelli logosunu yeniledi. Yeni tasarım daha modern bir görünüm sunarken “r” harfinin şekli sosyal ..."},
+        {"title":"Instagzam? This is what the new Instagram logo that's ...","url":"https://en.softonic.com/articles/instagzam-this-is-what-the-new-instagram-logo-thats-confusing-us-all-looks-like","date":"2026-08-14","description":"A more modern, sharper and clearly recognizable design, Instagram has updated its wordmark to give it a more modern look, original. The new ..."},
+        {"title":"Instagram Head of Design Explains New Logo, Responds ...","url":"https://variety.com/2026/digital/news/instagram-designer-explains-new-logo-responds-to-critics-1236836340/","date":"2026-08-17","description":"Instagram director of product design Jasmine Probst explained what went into the new logo and responded to critics who say it looks like ..."},
+        {"url":"https://www.instagram.com/p/DcCHOjlnbCt/"},
+        {"url":"https://www.instagram.com/p/Db_mSBRkmQk/"}
+      ]
+    },
+    {
+      "term": "Instagram logo redesign backlash August 2026",
+      "results": [
+        {"title":"Instagram's new logo explained (2026 wordmark redesign)","url":"https://www.jukeboxprint.com/blog/instagram-new-logo","date":"2026-08-13","description":"Instagram's first wordmark change in a decade landed August 13, 2026. Heavier, tighter, still script. the app is now called Instagzam."},
+        {"title":"“Instagram has evolved”: the process and craft behind ...","url":"https://www.itsnicethat.com/features/behind-instagrams-first-major-refresh-in-10-years-partnership-130826","date":"2026-08-13","description":"Director of brand design Cynthia Pratomo describes the redesign as Instagram “growing up”. That doesn't mean becoming more serious. It just ..."},
+        {"title":"Instagram new logo 2026: the 'Instagzam' effect explained","url":"https://sapere.digital/insights/instagram-new-logo-2026-lessons","date":"2026-08-15","description":"Cleaner and more modern, On August 13, 2026, Instagram unveiled a redesigned wordmark, the first update to the lettering in ten years. The ..."},
+        {"title":"Everyone's Wrong About Instagram's New Logo","url":"https://www.youtube.com/watch?v=RmwRpeMLyeI","description":"57,2K+ views"},
+        {"url":"https://www.instagram.com/p/DcJQBDOCBbG/","description":"Instagram has rolled out its first logo update in 10 years, and instead of praise, it got roasted. Users say the new wordmark is harder to ..."}
+      ]
+    },
+    {
+      "term": "site:reddit.com Instagram new logo Instagzam",
+      "results": [
+        {"title":"Instagram's new wordmark : r/logodesign","url":"https://www.reddit.com/r/logodesign/comments/1vnbpw4/instagrams_new_wordmark/"},
+        {"title":"r/Design - Instagzam: before after","url":"https://www.reddit.com/r/Design/comments/1vnta49/instagzam_before_after/","description":"the new one looks like a font you would find in a gallery of AI generated inspirational quotes on plain color backgrounds posted on Instagram ..."},
+        {"title":"Instagram has a new wordmark logo : r/popculturechat","url":"https://www.reddit.com/r/popculturechat/comments/1vnisoj/instagram_has_a_new_wordmark_logo/"},
+        {"title":"Instagram Just Changed Its Wordmark for the First Time in ...","url":"https://www.reddit.com/r/Instagram/comments/1vnfjiu/instagram_just_changed_its_wordmark_for_the_first/"},
+        {"title":"Instagram changes its wordmark : r/Design","url":"https://www.reddit.com/r/Design/comments/1vnbtdo/instagram_changes_its_wordmark/"},
+        {"title":"Unpopular opinion: The new IG logo actually looks clean.","url":"https://www.reddit.com/r/graphic_design/comments/1vp059x/unpopular_opinion_the_new_ig_logo_actually_looks/"},
+        {"title":"r/mildlyinfuriating - New Instagram logo","url":"https://www.reddit.com/r/mildlyinfuriating/comments/1vnfxk8/new_instagram_logo/"}
+      ]
+    },
+    {
+      "term": "Instagram new logo wordmark 2026",
+      "results": [
+        {"title":"Built to celebrate creativity: the new Instagram brand identity","url":"https://www.meta.com/design-at-meta/blog/the-new-instagram-brand-identity/","date":"2026-08-13","description":"The refreshed Instagram wordmark is now rolling out globally, with the full brand identity following through 2026 and beyond."},
+        {"title":"Instagram reveals its first brand refresh in 10 years, with a ...","url":"https://www.creativeboom.com/news/instagram-reveals-its-first-brand-refresh-in-10-years-with-a-new-wordmark-and-three-typefaces/","date":"2026-08-14","description":"Instagram reveals its first brand refresh in 10 years, with a new wordmark and three typefaces ... The script survives, but it's been straightened ..."},
+        {"title":"Instagram's new logo explained (2026 wordmark redesign)","url":"https://www.jukeboxprint.com/blog/instagram-new-logo","date":"2026-08-13","description":"In the new wordmark, the r carries a cursive swoosh where you'd expect a plain stem and shoulder, and it sits right next to a g with a curve of ..."},
+        {"title":"Instagram rebrand references the \"individual expression\" of ...","url":"https://www.dezeen.com/2026/08/14/instagram-rebrand-wordmark-script-2026/","date":"2026-08-14","description":"Instagram has updated its brand identity with elements such as a refreshed, \"bolder and simpler\" wordmark and updated typographic elements ..."},
+        {"url":"https://www.instagram.com/p/Db_HEdzmyDi/"},
+        {"url":"https://www.instagram.com/p/Db_hydTjOER/"}
+      ]
+    },
+    {
+      "term": "Instagram new wordmark \"Instagzam\"",
+      "results": [
+        {"title":"Instagram unveils first new wordmark in a decade as users ...","url":"https://tribune.com.pk/story/2623753/instagram-unveils-first-new-wordmark-in-a-decade-as-users-react-to-the-redesign","date":"2026-08-14","description":"The new wordmark replaces the familiar cursive lettering that Instagram has used since 2016 with a hybrid style that combines elements of ..."},
+        {"title":"Instagram updates its official wordmark - Innovation Village","url":"https://innovation-village.com/instagram-updates-its-official-wordmark/","date":"2026-08-16"},
+        {"title":"Instagram Unveils New Wordmark, Signals First Brand ...","url":"https://www.medianews4u.com/instagram-unveils-new-wordmark-signals-first-brand-typography-refresh-in-a-decade/","date":"2026-08-14"}
+      ]
+    },
+    {
+      "term": "Instagram new wordmark small size legibility app",
+      "results": [
+        {"title":"Instagram's new logo explained (2026 wordmark redesign)","url":"https://www.jukeboxprint.com/blog/instagram-new-logo","date":"2026-08-13","description":"Instagram changed its wordmark on August 13, 2026, the app is now called Instagzam. Users raised legibility and accessibility concerns within ..."},
+        {"title":"Instagram changed its logo. The bit you actually tap is ...","url":"https://thenextweb.com/news/instagram-logo-wordmark-redesign-app-icon-unchanged","date":"2026-08-13","description":"Instagram changed its wordmark on Thursday. A wordmark is the written name, the word “Instagram” as it appears at the top of the app."},
+        {"title":"Logo Legibility vs. Personality: What Went Wrong","url":"https://jadeagarddesign.com/logo-legibility-vs-personality/","date":"2026-08-14","description":"Shrink it down first. Test your wordmark at the smallest size it'll ever realistically appear, like a favicon, an app icon, or a mobile header."},
+        {"title":"Instagram's New Wordmark Puts Brand Recognition ...","url":"https://news.designrush.com/instagrams-new-wordmark-puts-brand-recognition-test","date":"2026-09-21","description":"Instagram's new wordmark puts readability and brand recognition under scrutiny ... Size: Does the lettering remain readable when it is small?"},
+        {"title":"Instagram's New Wordmark: A Designer's Perspective (Facebook group post)","url":"https://www.facebook.com/groups/naijadesigners/posts/10164706354011306/","description":"The “r” does introduce a legitimate legibility question. Legibility is: “I can immediately and correctly decode every letter.” a smaller or ..."}
+      ]
+    },
+    {
+      "term": "Instagram new logo bots fake positive comments",
+      "results": [
+        {"title":"Cracker Barrel logo backlash was fueled by bots, data shows","url":"https://restaurantbusinessonline.com/technology/cracker-barrel-logo-backlash-was-fueled-bots-data-shows","date":"2025-09-29","description":"More than 44% of social posts made during the first 24 hours of the logo debacle were likely created by automated accounts with an agenda,"},
+        {"note":"No result discussed coordinated or inauthentic support for the 2026 Instagram wordmark. Other results were generic articles about Instagram spam bots (2020–2026)."}
+      ]
+    },
+    {
+      "term": "Instagzam X twitter reaction",
+      "results": [
+        {"title":"Instagzam: If It Ain't Broke, Do We Fix It?","url":"https://www.makingscience.com/en/blog/instagzam-if-it-aint-broke-do-we-fix-it/","date":"2026-09-01","description":"In July 2023, Twitter became X. the X rebrand was widely understood as Elon Musk marking new territory, not addressing an actual user complaint ..."},
+        {"title":"Instagram Unveils New Logo and People Are Already ...","url":"https://variety.com/2026/digital/news/instagram-unveils-new-logo-1236833931/","date":"2026-08-13","description":"Although some are saying it reads: Instagzam. I dig that 😆” Mosseri seemed to be bracing for a strong reaction."},
+        {"title":"Instagram's new wordmark sparks debate over cursive ...","url":"https://gulfnews.com/technology/instagram-changes-its-wordmark-and-the-internet-has-opinions-can-gen-z-read-cursive-1.500640847","date":"2026-08-14","description":"Instagram's new wordmark sparks online debate as users mock the 'Instagzam' logo and question whether Gen Z's cursive skills drove the ..."},
+        {"title":"Some users are already joking that the new logo reads \"Instagzam.\" (CNET Facebook post)","url":"https://www.facebook.com/cnet/posts/some-users-are-already-joking-that-the-new-logo-reads-instagzam/1440383261284862/","description":"MIXED REACTIONS WITH FIRST 638 reactions."},
+        {"note":"An X reply under The Verge's post was excluded: political joke (sensitive-topic rule)."}
+      ]
+    },
+    {
+      "term": "Instagram 2016 logo change backlash then accepted",
+      "results": [
+        {"title":"Instagram logo change: Are users overreacting?","url":"https://www.marketing-interactive.com/instagram-logo-change-users-overreacting","date":"2016-05-12","description":"According to an Instagram spokesperson, the change reflects Instagram's evolution from a place to edit and share photos, to a global community ..."},
+        {"title":"Instagram and 5 other logo changes people hated","url":"https://finance.yahoo.com/news/instagram-and-other-tech-corporate-logo-changes-people-hated-airbnb-uber-facebook-gap-logo-173040119.html","date":"2016-05-12","description":"Adweek called the new logo \"a travesty.\" GQ called it a \"logo change no one wanted.\" The Independent explained \"why you might hate it.\" ..."},
+        {"title":"Instagram Rebrand Fails to Capture Followers' Hearts","url":"https://fatguymedia.com/branding/instagram-rebrand/","date":"2016-05-22","description":"By modernizing its logo, Instagram angered their core audience, who had grown accustomed and attached to the old logo."}
+      ]
+    }
+  ]
+}

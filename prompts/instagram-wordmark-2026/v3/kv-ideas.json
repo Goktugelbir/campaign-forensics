@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph, over-the-shoulder close-up: a young creator sketching loose abstract doodles, swirls and shapes with a black brush pen in an open spiral notebook on a sunny cafe table, a ceramic coffee cup nearby, morning window light, warm tones with soft magenta and orange accents, shallow depth of field, candid. The page shows only abstract shapes.",
+  "negative_prompt": "text, letters, words, numbers, writing, handwriting, typography, caption, logo, watermark, signature, phone screen content, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

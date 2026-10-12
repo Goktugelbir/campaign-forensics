@@ -1,0 +1,43 @@
+{
+  "note": "Excerpts from apify/web-fetch (text). Navigation and unrelated blocks removed; quoted passages verbatim.",
+  "pages": [
+    {
+      "url": "https://www.pepsico.com/en/newsroom/stories/2025/from-potato-to-chip-the-next-chapter-of-lays",
+      "title": "From potato to chip: The next chapter of Lay's",
+      "published": "2025-10-09",
+      "excerpts": [
+        "There are more than 4,000 registered potato varieties in the world, and only 10 are good enough to become a Lay's potato chip.",
+        "But here's the surprising part — many people are not aware that Lay's are made from real potatoes.",
+        "Now, with the largest brand redesign in Lay's nearly 100-year history, Lay's is here to showcase that every chip is rooted in real potatoes, real people and real joy — and bringing consumers more choices with the same unbeatable taste, by removing artificial flavors and colors in the U.S.",
+        "during harvest season, it's possible for farm-grown potatoes to go from farm to bag in as little as 48 hours.",
+        "Lay's Baked will be made with olive oil and have 50% less fat than regular potato chips",
+        "the team made the sun warmer and more distinct. Sun rays, or \"Lay's Rays,\" beam from the logo ... A refined color palette was inspired by the ingredients of Lay's recipes: pickle green, hickory brown, savory red and more."
+      ]
+    },
+    {
+      "url": "https://www.inc.com/maria-jose-gutierrez-chavez/why-lays-pulled-off-its-biggest-rebrand-in-nearly-100-years/91252672",
+      "title": "How Lay's Pulled Off Its Biggest Rebrand in Nearly 100 Years",
+      "published": "2025-10-17",
+      "excerpts": [
+        "The chip brand is building into its story rather than stripping it to parts. (meta description)",
+        "The legacy brand's sales were slipping, hinting at the need for a refresh. (search snippet)"
+      ]
+    },
+    {
+      "url": "https://pazarlamaturkiye.com/laysin-yeni-reklam-filmi-tam-da-layslik-izleyenleri-sevgiyle-buyutulen-ozenle-yetistirilen-patateslerin-hikayesiyle-bulusturuyor/",
+      "title": "Lay's'in Yeni Reklam Filmi “Tam da Lay'slik” ...",
+      "published": "2026-03-29",
+      "excerpts": [
+        "Yeni logosu ve ambalajıyla sevenlerinin karşısına çıkmaya hazırlanan Lay's, duygusal reklam filmiyle izleyicileri içten bir hikâyeyle buluşturuyor.",
+        "Demet anılarında traktörden düşen küçük bir patatesi bulup tekrar toprağa dikiyor. ... Bu özen ve sevgi sayesinde patates, “Tam Da Lay'slik”, lezzetli bir patatese dönüşüyor.",
+        "Reklam Ajansı: TBWA\\Istanbul"
+      ]
+    },
+    {
+      "url": "https://www.adweek.com/creativity/creatives-react-lays-super-bowl-ad/",
+      "title": "Creatives React: Lay's Ad Makes Potatoes Emotional, But Could Benefit From Cooking Time",
+      "published": "2026-02-08",
+      "excerpts": ["Lay's Super Bowl ad goes for all the emotions with 'The Last Harvest.' (meta description)"]
+    }
+  ]
+}

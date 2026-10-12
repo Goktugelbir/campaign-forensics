@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f36-5690-7f41-b2cd-332f03edc6f3",
+  "created_at": "2026-10-12T08:24:16.785Z",
+  "seconds": 5,
+  "input": {
+    "text": "Every idea starts in your own hand.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f51/se5xXo5VpUY8dzCp29JME_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo3-1.mp3"
+  ]
+}

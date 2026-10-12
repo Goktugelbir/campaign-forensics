@@ -1,0 +1,50 @@
+{
+  "output": "/cases/lays-rebrand/relaunch-v1.mp4",
+  "size": [1280, 720],
+  "fps": 30,
+  "music": { "file": "/cases/lays-rebrand/music-v1.wav", "volume": 0.3 },
+  "segments": [
+    {
+      "kind": "clip",
+      "source": "/cases/lays-rebrand/clip-slices.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/lays-rebrand/vo-1.mp3",
+      "voOffset": 0.6,
+      "shade": 0.3,
+      "texts": [{ "text": "Only 10 potato varieties make the cut.", "font": "georgia.ttf", "size": 54, "color": "white", "y": 600, "shadow": true }]
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/lays-rebrand/clip-pour.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/lays-rebrand/vo-2.mp3",
+      "voOffset": 0.5,
+      "shade": 0.3,
+      "texts": [{ "text": "Sliced thin. Cooked golden. A pinch of salt.", "font": "georgia.ttf", "size": 50, "color": "white", "y": 600, "shadow": true }]
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/lays-rebrand/clip-friends.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/lays-rebrand/vo-3.mp3",
+      "voOffset": 1.2,
+      "shade": 0.3,
+      "texts": [{ "text": "That crunch.", "font": "georgia.ttf", "size": 64, "color": "white", "y": 595, "shadow": true }]
+    },
+    {
+      "kind": "image",
+      "source": "/cases/lays-rebrand/pack-v1.png",
+      "duration": 4,
+      "vo": "/cases/lays-rebrand/vo-4.mp3",
+      "voOffset": 0.4,
+      "texts": [
+        { "text": "The crunch says it all.", "font": "georgia.ttf", "size": 52, "color": "0x7a1414", "y": 28 },
+        { "text": "CLASSIC IN GOLD  ·  BAKED IN MATTE", "font": "consola.ttf", "size": 22, "color": "0x5a3a0a", "y": 652 },
+        { "text": "Concept based on diagnosis — not an official Lay's design.", "font": "segoeui.ttf", "size": 15, "color": "0x6b5a2a", "y": 692 }
+      ]
+    }
+  ]
+}

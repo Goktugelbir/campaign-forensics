@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="New Northwind Coffee wordmark, condensed sans with merged rt ligature">
+  <rect width="800" height="450" fill="#111111"/>
+  <g fill="#f3ebdd" font-family="'Arial Narrow', 'Helvetica Neue', Arial, sans-serif" font-weight="700">
+    <text x="400" y="225" text-anchor="middle" font-size="120" letter-spacing="-6">NO<tspan letter-spacing="-38">R</tspan>THWIND</text>
+  </g>
+  <g transform="translate(330 300)">
+    <rect width="64" height="64" rx="14" fill="#f3ebdd"/>
+    <text x="32" y="38" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="-0.8" fill="#111">NO<tspan letter-spacing="-4.5">R</tspan>THWIND</text>
+  </g>
+  <g transform="translate(410 310)">
+    <rect width="44" height="44" rx="10" fill="#f3ebdd"/>
+    <text x="22" y="26" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-weight="700" font-size="8" letter-spacing="-0.6" fill="#111">NO<tspan letter-spacing="-3">R</tspan>THWIND</text>
+  </g>
+</svg>

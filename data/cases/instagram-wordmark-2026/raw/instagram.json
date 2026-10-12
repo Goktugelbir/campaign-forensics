@@ -1,0 +1,57 @@
+{
+  "note": "Owner username, full name, profile picture and IDs removed. Comments that only @-tag another account are dropped. The scraper returns newest comments first, so run 1 (announcement posts) is mostly off-topic Sept–Oct traffic.",
+  "runs": [
+    {
+      "runId": "ckfVyibB3HGSBGBdp",
+      "posts": ["https://www.instagram.com/p/Db-x8_oRDAN/", "https://www.instagram.com/p/Db_HEdzmyDi/"],
+      "items_returned": 29,
+      "kept_on_topic": [
+        {"commentUrl":"https://www.instagram.com/p/Db-x8_oRDAN/c/18125730832655634","timestamp":"2026-09-23T10:59:23Z","likesCount":0,"text":"Font name?"},
+        {"commentUrl":"https://www.instagram.com/p/Db-x8_oRDAN/c/17895109725397784","timestamp":"2026-09-10T09:46:05Z","likesCount":0,"text":"So article👏 a great correction😍"},
+        {"commentUrl":"https://www.instagram.com/p/Db_HEdzmyDi/c/18145457248602807","timestamp":"2026-10-10T12:50:09Z","likesCount":0,"text":"Amazinggg 🔥"}
+      ],
+      "dropped": "26 items: spam links, emoji-only, @-tags, account-support requests and feature requests unrelated to the wordmark"
+    },
+    {
+      "runId": "8l20euvqTJyNnDW0E",
+      "posts": ["https://www.instagram.com/p/DcCHOjlnbCt/", "https://www.instagram.com/p/Db_mSBRkmQk/", "https://www.instagram.com/p/DcJQBDOCBbG/"],
+      "items_returned": 45,
+      "items": [
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/17908430058498093","timestamp":"2026-09-10T11:55:43Z","likesCount":0,"text":"The r looks like a 7 🫩"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18364959943214938","timestamp":"2026-08-26T19:59:00Z","likesCount":0,"text":"Ai 🤔"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18076128875698093","timestamp":"2026-08-24T06:00:47Z","likesCount":0,"text":"It’s ugly asf"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/17895554631387005","timestamp":"2026-08-23T15:16:10Z","likesCount":0,"text":"I don’t like it"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18614418928060131","timestamp":"2026-08-22T19:13:28Z","likesCount":0,"text":"Looks like shittily written Hebrew"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18128503450673688","timestamp":"2026-08-21T03:00:20Z","likesCount":0,"text":"Instagram is now instagazm. Zefinitely annoying but whateverrrr. Next 🥱"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18107214452151685","timestamp":"2026-08-20T21:06:41Z","likesCount":0,"text":"Because the kids can’t read cursive"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18097967999293855","timestamp":"2026-08-20T16:01:43Z","likesCount":0,"text":"The r looks like half a pi symbol 😂"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18194661778378541","timestamp":"2026-08-20T11:15:29Z","likesCount":0,"text":"Ppl can't read cursive anymore"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18109993592053858","timestamp":"2026-08-20T10:15:19Z","likesCount":0,"text":"Everyone saying it looks like a z because they don’t know what a cursive z looks like lol"},
+        {"commentUrl":"https://www.instagram.com/p/Db_mSBRkmQk/c/18118318526478462","timestamp":"2026-08-19T14:20:19Z","likesCount":0,"text":"Looks like a website my teacher told me to sign up for in middle school…eww"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18114009286993271","timestamp":"2026-09-12T12:20:00Z","likesCount":0,"text":"Brands roasting brands is my new genre of reels😭😭"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18005327501782764","timestamp":"2026-09-07T08:02:56Z","likesCount":0,"text":"1 : ubez 2 : chat ji pi ti 3: McDonalds4:Volkswagen 5:canza 6: Picsazt"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18620003674025982","timestamp":"2026-09-04T07:39:45Z","likesCount":0,"text":"Free mei sab brand ne instagram ka promotion kr diya 😂"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18096873860059478","timestamp":"2026-09-03T07:51:08Z","likesCount":0,"text":"And that’s what you call a smart marketing - all those are paid partnerships to promote their new branding"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18039731009641156","timestamp":"2026-09-02T05:51:27Z","likesCount":0,"text":"k bit these are kinda fire"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/17904812502508164","timestamp":"2026-09-02T00:24:41Z","likesCount":0,"text":"PicsArt lowk looks good tho"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18627271438020500","timestamp":"2026-09-01T16:21:09Z","likesCount":0,"text":"Trends need to die"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/17978765775110622","timestamp":"2026-08-31T23:03:22Z","likesCount":0,"text":"branding by committee, apparently 😏"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18111001202037116","timestamp":"2026-08-31T04:56:26Z","likesCount":0,"text":"The audacity to do it using an Instagram post😭👆"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18111861287051052","timestamp":"2026-08-30T21:51:19Z","likesCount":0,"text":"This old logo looks like ass. The new one is even worse. But nothing is worse than UI/UX"},
+        {"commentUrl":"https://www.instagram.com/p/DcJQBDOCBbG/c/18035393918830029","timestamp":"2026-08-30T19:01:28Z","likesCount":0,"text":"does [brand account] not know that that is an R not a V?😭😂"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18108166739024732","timestamp":"2026-08-16T09:46:07Z","likesCount":0,"text":"Do people even take much notice of it anyway??"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/17922897882183325","timestamp":"2026-08-15T22:06:39Z","likesCount":0,"text":"Instagzam"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18088288652174836","timestamp":"2026-08-15T17:33:58Z","likesCount":0,"text":"DO THIS: Tap the Instagzam logo and see what you get 😉\nSpoiler: A chronological feed of accounts you’re following! Been there for years! 🙏🏾"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18204757720362909","timestamp":"2026-08-15T17:23:57Z","likesCount":0,"text":"In stag zam"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18117315952903779","timestamp":"2026-08-15T12:50:34Z","likesCount":0,"text":"Why does the R look like a cheeze doodle?"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/17928443079145520","timestamp":"2026-08-15T11:55:44Z","likesCount":0,"text":"Do you have an Instagzam account ?!"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18091926509635510","timestamp":"2026-08-15T06:19:07Z","likesCount":1,"text":"Instagram doing everything other than improving right to speech and photo/thumbnail format"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18553445662072796","timestamp":"2026-08-15T05:31:45Z","likesCount":0,"text":"Hideous"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/17931969264366772","timestamp":"2026-08-15T04:18:09Z","likesCount":3,"text":"It’s less readable, congrats geniuses"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/17964490481960361","timestamp":"2026-08-15T03:59:25Z","likesCount":0,"text":"Cleaner? Is it because them young ones can't read cursive? 😂"},
+        {"commentUrl":"https://www.instagram.com/p/DcCHOjlnbCt/c/18328378000279324","timestamp":"2026-08-15T03:39:40Z","likesCount":0,"text":"I am wondering what they were thinking with that r"}
+      ],
+      "dropped": "12 items: empty, emoji-only, one-word (\"Eh\", \"Sigh\", \"Since when\"), spam, and one vulgar pun"
+    }
+  ]
+}

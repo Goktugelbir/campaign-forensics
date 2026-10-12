@@ -1,0 +1,19 @@
+{
+  "model": "fal-ai/lyria2",
+  "requestId": "01a12f2f-33bd-7830-92d6-d5ec4d07931a",
+  "created_at": "2026-10-12T08:17:20.914Z",
+  "seconds": 57,
+  "input": {
+    "prompt": "Warm, confident, minimal instrumental bed for a 20-second brand relaunch ad: soft felt piano and light plucked guitar over a gentle, steady modern beat, optimistic and a little playful, building slightly towards a clean resolving ending. No vocals.",
+    "negative_prompt": "vocals, singing, lyrics, harsh drums, distortion, low quality"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f27/v6BFvsFw1RmciYkFlZGf-_output.wav"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/music-v1.wav"
+  ]
+}

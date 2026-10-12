@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f2e-bf1f-78e3-a9c3-4c7a6fec4fec",
+  "created_at": "2026-10-12T08:15:58.636Z",
+  "seconds": 4,
+  "input": {
+    "text": "And millions read it as... Instagzam.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f1f/0RE-ALjohz6GmYxr7qG_K_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo-2.mp3"
+  ]
+}

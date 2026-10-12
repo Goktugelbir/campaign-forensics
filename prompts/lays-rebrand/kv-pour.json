@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph, macro food photography: golden potato chips cascading into a white ceramic bowl in slow motion, coarse salt crystals sparkling in warm sunlight, a few chips mid-air, bright warm yellow background, glossy highlights, crisp texture, appetising, high-end commercial look.",
+  "negative_prompt": "text, letters, words, numbers, logo, brand name, packaging text, watermark, signature, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

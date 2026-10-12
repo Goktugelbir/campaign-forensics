@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f30-5515-7842-b8d7-cbb171e2e0a2",
+  "created_at": "2026-10-12T08:17:43.387Z",
+  "seconds": 5,
+  "input": {
+    "text": "Not taste. One letter: an r that looks like a z.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f2a/fxIgBqEghBEQY2iA04sF7_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo-3.mp3"
+  ]
+}

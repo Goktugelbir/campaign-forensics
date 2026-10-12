@@ -1,0 +1,23 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f4b-9955-74a3-b978-828feaca585a",
+  "created_at": "2026-10-12T08:49:18.454Z",
+  "seconds": 114,
+  "input": {
+    "prompt": "The golden potato slices keep tumbling and spinning through the warm backlight in smooth slow motion, oil droplets glinting. Slow, steady camera push-in. Joyful, appetising mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0fdc/vUoEpHsSysE5EOnK6fz9b_1791794840827.png",
+    "duration": "5",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distortion, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fe7/cYryMp-nxOpy6hZY6JFuU_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/clip-slices.mp4"
+  ]
+}

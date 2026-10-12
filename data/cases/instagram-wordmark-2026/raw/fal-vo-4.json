@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f2e-e34d-7c63-ac9d-b29f1bbd6436",
+  "created_at": "2026-10-12T08:16:08.583Z",
+  "seconds": 5,
+  "input": {
+    "text": "So we redrew it. Same script, a clear r.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f20/zVdmaF8WFJVjeeG5YRTU__output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo-4.mp3"
+  ]
+}

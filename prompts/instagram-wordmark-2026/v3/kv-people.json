@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph: three young friends seen from behind sitting close together on a city rooftop at golden hour, one of them holding up a phone to capture the sunset skyline, the phone screen facing away from the camera, warm backlight and lens flare, candid and joyful, soft magenta and orange sky.",
+  "negative_prompt": "text, letters, words, numbers, writing, handwriting, typography, caption, logo, watermark, signature, phone screen content, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

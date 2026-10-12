@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "campaign-forensics",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start", "--", "-p", "3100"],
+      "cwd": "C:\\Users\\user\\campaign-forensics",
+      "port": 3100
+    }
+  ]
+}

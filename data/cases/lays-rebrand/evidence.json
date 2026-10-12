@@ -1,0 +1,1035 @@
+{
+  "case_slug": "lays-rebrand",
+  "collected_at": "2026-10-12T08:40:00Z",
+  "sources_summary": [
+    {
+      "source": "reddit",
+      "count": 34
+    },
+    {
+      "source": "instagram",
+      "count": 15
+    },
+    {
+      "source": "news",
+      "count": 10
+    },
+    {
+      "source": "web",
+      "count": 3
+    },
+    {
+      "source": "competitor",
+      "count": 2
+    },
+    {
+      "source": "x",
+      "count": 1
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev_001",
+      "source": "web",
+      "type": "official",
+      "url": "https://www.pepsico.com/en/newsroom/stories/2025/from-potato-to-chip-the-next-chapter-of-lays",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Official announcement: \"many people are not aware that Lay's are made from real potatoes.\" The \"largest brand redesign in Lay's nearly 100-year history\" aims to show \"every chip is rooted in real potatoes, real people and real joy\" — \"with the same unbeatable taste\" — while removing artificial flavors and colors in the U.S. \"Only 10\" of 4,000+ potato varieties are good enough to become a Lay's chip.",
+      "sentiment": "neutral",
+      "tags": [
+        "official",
+        "real-potatoes",
+        "claim"
+      ]
+    },
+    {
+      "id": "ev_002",
+      "source": "news",
+      "type": "news",
+      "url": "https://fortune.com/article/lays-rebrand-consumers-didnt-know-chips-were-made-from-potatoes/",
+      "date": null,
+      "lang": "en",
+      "text": "Lay's rebrands after finding 42% of consumers didn't know its chips were made from potatoes. \"New bags—matte-ified and designed to look like wood planks (like a potato crate)—will hold the chips with revamped ingredient lists.\"",
+      "sentiment": "neutral",
+      "tags": [
+        "real-potatoes",
+        "packaging",
+        "matte"
+      ]
+    },
+    {
+      "id": "ev_003",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.packagingdigest.com/packaging-design/lay-s-revamps-logo-package-ingredients-messaging",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "\"The updated logo features a warmer shade of yellow for the sun, and the surrounding 'Lay's Rays' are warmer in color and more distinct.\"",
+      "sentiment": "neutral",
+      "tags": [
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_004",
+      "source": "news",
+      "type": "news",
+      "url": "https://adage.com/brand-marketing/food-beverage/aa-lays-logo-packaging-redesign/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Lay's \"is rolling out a sunny new logo and packaging meant to evoke a farm-grown feel as it begins reformulating its snacks to remove artificial\" ingredients.",
+      "sentiment": "neutral",
+      "tags": [
+        "natural-cue",
+        "packaging"
+      ]
+    },
+    {
+      "id": "ev_005",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.wsj.com/business/retail/pepsico-lays-potato-chips-maha-fcbc9ee0",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Framed as a makeover \"for the MAHA era\": bags will highlight that the product is \"Made with real potatoes\" and some varieties will be reformulated with olive or avocado oil.",
+      "sentiment": "neutral",
+      "tags": [
+        "health-positioning",
+        "real-potatoes"
+      ]
+    },
+    {
+      "id": "ev_006",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.inc.com/maria-jose-gutierrez-chavez/why-lays-pulled-off-its-biggest-rebrand-in-nearly-100-years/91252672",
+      "date": "2025-10-17",
+      "lang": "en",
+      "text": "Context: \"The legacy brand's sales were slipping, hinting at the need for a refresh.\" The brand \"is building into its story rather than stripping it to parts.\"",
+      "sentiment": "neutral",
+      "tags": [
+        "sales",
+        "context"
+      ]
+    },
+    {
+      "id": "ev_007",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.printmag.com/branding-identity-design/lays-rays-and-the-art-of-subtle-reinvention/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Design press: \"The new logo feels cleaner, its iconic sun given 'Lay's Rays'\" — \"good design is about clarity, not shock value.\"",
+      "sentiment": "positive",
+      "tags": [
+        "design-press",
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_008",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.today.com/food/snacks/lays-real-potato-chips-rebrand-rcna237326",
+      "date": "2025-10-13",
+      "lang": "en",
+      "text": "Lay's is rebranding its logo, bag design and advertising \"to make sure its customers know its chips are made with 'real potatoes.'\"",
+      "sentiment": "neutral",
+      "tags": [
+        "real-potatoes",
+        "claim"
+      ]
+    },
+    {
+      "id": "ev_009",
+      "source": "news",
+      "type": "news",
+      "url": "https://myfox8.com/news/lays-overhauls-ingredients-redesigns-bags-in-largest-rebrand-in-100-year-history/",
+      "date": "2025-10-14",
+      "lang": "en",
+      "text": "Coverage cites the study as \"just 43% of people 'who enjoy Lay's don't realize they're made with real, farm-grown potatoes'\" — other outlets report 42%; the statistic itself became the headline.",
+      "sentiment": "neutral",
+      "tags": [
+        "real-potatoes",
+        "research"
+      ]
+    },
+    {
+      "id": "ev_010",
+      "source": "web",
+      "type": "official",
+      "url": "https://www.pepsico.com/newsroom/stories/2026/lays-super-bowl-ads-last-harvest-challenge",
+      "date": "2026-02-04",
+      "lang": "en",
+      "text": "Super Bowl LX: \"Dubbed 'Last Harvest,' the new emotionally driven ad follows a father-daughter potato farming duo as they pass down generations of potato\" farming.",
+      "sentiment": "neutral",
+      "tags": [
+        "advertising",
+        "farm-story"
+      ]
+    },
+    {
+      "id": "ev_011",
+      "source": "news",
+      "type": "news",
+      "url": "https://www.adweek.com/creativity/creatives-react-lays-super-bowl-ad/",
+      "date": "2026-02-08",
+      "lang": "en",
+      "text": "Adweek creatives on \"Last Harvest\": the ad \"makes potatoes emotional, but could benefit from cooking time.\"",
+      "sentiment": "neutral",
+      "tags": [
+        "advertising",
+        "farm-story"
+      ]
+    },
+    {
+      "id": "ev_012",
+      "source": "news",
+      "type": "news",
+      "url": "https://pazarlamaturkiye.com/laysin-yeni-reklam-filmi-tam-da-layslik-izleyenleri-sevgiyle-buyutulen-ozenle-yetistirilen-patateslerin-hikayesiyle-bulusturuyor/",
+      "date": "2026-03-29",
+      "lang": "tr",
+      "text": "Türkiye: yeni logo ve ambalajla gelen “Tam da Lay'slik” filmi (TBWA\\Istanbul), traktörden düşen küçük bir patatesin sevgiyle büyütülüp “Tam Da Lay'slik” bir patatese dönüşmesini anlatıyor — tarladan sofraya, nostaljik bir hikâye.",
+      "sentiment": "neutral",
+      "tags": [
+        "advertising",
+        "farm-story",
+        "tr"
+      ]
+    },
+    {
+      "id": "ev_013",
+      "source": "instagram",
+      "type": "news",
+      "url": "https://www.instagram.com/p/DP3IL7hiMPK/",
+      "date": null,
+      "lang": "tr",
+      "text": "Yerel haber hesabı: Lay's Türkiye'de “global bir marka gibi çeviri dilinde konuşmak yerine 'bizden biri' olmayı seçti” — Ayşe Teyze karakteri, Ege şivesi.",
+      "sentiment": "positive",
+      "tags": [
+        "tr",
+        "local-voice"
+      ]
+    },
+    {
+      "id": "ev_014",
+      "source": "reddit",
+      "type": "discussion",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/",
+      "date": "2026-01-11",
+      "lang": "en",
+      "text": "\"My box of chips had bags with two different designs\" — old and new Lay's bags side by side in one box.",
+      "metrics": {
+        "likes": 5567,
+        "replies": 228
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "transition",
+        "packaging"
+      ]
+    },
+    {
+      "id": "ev_015",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz1y8aw/",
+      "date": "2026-01-11",
+      "lang": "en",
+      "text": "Left is new branding. They changed it because market research showed that a shocking percentage of people didn't realize the chips were made of potato. SMH.",
+      "metrics": {
+        "likes": 4450
+      },
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "research"
+      ]
+    },
+    {
+      "id": "ev_016",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz23ipe/",
+      "date": "2026-01-11",
+      "lang": "en",
+      "text": "Figured it was new branding, assumed it was an attempt to look more like the natural/healthier brands.",
+      "metrics": {
+        "likes": 1830
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "natural-cue",
+        "health-positioning"
+      ]
+    },
+    {
+      "id": "ev_017",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz2tp7z/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "If you taste test them side-by-side you'll see it isn't just marketing. They did make changes. The old ones are light and crispy, leave your fingers oily, and taste amazing. The new ones smell close to the same, but are a bit thicker, and harder, and don't have as much oil on them.",
+      "metrics": {
+        "likes": 973
+      },
+      "sentiment": "negative",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_018",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz27ekg/",
+      "date": "2026-01-11",
+      "lang": "en",
+      "text": "I'm not gonna lie. When I saw this in stores my first thought was \"what were the old ones made of then?\"",
+      "metrics": {
+        "likes": 808
+      },
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "backfire"
+      ]
+    },
+    {
+      "id": "ev_019",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz2zqw4/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "So it wasn't just me. I thought the new package ones were slightly different.",
+      "metrics": {
+        "likes": 423
+      },
+      "sentiment": "negative",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_020",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz32aot/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "I got the new bag thinking they were the baked ones and was pretty frustrated when they were not. I think that was their goal. I like the new bag but I do not like classic lays.",
+      "metrics": {
+        "likes": 372
+      },
+      "sentiment": "negative",
+      "tags": [
+        "baked-confusion",
+        "matte"
+      ]
+    },
+    {
+      "id": "ev_021",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz2n76f/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "I think lays made a good choice here, the left bag looks a lot more appealing.",
+      "metrics": {
+        "likes": 297
+      },
+      "sentiment": "positive",
+      "tags": [
+        "packaging",
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_022",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz3ucej/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "The only thing I don't like about the new design is that I can't automatically tell a baked bag (which has always been matte) from a normal one (that used to be shiny and is now also matte).",
+      "metrics": {
+        "likes": 43
+      },
+      "sentiment": "negative",
+      "tags": [
+        "baked-confusion",
+        "matte"
+      ]
+    },
+    {
+      "id": "ev_023",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/mildlyinteresting/comments/1qabw66/my_box_of_chips_had_bags_with_two_different/nz3umm7/",
+      "date": "2026-01-12",
+      "lang": "en",
+      "text": "These confused me because the new style bag looks very similar to the baked version.",
+      "metrics": {
+        "likes": 42
+      },
+      "sentiment": "negative",
+      "tags": [
+        "baked-confusion"
+      ]
+    },
+    {
+      "id": "ev_024",
+      "source": "reddit",
+      "type": "discussion",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "\"Lay's is getting 'the biggest redesign of the decade'.\" I personally like it, I feel like we are bringing something like maximalism back slowly.",
+      "metrics": {
+        "likes": 469,
+        "replies": 131
+      },
+      "sentiment": "positive",
+      "tags": [
+        "design-community",
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_025",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nio8n4p/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Lay's is one of those brands that is such a staple that I'm just now realizing I never really looked at the logo.",
+      "metrics": {
+        "likes": 116
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "low-attention",
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_026",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nio68c7/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Not bad. Subtle changes to make them seem \"healthier\" or more natural. The wood grain, a cute little salt dish, the radial sunburst... It's teetering on farmhouse — I'd almost expect this to be the new look for baked lays.",
+      "metrics": {
+        "likes": 88
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "natural-cue",
+        "baked-confusion",
+        "design-community"
+      ]
+    },
+    {
+      "id": "ev_027",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nio4r5b/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "I don't really love the radial pattern in the circle behind Lays combined with the textured wood-like pattern of the background... But otherwise I think it looks pretty nice.",
+      "metrics": {
+        "likes": 129
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "execution",
+        "design-community"
+      ]
+    },
+    {
+      "id": "ev_028",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nio4gmn/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Note: \"made WITH real potatoes\" is not legally the same as \"made FROM real potatoes\". Maybe they're reformulating them to be 1% potatoes and 99% gypsum drywall, salt, and that gas that keeps the bag puffed up.",
+      "metrics": {
+        "likes": 112
+      },
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "skepticism"
+      ]
+    },
+    {
+      "id": "ev_029",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nio63bp/",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Toning back the vibrancy of the yellow moves the branding gently from the attention-grabbing packaging people associate with mediocre junk food towards more contemporary \"simple ingredients\" sorts of foods... For a period this will probably work, but if a lot of design language moves this way people will start to calibrate.",
+      "metrics": {
+        "likes": 11
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "health-positioning",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "ev_030",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/Design/comments/1o2imx4/lays_is_getting_the_biggest_redesign_of_the_decade/nir10gq/",
+      "date": "2025-10-10",
+      "lang": "en",
+      "text": "And now with... \"Real Potatoes\"!",
+      "metrics": {
+        "likes": 21
+      },
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "mockery"
+      ]
+    },
+    {
+      "id": "ev_031",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1mommwz/did_lays_get_a_new_design/n8da4rj/",
+      "date": "2025-08-12",
+      "lang": "en",
+      "text": "Yes, probably to distract us from the bags getting smaller.",
+      "metrics": {
+        "likes": 160
+      },
+      "sentiment": "negative",
+      "tags": [
+        "shrinkflation"
+      ]
+    },
+    {
+      "id": "ev_032",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1mommwz/did_lays_get_a_new_design/n8ddnqu/",
+      "date": "2025-08-12",
+      "lang": "en",
+      "text": "Why is advertising made with real potatoes a thing again?",
+      "metrics": {
+        "likes": 10
+      },
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes"
+      ]
+    },
+    {
+      "id": "ev_033",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1mommwz/did_lays_get_a_new_design/n8el402/",
+      "date": "2025-08-13",
+      "lang": "en",
+      "text": "Why do logos keep getting uglier every time they are updated.",
+      "metrics": {
+        "likes": 17
+      },
+      "sentiment": "negative",
+      "tags": [
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_034",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oa8ws7t/",
+      "date": "2026-03-13",
+      "lang": "en",
+      "text": "It's a great redesign and has been widely successful. Their sales have increased across the board... And yeah, turns out a lot of people didn't know they were made with real potatoes.",
+      "metrics": {
+        "likes": 9
+      },
+      "sentiment": "positive",
+      "tags": [
+        "sales",
+        "unverified",
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_035",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oa8so7h/",
+      "date": "2026-03-13",
+      "lang": "en",
+      "text": "I hate that they're shrinking the bag so much.",
+      "metrics": {
+        "likes": 5
+      },
+      "sentiment": "negative",
+      "tags": [
+        "shrinkflation"
+      ]
+    },
+    {
+      "id": "ev_036",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oa8p98m/",
+      "date": "2026-03-13",
+      "lang": "en",
+      "text": "I think it's neat.",
+      "metrics": {
+        "likes": 15
+      },
+      "sentiment": "positive",
+      "tags": [
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_037",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oae6z86/",
+      "date": "2026-03-14",
+      "lang": "en",
+      "text": "THIS is what companies should do if they want to re-brand: it's still identifiable, it's a nice subtle upgrade... Only complaint is it still wasn't necessary.",
+      "metrics": {
+        "likes": 2
+      },
+      "sentiment": "positive",
+      "tags": [
+        "praise",
+        "design-community"
+      ]
+    },
+    {
+      "id": "ev_038",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oacvugu/",
+      "date": "2026-03-14",
+      "lang": "en",
+      "text": "I like that it tells me that it's made from real potatoes.",
+      "metrics": {
+        "likes": 2
+      },
+      "sentiment": "positive",
+      "tags": [
+        "real-potatoes"
+      ]
+    },
+    {
+      "id": "ev_039",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oad4dqk/",
+      "date": "2026-03-14",
+      "lang": "en",
+      "text": "The dill pickle bag is snot coloured and I am not here for it. Also, the back sides are boring now that they got rid of the fun tasty adjectives.",
+      "metrics": {
+        "likes": 2
+      },
+      "sentiment": "negative",
+      "tags": [
+        "execution",
+        "flavor-personality"
+      ]
+    },
+    {
+      "id": "ev_040",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1rsqk6n/what_is_your_opinion_on_the_lays_redesign/oa98fo2/",
+      "date": "2026-03-13",
+      "lang": "en",
+      "text": "Excellent branding. Simple, yet eye catching. The recent price decreases are causing me to buy more chips as well!",
+      "metrics": {
+        "likes": 3
+      },
+      "sentiment": "positive",
+      "tags": [
+        "praise",
+        "price"
+      ]
+    },
+    {
+      "id": "ev_041",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1pau1zm/thoughts_on_lays_new_rebrand_i_personally_really/nwhp43v/",
+      "date": "2025-12-29",
+      "lang": "en",
+      "text": "They changed the recipe and now the chips genuinely taste like [expletive].",
+      "metrics": {
+        "likes": 6
+      },
+      "sentiment": "negative",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_042",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1pau1zm/thoughts_on_lays_new_rebrand_i_personally_really/nu7iyru/",
+      "date": "2025-12-15",
+      "lang": "en",
+      "text": "They don't taste the same for some reason 😭",
+      "metrics": {
+        "likes": 5
+      },
+      "sentiment": "negative",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_043",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1pau1zm/thoughts_on_lays_new_rebrand_i_personally_really/nzewsyx/",
+      "date": "2026-01-13",
+      "lang": "en",
+      "text": "I do not like the new recipe at all, the flavor is bland and the chips are way more crunchy which I'm not a fan of.",
+      "metrics": {
+        "likes": 3
+      },
+      "sentiment": "negative",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_044",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1pau1zm/thoughts_on_lays_new_rebrand_i_personally_really/ns0lepu/",
+      "date": "2025-12-03",
+      "lang": "en",
+      "text": "I hate to say it, the chips taste the exact same… but slightly better. And I don't know why that is.",
+      "metrics": {
+        "likes": 2
+      },
+      "sentiment": "positive",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_045",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/chips/comments/1pau1zm/thoughts_on_lays_new_rebrand_i_personally_really/nxlgxur/",
+      "date": "2026-01-04",
+      "lang": "en",
+      "text": "The logo upgrade is fine but why did they have to make the bag look like crap?",
+      "metrics": {
+        "likes": 2
+      },
+      "sentiment": "negative",
+      "tags": [
+        "packaging",
+        "matte"
+      ]
+    },
+    {
+      "id": "ev_046",
+      "source": "reddit",
+      "type": "discussion",
+      "url": "https://www.reddit.com/r/unpopularopinion/comments/1ohr36i/the_new_lays_logo_is_hot_garbage/",
+      "date": "2025-10-27",
+      "lang": "en",
+      "text": "\"The new lays logo is hot garbage.\" What is the point of adding the stripes on the circle? Or making it 2D? It just looks horrible. Can we keep things the same for once?",
+      "metrics": {
+        "likes": 0,
+        "replies": 19
+      },
+      "sentiment": "negative",
+      "tags": [
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_047",
+      "source": "reddit",
+      "type": "comment",
+      "url": "https://www.reddit.com/r/unpopularopinion/comments/1ohr36i/the_new_lays_logo_is_hot_garbage/nlpzz4q/",
+      "date": "2025-10-27",
+      "lang": "en",
+      "text": "Until you pointed this out, I hadn't even noticed the change. Even seeing the two side by side I can barely tell.",
+      "metrics": {
+        "likes": 3
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "low-attention",
+        "logo"
+      ]
+    },
+    {
+      "id": "ev_048",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/18079759717989777",
+      "date": "2025-10-10",
+      "lang": "en",
+      "text": "So, previously they are not made by real potatoes? 🤔",
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "backfire"
+      ]
+    },
+    {
+      "id": "ev_049",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/17866229310393245",
+      "date": "2025-10-10",
+      "lang": "en",
+      "text": "You know the standard of health in the US when the highlight is \"real potatoes\".",
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "health-positioning"
+      ]
+    },
+    {
+      "id": "ev_050",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/18069798899213226",
+      "date": "2025-10-15",
+      "lang": "en",
+      "text": "Love how \"made with real potatoes\" is a flex.",
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes",
+        "mockery"
+      ]
+    },
+    {
+      "id": "ev_051",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/18045788381387757",
+      "date": "2025-10-10",
+      "lang": "en",
+      "text": "New Logo, wow. Same product?",
+      "sentiment": "negative",
+      "tags": [
+        "product",
+        "skepticism"
+      ]
+    },
+    {
+      "id": "ev_052",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/17901694656148163",
+      "date": "2025-10-10",
+      "lang": "en",
+      "text": "Wtf happened to standing out.",
+      "sentiment": "negative",
+      "tags": [
+        "differentiation"
+      ]
+    },
+    {
+      "id": "ev_053",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/18121510819512906",
+      "date": "2025-10-14",
+      "lang": "en",
+      "text": "This is beautiful fr.",
+      "sentiment": "positive",
+      "tags": [
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_054",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DPl-KUjEcxq/c/17978163728923719",
+      "date": "2025-10-11",
+      "lang": "en",
+      "text": "Nahhhhh if they taste diff imma riot.",
+      "sentiment": "neutral",
+      "tags": [
+        "taste"
+      ]
+    },
+    {
+      "id": "ev_055",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DP6L9QDDbJ5/c/18057207629233342",
+      "date": "2025-10-17",
+      "lang": "en",
+      "text": "Every body knows that potato chips came from potatoes.",
+      "sentiment": "negative",
+      "tags": [
+        "real-potatoes"
+      ]
+    },
+    {
+      "id": "ev_056",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV_kApmjOH7/c/18264669118305772",
+      "date": "2026-09-08",
+      "lang": "tr",
+      "text": "Abla seni severiz ama bize Ayşe Teyze lazım 😂",
+      "sentiment": "neutral",
+      "tags": [
+        "tr",
+        "local-voice"
+      ]
+    },
+    {
+      "id": "ev_057",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV-4vGOCGis/c/18095174305844894",
+      "date": "2026-04-03",
+      "lang": "tr",
+      "text": "Kaşık cips geri gelsiiiin 🙏🥹",
+      "sentiment": "neutral",
+      "tags": [
+        "tr",
+        "flavor-requests"
+      ]
+    },
+    {
+      "id": "ev_058",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV-4vGOCGis/c/17971692209864400",
+      "date": "2026-03-24",
+      "lang": "tr",
+      "text": "Lütfen cacıklı cipsi tekrar getirir misiniz, teşekkürler.",
+      "sentiment": "neutral",
+      "tags": [
+        "tr",
+        "flavor-requests"
+      ]
+    },
+    {
+      "id": "ev_059",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV-4vGOCGis/c/17956394433084066",
+      "date": "2026-03-25",
+      "lang": "tr",
+      "text": "Lay's zeytinyağlı cipsi geri getirme ricanız var mı?",
+      "sentiment": "neutral",
+      "tags": [
+        "tr",
+        "flavor-requests"
+      ]
+    },
+    {
+      "id": "ev_060",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV-4vGOCGis/c/17919557028128307",
+      "date": "2026-03-30",
+      "lang": "tr",
+      "text": "Lay's en sevdiğim cips markası.",
+      "sentiment": "positive",
+      "tags": [
+        "tr",
+        "praise"
+      ]
+    },
+    {
+      "id": "ev_061",
+      "source": "instagram",
+      "type": "comment",
+      "url": "https://www.instagram.com/p/DV-4vGOCGis/c/17873917242571298",
+      "date": "2026-04-02",
+      "lang": "tr",
+      "text": "Arka paketteki yazı fontunun kaldırılmasıyla ilgili firmanıza bol mesaj attım, beni aradınız, söyledim çalışanlarınıza.",
+      "sentiment": "negative",
+      "tags": [
+        "tr",
+        "packaging",
+        "flavor-personality"
+      ]
+    },
+    {
+      "id": "ev_062",
+      "source": "x",
+      "type": "comment",
+      "url": "https://x.com/gidadedektifiTR/status/1705679890274488707",
+      "date": null,
+      "lang": "tr",
+      "text": "Önceki dönem (yeniden tasarımdan önce): Lay's Baharatlı'nın gramajı 150 gramdan 130 grama düşürüldü — \"gizli zam\"; ambalaj üzerinde \"Yeni gramaj\" ibaresi.",
+      "sentiment": "negative",
+      "tags": [
+        "shrinkflation",
+        "tr",
+        "context"
+      ]
+    },
+    {
+      "id": "ev_063",
+      "source": "web",
+      "type": "discussion",
+      "url": "https://eksisozluk.com/lays-firindan--3347309?p=8",
+      "date": null,
+      "lang": "tr",
+      "text": "Lay's Fırından: \"sade olanının pakedine aldandım aldım. '%50 daha az yağlı' ibaresi ve fırın resmi ile beni kendine çekti\" — Türkiye'de fırın serisinin ambalajı \"daha sağlıklı\" sinyalini taşıyor.",
+      "sentiment": "neutral",
+      "tags": [
+        "baked-cue",
+        "tr"
+      ]
+    },
+    {
+      "id": "ev_064",
+      "source": "competitor",
+      "type": "news",
+      "url": "https://tastewise.io/blog/lays-chips-trends",
+      "date": "2025-12-24",
+      "lang": "en",
+      "text": "Category context: \"Lay's is gaining real traction on foodservice menus. Over the past year, Lay's menu items increased by 14.24% YoY.\"",
+      "sentiment": "positive",
+      "tags": [
+        "sales",
+        "context"
+      ]
+    },
+    {
+      "id": "ev_065",
+      "source": "competitor",
+      "type": "news",
+      "url": "https://www.pepsico.com/en/newsroom/stories/2025/from-potato-to-chip-the-next-chapter-of-lays",
+      "date": "2025-10-09",
+      "lang": "en",
+      "text": "Own-portfolio comparison: \"Lay's Baked will be made with olive oil and have 50% less fat than regular potato chips\" — the better-for-you line the new Classic pack now resembles.",
+      "sentiment": "neutral",
+      "tags": [
+        "baked-cue",
+        "comparison"
+      ]
+    }
+  ]
+}

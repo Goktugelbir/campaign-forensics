@@ -1,0 +1,23 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f36-3cd3-7513-96b2-2fe630acb9cd",
+  "created_at": "2026-10-12T08:28:36.078Z",
+  "seconds": 270,
+  "input": {
+    "prompt": "The creator keeps sketching flowing abstract swirls with the brush pen, smiling slightly, sunlight flickering through the cafe window. Slow, steady camera movement. Warm, confident, optimistic mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0f50/6Y3ZoMw_4BHGDujjBth2T_1791793442832.png",
+    "duration": "5",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f6b/O4YL87tDZnfgpu-KqYIko_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/clip-ideas.mp4"
+  ]
+}

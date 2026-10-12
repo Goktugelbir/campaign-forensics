@@ -1,0 +1,23 @@
+{
+  "model": "fal-ai/kling-video/v3/standard/image-to-video",
+  "requestId": "01a12f4b-948d-7b53-8ae0-f914cf1dfb91",
+  "created_at": "2026-10-12T08:49:43.214Z",
+  "seconds": 139,
+  "input": {
+    "prompt": "The friends laugh together, one takes a crunchy bite of a chip, another reaches into the bowl, warm golden-hour light and a gentle breeze. Slow, steady camera movement. Joyful, energetic mood. Keep the people and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+    "start_image_url": "https://v3b.fal.media/files/b/0aae0fdc/qkMl2KcKyI4NQT2Qhn5r1_1791794841050.png",
+    "duration": "5",
+    "generate_audio": false,
+    "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+    "cfg_scale": 0.5
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fe9/ND5PBJmxfB4fFdH2wsFoT_output.mp4"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/clip-friends.mp4"
+  ]
+}

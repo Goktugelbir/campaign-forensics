@@ -1,0 +1,8 @@
+{
+  "prompt": "The creator pins one more colourful photo to the wall, steps back and looks at the arrangement with a quiet proud smile. Slow, steady camera movement. Warm, confident, optimistic mood. Keep the subject and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+  "start_image_url": "/cases/instagram-wordmark-2026/kv-voice.png",
+  "duration": "5",
+  "generate_audio": false,
+  "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+  "cfg_scale": 0.5
+}

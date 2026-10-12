@@ -1,0 +1,24 @@
+{
+  "model": "fal-ai/ideogram/v3",
+  "requestId": "01a12f35-3447-7381-a28f-cf59ad49bd69",
+  "created_at": "2026-10-12T08:23:11.281Z",
+  "seconds": 14,
+  "input": {
+    "prompt": "Photograph, over-the-shoulder close-up: a young creator sketching loose abstract doodles, swirls and shapes with a black brush pen in an open spiral notebook on a sunny cafe table, a ceramic coffee cup nearby, morning window light, warm tones with soft magenta and orange accents, shallow depth of field, candid. The page shows only abstract shapes.",
+    "negative_prompt": "text, letters, words, numbers, writing, handwriting, typography, caption, logo, watermark, signature, phone screen content, distorted hands, extra fingers, warped faces",
+    "rendering_speed": "BALANCED",
+    "style": "REALISTIC",
+    "expand_prompt": false,
+    "num_images": 1,
+    "image_size": "landscape_16_9"
+  },
+  "output": {
+    "seed": 1777703279,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f4a/21P7CxwHwuKkvTO3fgbsU_aSKqPc02.png"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/kv-ideas.png"
+  ]
+}

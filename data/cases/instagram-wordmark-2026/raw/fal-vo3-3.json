@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f36-7c64-7713-8427-4a10110a6fa6",
+  "created_at": "2026-10-12T08:24:26.118Z",
+  "seconds": 4,
+  "input": {
+    "text": "Every post, in your own voice.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0f52/L6xP1M--jt3UiczAW__Dy_output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/instagram-wordmark-2026/vo3-3.mp3"
+  ]
+}

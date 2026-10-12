@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph, macro food photography: thin golden potato slices tumbling through the air in slow motion against a warm dark background, backlit by golden light, droplets of oil glistening, crisp edges, shallow depth of field, rich warm yellow and amber tones, appetising, high-end commercial look.",
+  "negative_prompt": "text, letters, words, numbers, logo, brand name, packaging text, watermark, signature, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

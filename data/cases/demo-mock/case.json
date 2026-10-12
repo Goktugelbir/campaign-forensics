@@ -1,0 +1,27 @@
+{
+  "slug": "demo-mock",
+  "case_code": "CF-0412",
+  "brand": "Northwind Coffee",
+  "campaign": "Logo refresh",
+  "campaign_type": "rebrand",
+  "launch_date": "2026-08-14",
+  "summary": "Northwind Coffee, a fictional 400-store coffee chain, replaced its 12-year-old rounded serif wordmark with a condensed geometric sans and an 'rt' ligature. Within 48 hours the new mark was being mocked as 'Norhwind' across app-store reviews, Reddit and Instagram comments, while design press mostly praised it.",
+  "claim": "\"A wordmark made for mobile ordering\" — cleaner, faster to recognise on small screens, and more premium on packaging.",
+  "comparison_targets": [
+    "Northwind 2014 wordmark change (also criticised, later accepted)",
+    "Harbor Coffee Co. — 2025 identity refresh",
+    "Bluebird Roasters — app-first rebrand"
+  ],
+  "key_questions": [
+    "Northwind's 2014 logo change was also mocked and then accepted. What is different this time?",
+    "Is the 'Norhwind' complaint a matter of taste, or a measurable legibility defect?",
+    "Who is objecting — the design community or everyday customers? Does the reaction differ by platform?",
+    "Did the launch claim ('made for mobile ordering') make the backlash worse?"
+  ],
+  "assets": [
+    { "label": "Previous wordmark (2014–2026)", "url": "/cases/demo-mock/old-wordmark.svg" },
+    { "label": "New wordmark (Aug 2026)", "url": "/cases/demo-mock/new-wordmark.svg" },
+    { "label": "Launch announcement (mock link)", "url": "https://example.com/mock/northwind/launch-post" }
+  ],
+  "status": "done"
+}

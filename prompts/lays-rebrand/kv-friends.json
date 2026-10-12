@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph: three young friends sitting together on a sunny rooftop at golden hour, laughing and reaching into a big bowl of golden potato chips on a low table, one mid-bite with a joyful expression, warm backlight, bright yellow and red accents in their clothes, candid, energetic, commercial lifestyle photography.",
+  "negative_prompt": "text, letters, words, numbers, logo, brand name, packaging, watermark, signature, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

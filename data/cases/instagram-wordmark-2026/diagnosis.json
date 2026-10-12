@@ -1,0 +1,112 @@
+{
+  "case_slug": "instagram-wordmark-2026",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "name": "Positioning",
+      "status": "uncertain",
+      "confidence": 38,
+      "evidence_ids": ["ev_001", "ev_052", "ev_048", "ev_042"],
+      "reasoning": "The refresh is positioned around 'individual expression' and crafted script, while several commenters describe today's Instagram as an algorithmic, ad-heavy feed and read the logo through that lens. This colours the reaction, but few items reject the positioning itself; most complaints are about one letter."
+    },
+    {
+      "id": "H2",
+      "name": "Target Audience",
+      "status": "uncertain",
+      "confidence": 52,
+      "evidence_ids": ["ev_041", "ev_051", "ev_039", "ev_012", "ev_027", "ev_061"],
+      "reasoning": "Reaction differs by audience: design communities are split, including a 511-upvote 'it actually looks clean' thread, while general-user threads and comments are mostly negative. Several sources tie the r→z misreading to younger users not reading cursive, but there is no demographic data to confirm who misreads it."
+    },
+    {
+      "id": "H3",
+      "name": "Differentiation",
+      "status": "rejected",
+      "confidence": 22,
+      "evidence_ids": ["ev_009", "ev_057", "ev_038", "ev_035"],
+      "reasoning": "A few comments call it generic minimalism or 'a Canva logo', and it now aligns with the Meta/Threads family. But the mark was distinctive enough that major brands copied its style within days, and the dominant complaint is that it is hard to read, not that it looks like others."
+    },
+    {
+      "id": "H4",
+      "name": "Message",
+      "status": "confirmed",
+      "confidence": 72,
+      "evidence_ids": ["ev_004", "ev_024", "ev_031", "ev_023", "ev_007"],
+      "reasoning": "The launch reason users heard was 'the wordmark hasn't changed in 10 years, so it was time for a refresh'. That line drew the most-upvoted reactions in the sample (1,075 and 484) and comparisons to rebrands that answer no user complaint. When readability was raised, the brand said it 'enjoyed' the memes rather than addressing it."
+    },
+    {
+      "id": "H5",
+      "name": "Creative Execution",
+      "status": "confirmed",
+      "confidence": 88,
+      "evidence_ids": ["ev_007", "ev_009", "ev_003", "ev_019", "ev_025", "ev_039", "ev_055"],
+      "reasoning": "The cursive-style 'r' — a swoosh joined to the 'a' where readers expect a print stem and shoulder — is described by the press as the top criticism and reads as a 'z', producing 'Instagzam'. The mixed cursive/print construction makes the one cursive letter stand out; designers propose connecting it to the 'g' or rounding it to restore legibility."
+    },
+    {
+      "id": "H6",
+      "name": "Competition",
+      "status": "rejected",
+      "confidence": 14,
+      "evidence_ids": ["ev_037", "ev_065", "ev_022"],
+      "reasoning": "No rival launch or competitor message shapes the reaction; users say they stay because there is 'no real competition'. Other brands joined in after the fact as amplifiers of the meme, not as competitors, and no evidence of coordinated or automated accounts was found (unlike the Cracker Barrel comparison case)."
+    }
+  ],
+  "diagnosis": {
+    "main_cause": "The new wordmark's cursive 'r' — joined to the 'a' with a swoosh where readers expect a print stem — reads as a 'z' inside an otherwise print-style word, so 'Instagram' reads as 'Instagzam'.",
+    "explanation": "The r→z misreading is the most-cited criticism in press and comments alike (ev_007, ev_009, ev_003, ev_011) and the core of the 'Instagzam' meme (ev_026, ev_032, ev_039). Designers pinpoint the construction: one cursive letter in a print-leaning word, attached to the wrong neighbour (ev_019, ev_029, ev_054, ev_055). The launch gave users no reason that could outweigh a misread name — only that 'it hasn't changed in 10 years' (ev_004, ev_024, ev_031). Unlike 2016, when critics objected to a generic icon and a new algorithmic feed, the 2026 objection is about decoding one letter (ev_010, ev_017). We found no evidence that the reaction was driven by automated accounts; the one claim that brand remixes were paid partnerships is unverified (ev_066).",
+    "secondary_causes": [
+      "The launch rationale — 'it hasn't changed in 10 years' — gave users no benefit to weigh against the change and became a target in itself.",
+      "The mixed cursive/print logic relies on cursive literacy that many younger users are said to lack, so the one cursive letter breaks the word.",
+      "Distrust of Meta and of today's feed coloured the reception of anything the brand changed."
+    ],
+    "surprising_finding": "The most-upvoted reaction in our sample is not the 'Instagzam' joke but the launch rationale: 'it hasn't changed in 10 years, so it's time' drew 1,075 upvotes on r/Design and a near-identical objection 484 on r/logodesign — more than any 'r looks like a z' comment. The 'r' made the change visible; the missing reason made it indefensible. Design communities were split rather than hostile — the same spaces that rejected the rationale also produced a 511-upvote defence — while general-user threads were mostly negative.",
+    "surprising_evidence_ids": ["ev_024", "ev_031", "ev_041"],
+    "evidence_ids": ["ev_007", "ev_009", "ev_019", "ev_039"]
+  },
+  "prescription": [
+    {
+      "change": "Redraw the 'r' with a print-style stem and shoulder (or join it to the 'g', as designers proposed) while keeping the script character of the rest of the wordmark.",
+      "why": "Every legibility complaint traces to this one letterform and its connection to the 'a'.",
+      "evidence_ids": ["ev_019", "ev_029", "ev_054", "ev_055"]
+    },
+    {
+      "change": "Test the revised wordmark at in-app header size with readers who don't use cursive, and publish the test as part of the relaunch.",
+      "why": "The misreading is tied to cursive literacy and small sizes; testing where the mark actually appears answers the 'did anyone check?' criticism.",
+      "evidence_ids": ["ev_020", "ev_021", "ev_027", "ev_061"]
+    },
+    {
+      "change": "Replace 'it hasn't changed in 10 years' with a user-facing reason: what the new script and typefaces let creators do.",
+      "why": "The rationale itself drew the strongest agreement against the change.",
+      "evidence_ids": ["ev_024", "ev_031", "ev_023"]
+    },
+    {
+      "change": "Relaunch with a creator-first ad that ends on the legible wordmark — show what the identity is for, instead of re-explaining the change or celebrating the memes.",
+      "why": "The brand-centric rationale and the 'we enjoyed the memes' reply drew the strongest pushback; the official claim of 'individual expression' was never shown to users.",
+      "evidence_ids": ["ev_001", "ev_007", "ev_024"]
+    }
+  ],
+  "creative_brief": {
+    "concept": "\"Made for your voice.\" The relaunch shows what the new script identity is for — people's ideas, people and voice — and lands on a wordmark that reads at a glance. The change is never explained; it is used.",
+    "message": "Instagram's new look is made for how you create: your ideas, your people, your voice.",
+    "audience": "Everyday Instagram users, especially younger creators, plus the design community that followed the launch.",
+    "tone": "Warm, confident and optimistic — about the community, not about the logo.",
+    "scenes": [
+      "Your ideas: over-the-shoulder close-up of a young creator sketching abstract doodles with a brush pen in a notebook at a sunny café table.",
+      "Your people: friends seen from behind on a rooftop at golden hour, one holding up a phone to capture the moment, screen not visible.",
+      "Your voice: a creator in a small sunlit studio pinning colourful printed photos to a wall.",
+      "End card: the revised, legible wordmark with the line 'Made for your voice.' and the CTA."
+    ],
+    "visual_direction": "Photographic, natural light, candid moments, warm magenta-orange accents echoing the brand gradient. No fake UI, no on-screen text from the model; supers and the wordmark are added in the edit.",
+    "cta": "Update the app."
+  },
+  "before_after": [
+    { "dimension": "The 'r'", "before": "Cursive swoosh joined to the 'a' — reads as a 'z'", "after": "Print-style stem and shoulder; joins only where it stays legible" },
+    { "dimension": "Script logic", "before": "One cursive letter inside a print-leaning word", "after": "One consistent rule for which letters connect" },
+    { "dimension": "Testing", "before": "Feedback rounds balanced against 'creative conviction'", "after": "Tested at in-app header size with non-cursive readers, results shared" },
+    { "dimension": "Launch reason", "before": "\"It hasn't changed in 10 years\"", "after": "What the new script and typefaces give creators" },
+    { "dimension": "Relaunch story", "before": "\"We've truly enjoyed seeing the response... memes\"", "after": "Creator-first ad — your ideas, your people, your voice — ending on the legible wordmark" }
+  ],
+  "generic_check": {
+    "passed": true,
+    "note": "Names a specific letter ('r'), the specific misreading ('z' → 'Instagzam'), its construction (cursive swoosh joined to the 'a' in a print-leaning word) and the launch line users rejected. It would not fit another brand's campaign unchanged."
+  }
+}

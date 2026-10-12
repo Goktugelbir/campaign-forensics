@@ -1,0 +1,8 @@
+{
+  "prompt": "The friends laugh together, one takes a crunchy bite of a chip, another reaches into the bowl, warm golden-hour light and a gentle breeze. Slow, steady camera movement. Joyful, energetic mood. Keep the people and composition consistent with the input image. No on-screen text, no fast cuts, no distortion.",
+  "start_image_url": "/cases/lays-rebrand/kv-friends.png",
+  "duration": "5",
+  "generate_audio": false,
+  "negative_prompt": "text, letters, words, captions, subtitles, logo, watermark, packaging, distorted hands, extra fingers, warped faces, flicker, blur, low quality",
+  "cfg_scale": 0.5
+}

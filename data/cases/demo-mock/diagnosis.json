@@ -1,0 +1,112 @@
+{
+  "case_slug": "demo-mock",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "name": "Positioning",
+      "status": "rejected",
+      "confidence": 20,
+      "evidence_ids": ["ev_002", "ev_030"],
+      "reasoning": "The premium repositioning is consistent across menu, stores and pricing, and almost no comment disputes it. People argue about how the name reads, not about where the brand is going."
+    },
+    {
+      "id": "H2",
+      "name": "Target Audience",
+      "status": "uncertain",
+      "confidence": 44,
+      "evidence_ids": ["ev_008", "ev_027", "ev_009"],
+      "reasoning": "There is a visible split: design press praises the mark while app-ordering regulars complain. The only audience data is a small self-selected Reddit poll, so we cannot confirm the split is the cause rather than a symptom."
+    },
+    {
+      "id": "H3",
+      "name": "Differentiation",
+      "status": "rejected",
+      "confidence": 16,
+      "evidence_ids": ["ev_012", "ev_036"],
+      "reasoning": "A handful of comments call it generic, but most discussion says the opposite — the ligature is distinctive. Side-by-side comparisons with Harbor show the marks are easy to tell apart."
+    },
+    {
+      "id": "H4",
+      "name": "Message",
+      "status": "confirmed",
+      "confidence": 71,
+      "evidence_ids": ["ev_005", "ev_019", "ev_001"],
+      "reasoning": "The launch promised a mark 'made for mobile ordering' and 'faster to recognise on small screens'. That claim is contradicted exactly where customers look, which turned a routine logo complaint into a widely shared joke."
+    },
+    {
+      "id": "H5",
+      "name": "Creative Execution",
+      "status": "confirmed",
+      "confidence": 86,
+      "evidence_ids": ["ev_003", "ev_014", "ev_021", "ev_013"],
+      "reasoning": "The 'rt' ligature shares a stem and aligns the t's crossbar with the r's arm, so below roughly 60px the t vanishes and the mark reads 'Norhwind'. An informal 20-person test reproduces it at icon size but not at poster size."
+    },
+    {
+      "id": "H6",
+      "name": "Competition",
+      "status": "rejected",
+      "confidence": 12,
+      "evidence_ids": ["ev_011", "ev_040"],
+      "reasoning": "Harbor's same-day fall campaign drew no cross-mentions and share of voice shows no spike. Commenters themselves describe it as a typography story, not a competitor story."
+    }
+  ],
+  "diagnosis": {
+    "main_cause": "At app-icon and cup-sleeve sizes, the new 'rt' ligature collapses into a single stroke, so the wordmark reads as 'Norhwind' — a different word.",
+    "explanation": "Most negative reactions cite legibility, not taste: customers screenshot the loyalty-app icon and cup stamp, where the t disappears into the r (ev_003, ev_013, ev_032). A 20-person informal test reproduces the misreading at icon size but not at poster size (ev_021). The identity was only reviewed and published at billboard and storefront scale (ev_017). Because the launch promised a mark 'made for mobile ordering', the failure landed on the brand's own claim and spread as a meme (ev_005, ev_015).",
+    "secondary_causes": [
+      "The launch message promised small-screen legibility, so the defect read as a broken promise rather than an aesthetic choice.",
+      "No small-size cut of the wordmark was shipped for the app icon and cup stamp, unlike comparable app-first rebrands.",
+      "A recent price increase made some customers less forgiving of the change."
+    ],
+    "surprising_finding": "This is not a repeat of 2014. That backlash was about losing a 'cosy feel' and faded in six weeks; this one is about the name being misread, and it comes mostly from app-ordering regulars — the exact audience the redesign was meant for — while the design press, who saw it only at poster size, praised it.",
+    "surprising_evidence_ids": ["ev_017", "ev_025", "ev_038"],
+    "evidence_ids": ["ev_003", "ev_014", "ev_021", "ev_032"]
+  },
+  "prescription": [
+    {
+      "change": "Open the 'rt' ligature: separate the stems and drop the t's crossbar below the r's arm.",
+      "why": "The misreading comes from the shared stem; separating it keeps the condensed style that reviewers liked.",
+      "evidence_ids": ["ev_021", "ev_035", "ev_022"]
+    },
+    {
+      "change": "Ship a dedicated small-size cut (wider tracking, heavier t) for the app icon, favicon and cup stamp.",
+      "why": "Every complaint cluster is at 48–64px or on the 3 cm stamp; comparable app-first rebrands use an optical size or monogram there.",
+      "evidence_ids": ["ev_013", "ev_032", "ev_033"]
+    },
+    {
+      "change": "Relaunch with a short legibility-first film that shows the fixed mark at icon size first, billboard last.",
+      "why": "The original launch was judged at billboard scale; reversing the order addresses the broken 'made for mobile' promise directly.",
+      "evidence_ids": ["ev_017", "ev_019"]
+    },
+    {
+      "change": "Acknowledge the 'Norhwind' joke in one owned post instead of 'it will grow on people'.",
+      "why": "The 2014 framing doesn't fit: this is a fixable defect, and the brand response currently reads as dismissive.",
+      "evidence_ids": ["ev_034", "ev_025"]
+    }
+  ],
+  "creative_brief": {
+    "concept": "\"Every letter, every size.\" The refined wordmark is introduced where it failed — on a phone home screen and a cup sleeve — before it scales up to the storefront.",
+    "message": "We heard you: Northwind now reads as Northwind, from the app icon to the sign above the door.",
+    "audience": "App-ordering regulars who saw 'Norhwind' on their phone and cup; secondarily, the design community following the story.",
+    "tone": "Warm, self-aware, a little playful — owning the mistake without grovelling.",
+    "scenes": [
+      "Close-up of a phone home screen at morning light; the new Northwind icon is crisp and unmistakable.",
+      "A barista's hand slides a cup across the counter; the stamp on the sleeve is clearly legible.",
+      "Slow pull-back from the cup to the storefront sign, the same wordmark at large scale.",
+      "End card: the refined wordmark alone on cream, with the line 'Every letter, every size.'"
+    ],
+    "visual_direction": "Natural morning light, warm cream and espresso-brown palette, shallow depth of field, calm handheld camera. No visual effects, no on-screen text except the end card.",
+    "cta": "Update the app — and see your Northwind."
+  },
+  "before_after": [
+    { "dimension": "Legibility at 48px", "before": "Reads 'Norhwind' — t merges into r", "after": "Separated r and t, wider small-size tracking" },
+    { "dimension": "Small-size system", "before": "One wordmark for every size", "after": "Dedicated cut for app icon, favicon and cup stamp" },
+    { "dimension": "Launch message", "before": "\"Made for mobile ordering\" — contradicted by the icon", "after": "\"Every letter, every size\" — shown at icon size first" },
+    { "dimension": "Launch sequence", "before": "Billboard and storefront first", "after": "Phone and cup first, billboard last" },
+    { "dimension": "Response to criticism", "before": "\"It will grow on people\"", "after": "Owns the 'Norhwind' joke and shows the fix" }
+  ],
+  "generic_check": {
+    "passed": true,
+    "note": "The diagnosis names a specific glyph pair ('rt'), a size threshold (~60px) and the touchpoints where it fails (app icon, cup stamp). It would not fit another brand's campaign unchanged."
+  }
+}

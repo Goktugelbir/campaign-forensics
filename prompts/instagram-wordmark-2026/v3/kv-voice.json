@@ -1,0 +1,9 @@
+{
+  "prompt": "Photograph: a young creator seen from the side in a small sunlit studio, pinning colourful abstract printed photographs (colour fields, landscapes, flowers) onto a white wall, plants on a shelf, warm afternoon light, soft magenta and orange accents, candid, calm and proud mood.",
+  "negative_prompt": "text, letters, words, numbers, writing, handwriting, typography, caption, logo, watermark, signature, phone screen content, distorted hands, extra fingers, warped faces",
+  "rendering_speed": "BALANCED",
+  "style": "REALISTIC",
+  "expand_prompt": false,
+  "num_images": 1,
+  "image_size": "landscape_16_9"
+}

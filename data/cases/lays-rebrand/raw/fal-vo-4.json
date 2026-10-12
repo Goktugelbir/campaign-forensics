@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/elevenlabs/tts/eleven-v3",
+  "requestId": "01a12f4b-f9c8-70b3-942b-8e05c96af795",
+  "created_at": "2026-10-12T08:47:55.795Z",
+  "seconds": 6,
+  "input": {
+    "text": "Lay's. The crunch says it all.",
+    "voice": "Rachel",
+    "stability": 0.5,
+    "language_code": "en"
+  },
+  "output": {
+    "seed": null,
+    "urls": [
+      "https://v3b.fal.media/files/b/0aae0fdf/y8-BRUc4ZvREX475-k3H__output.mp3"
+    ]
+  },
+  "saved": [
+    "/cases/lays-rebrand/vo-4.mp3"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "output": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+  "size": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "music": {
+    "file": "/cases/instagram-wordmark-2026/music-v1.wav",
+    "volume": 0.24
+  },
+  "segments": [
+    {
+      "kind": "clip",
+      "source": "/cases/instagram-wordmark-2026/clip-ideas.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/instagram-wordmark-2026/vo3-1.mp3",
+      "voOffset": 0.8,
+      "texts": [
+        {
+          "text": "Your ideas.",
+          "font": "georgia.ttf",
+          "size": 68,
+          "color": "white",
+          "y": 595,
+          "shadow": true
+        }
+      ],
+      "shade": 0.28
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/instagram-wordmark-2026/clip-people.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/instagram-wordmark-2026/vo3-2.mp3",
+      "voOffset": 0.8,
+      "texts": [
+        {
+          "text": "Your people.",
+          "font": "georgia.ttf",
+          "size": 68,
+          "color": "white",
+          "y": 595,
+          "shadow": true
+        }
+      ],
+      "shade": 0.28
+    },
+    {
+      "kind": "clip",
+      "source": "/cases/instagram-wordmark-2026/clip-voice.mp4",
+      "start": 0,
+      "duration": 5,
+      "vo": "/cases/instagram-wordmark-2026/vo3-3.mp3",
+      "voOffset": 0.8,
+      "texts": [
+        {
+          "text": "Your voice.",
+          "font": "georgia.ttf",
+          "size": 68,
+          "color": "white",
+          "y": 595,
+          "shadow": true
+        }
+      ],
+      "shade": 0.28
+    },
+    {
+      "kind": "image",
+      "source": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "duration": 4,
+      "vo": "/cases/instagram-wordmark-2026/vo3-4.mp3",
+      "voOffset": 0.5,
+      "texts": [
+        {
+          "text": "Made for your voice.",
+          "font": "georgia.ttf",
+          "size": 44,
+          "color": "0x111111",
+          "y": 470
+        },
+        {
+          "text": "UPDATE THE APP",
+          "font": "consola.ttf",
+          "size": 24,
+          "color": "0x111111",
+          "y": 545
+        },
+        {
+          "text": "Concept based on diagnosis — not an official Instagram design.",
+          "font": "segoeui.ttf",
+          "size": 15,
+          "color": "0x666666",
+          "y": 690
+        }
+      ],
+      "crop": [
+        150,
+        200,
+        1012,
+        330
+      ],
+      "place": {
+        "width": 900,
+        "y": 130,
+        "bg": "0xeee7de"
+      }
+    }
+  ]
+}
