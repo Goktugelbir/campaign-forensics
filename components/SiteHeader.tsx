@@ -49,10 +49,11 @@ export function SiteHeader() {
                     href={l.href}
                     aria-current={active ? "page" : undefined}
                     className={`flex items-center gap-2 rounded-full px-4 py-1.5 text-sm transition-colors ${
-                      active ? "bg-ink-raised text-fg" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
+                      active
+                        ? "bg-amber font-medium text-black shadow-[0_4px_16px_-4px_rgba(245,166,35,0.6)]"
+                        : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
                     }`}
                   >
-                    {active && <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-amber" />}
                     {l.label}
                   </Link>
                 </li>
@@ -89,11 +90,10 @@ export function SiteHeader() {
                     href={l.href}
                     aria-current={active ? "page" : undefined}
                     className={`flex items-center justify-between rounded-xl px-4 py-3 text-base transition-colors ${
-                      active ? "bg-ink-raised text-fg" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
+                      active ? "bg-amber font-medium text-black" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
                     }`}
                   >
                     {l.label}
-                    {active && <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-amber" />}
                   </Link>
                 </li>
               );

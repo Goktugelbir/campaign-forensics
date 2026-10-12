@@ -5,6 +5,7 @@ import { parseTab, reportHref } from "@/components/report/ReportNav";
 import { pickBeforeImage } from "@/components/report/RelaunchTab";
 import { ToastProvider } from "@/components/Toast";
 import { mockBundle } from "./fixtures";
+import { pickOption } from "./select";
 import { router, setUrl } from "./navMock";
 import type { CaseBundle } from "@/lib/types";
 
@@ -134,7 +135,7 @@ describe("ReportView tabs", () => {
 
   it("re-shows a card hidden by the current filters before flashing it", async () => {
     renderReport(mockBundle(), "tab=evidence");
-    await userEvent.selectOptions(screen.getByRole("combobox", { name: /source/i }), "competitor");
+    await pickOption(screen.getByRole("combobox", { name: /source/i }), "Competitor");
     expect(document.getElementById("ev_014")).toBeNull();
     await act(async () => {
       window.location.hash = "#ev_014";
@@ -148,7 +149,7 @@ describe("ReportView tabs", () => {
   it("evidence filters narrow the list and show an empty state", async () => {
     renderReport(mockBundle(), "tab=evidence");
     expect(screen.getByText("Showing 40 of 40")).toBeInTheDocument();
-    await userEvent.selectOptions(screen.getByRole("combobox", { name: /source/i }), "competitor");
+    await pickOption(screen.getByRole("combobox", { name: /source/i }), "Competitor");
     expect(screen.getByText("Showing 3 of 40")).toBeInTheDocument();
     await userEvent.type(screen.getByRole("searchbox"), "zzzz-nothing");
     expect(screen.getByText("No evidence matches these filters")).toBeInTheDocument();

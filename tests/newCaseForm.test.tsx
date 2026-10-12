@@ -8,7 +8,8 @@ const TODAY = "2026-10-12";
 async function fillValid(user: ReturnType<typeof userEvent.setup>) {
   await user.type(screen.getByLabelText(/^brand/i), "Lay's");
   await user.type(screen.getByLabelText(/campaign name/i), "Global rebrand");
-  await user.selectOptions(screen.getByLabelText(/campaign type/i), "rebrand");
+  await user.click(screen.getByLabelText(/campaign type/i));
+  await user.click(screen.getByRole("option", { name: "Rebrand" }));
   await user.type(screen.getByLabelText(/launch date/i), "2026-09-01");
   await user.type(screen.getByLabelText("Campaign URL 1"), "https://example.com/launch");
   await user.click(screen.getByRole("checkbox", { name: /i confirm/i }));

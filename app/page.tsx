@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { HeroBackground } from "@/components/HeroBackground";
 import { CaseCard } from "@/components/CaseCard";
 import { WaitlistForm } from "@/components/WaitlistForm";
-import { REPORT_STEPS, reportHref } from "@/components/report/steps";
+import { StepsMarquee } from "@/components/StepsMarquee";
 
 export default function LandingPage() {
   const featured = getCaseBundle(FEATURED_CASE_SLUG);
@@ -19,31 +19,20 @@ export default function LandingPage() {
       <Hero slug={slug} />
 
       {/* How it works = the four steps of every report, each linking to that step of the sample */}
-      <section className="container-page py-24 md:py-28">
-        <SectionHeading
-          label="How it works"
-          title="Every report reads in four steps."
-          intro="The same four steps you see as tabs in a report. Click one to jump straight to it in the sample."
-          aside={
-            <Link href="/how-it-works" className="inline-flex items-center gap-1.5 text-sm text-amber hover:underline">
-              Read the methodology <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-            </Link>
-          }
-        />
-        <ol className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {REPORT_STEPS.map((s) => (
-            <li key={s.tab}>
-              <Link href={reportHref(slug, s.tab)} className="card group flex h-full flex-col p-6 transition-colors hover:border-amber/60">
-                <span className="font-mono text-sm text-amber">{s.n}</span>
-                <h3 className="heading-serif mt-5 text-3xl">{s.label}</h3>
-                <p className="mt-3 text-sm leading-relaxed">{s.summary}</p>
-                <span className="mt-auto inline-flex items-center gap-1 pt-5 text-sm text-fg-body transition-colors group-hover:text-amber">
-                  See it in the sample <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-                </span>
+      <section id="steps" className="scroll-mt-16 py-24 md:py-28">
+        <div className="container-page">
+          <SectionHeading
+            label="How it works"
+            title="Every report reads in four steps."
+            intro="The same four steps you see as tabs in a report. Click one to jump straight to it in the sample."
+            aside={
+              <Link href="/how-it-works" className="inline-flex items-center gap-1.5 text-sm text-amber hover:underline">
+                Read the methodology <ArrowRight className="h-3.5 w-3.5" aria-hidden />
               </Link>
-            </li>
-          ))}
-        </ol>
+            }
+          />
+        </div>
+        <StepsMarquee slug={slug} />
       </section>
 
       {/* Sample reports */}

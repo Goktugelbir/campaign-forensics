@@ -16,6 +16,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { setUrl } from "./navMock";
 import { SITE } from "@/lib/site";
 import { ev } from "./fixtures";
+import { pickOption } from "./select";
 import type { Hypothesis } from "@/lib/types";
 
 describe("EvidenceCard", () => {
@@ -201,10 +202,10 @@ describe("CaseList", () => {
     render(<CaseList cases={cases} />);
     expect(screen.getAllByRole("link")).toHaveLength(4);
     expect(screen.getAllByText(/mock data/i)).toHaveLength(1);
-    await userEvent.selectOptions(screen.getByRole("combobox", { name: /type/i }), "ad");
+    await pickOption(screen.getByRole("combobox", { name: /type/i }), "Ad");
     expect(screen.getAllByRole("link")).toHaveLength(1);
     expect(screen.getByRole("link")).toHaveAttribute("href", "/cases/b");
-    await userEvent.selectOptions(screen.getByRole("combobox", { name: /status/i }), "done");
+    await pickOption(screen.getByRole("combobox", { name: /status/i }), "Done");
     expect(screen.getByText(/no cases match/i)).toBeInTheDocument();
     await userEvent.click(screen.getByRole("button", { name: /clear filters/i }));
     expect(screen.getAllByRole("link")).toHaveLength(4);
@@ -271,5 +272,37 @@ describe("SiteHeader", () => {
     await userEvent.click(screen.getByRole("button", { name: "Close menu" }));
     expect(screen.queryByRole("navigation", { name: "Mobile" })).toBeNull();
     setUrl("/");
+  });
+});
+
+describe("StepsMarquee", () => {
+  it("exposes the four steps once; the looping copies are hidden and unfocusable", async () => {
+    const { StepsMarquee } = await import("@/components/StepsMarquee");
+    const { container } = render(<StepsMarquee slug="lays-rebrand" />);
+    const links = screen.getAllByRole("link");
+    expect(links.map((l) => l.getAttribute("href"))).toEqual([
+      "/cases/lays-rebrand",
+      "/cases/lays-rebrand?tab=evidence",
+      "/cases/lays-rebrand?tab=diagnosis",
+      "/cases/lays-rebrand?tab=relaunch",
+    ]);
+    const copies = container.querySelectorAll('ol[aria-hidden="true"] a');
+    expect(copies.length).toBeGreaterThan(0);
+    copies.forEach((a) => expect(a).toHaveAttribute("tabindex", "-1"));
+  });
+});
+
+describe("Checkboxes", () => {
+  it("use the custom checkbox style and toggle from the whole label row", async () => {
+    render(
+      <ToastProvider>
+        <WaitlistForm />
+      </ToastProvider>,
+    );
+    const box = screen.getByRole("checkbox");
+    expect(box).toHaveClass("checkbox");
+    expect(box.closest("label")).toHaveClass("checkbox-row");
+    await userEvent.click(screen.getByText(/send me product updates/i));
+    expect(box).toBeChecked();
   });
 });

@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { Mail } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { Select } from "./Select";
 
 export const REQUEST_TYPES = ["Information", "Correction", "Deletion", "Remove evidence", "Objection"] as const;
 
@@ -32,14 +33,16 @@ function Inner() {
     >
       <p className="label-amber">Send a request</p>
       <div className="grid gap-5 md:grid-cols-2">
-        <label className="block text-sm text-fg">
-          Request type
-          <select className="input mt-2" value={type} onChange={(e) => setType(e.target.value)}>
-            {REQUEST_TYPES.map((t) => (
-              <option key={t}>{t}</option>
-            ))}
-          </select>
-        </label>
+        <div className="text-sm text-fg">
+          <span id="data-request-type-label">Request type</span>
+          <Select
+            className="mt-2 w-full"
+            aria-labelledby="data-request-type-label"
+            value={type}
+            onChange={setType}
+            options={REQUEST_TYPES.map((t) => ({ value: t, label: t }))}
+          />
+        </div>
         <label className="block text-sm text-fg">
           Report link or evidence ID
           <input className="input mt-2" value={reference} onChange={(e) => setReference(e.target.value)} placeholder="e.g. ev_014" />

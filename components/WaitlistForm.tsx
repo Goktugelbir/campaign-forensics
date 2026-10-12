@@ -62,8 +62,8 @@ export function WaitlistForm() {
           {error}
         </p>
       )}
-      <label className="flex items-start gap-3 text-sm">
-        <input type="checkbox" className="mt-0.5 h-4 w-4 shrink-0 accent-amber" checked={updates} onChange={(e) => setUpdates(e.target.checked)} />
+      <label className="checkbox-row">
+        <input type="checkbox" className="checkbox" checked={updates} onChange={(e) => setUpdates(e.target.checked)} />
         <span>Send me product updates by e-mail. I can unsubscribe anytime.</span>
       </label>
       <p className="text-xs text-fg-muted">

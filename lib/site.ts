@@ -48,14 +48,31 @@ export const HEADER_LINKS: NavLink[] = [
 
 export const HEADER_CTA: NavLink = { label: "Start a case", href: "/new" };
 
-/** Footer, top row: the same places as the header plus the company pages. */
-export const FOOTER_LINKS: NavLink[] = [
-  ...HEADER_LINKS,
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+/** Footer link columns (the case-files column is built from the data). */
+export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
+  {
+    title: "Product",
+    links: [
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Sample reports", href: "/cases" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Start a case", href: "/new" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Contact", href: "/contact" },
+      { label: "FAQ", href: "/faq" },
+    ],
+  },
 ];
 
-/** Footer, bottom row: small print. */
+/** Every footer link outside the legal column. */
+export const FOOTER_LINKS: NavLink[] = FOOTER_COLUMNS.flatMap((c) => c.links);
+
+/** Footer, legal column. */
 export const LEGAL_LINKS: NavLink[] = [
   { label: "Privacy Policy", href: "/legal/privacy" },
   { label: "KVKK Notice (TR)", href: "/legal/kvkk" },
@@ -68,7 +85,7 @@ export const LEGAL_LINKS: NavLink[] = [
 
 /** Shown on the About page. */
 export const TEAM: { name: string; role: string; linkedin?: string }[] = [
-  { name: "Göktuğ", role: "Product & strategy" },
-  { name: "Team member", role: "Engineering & data" },
-  { name: "Team member", role: "Creative & brand" },
+  { name: "Mehmet Göktuğ Elbir", role: "Product & strategy" },
+  { name: "Mehmet Burak Albayrak", role: "Engineering & data" },
+  { name: "Fatih Kadim", role: "Creative & brand" },
 ];

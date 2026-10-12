@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Mail } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { Select } from "./Select";
 
 const TOPICS = ["General question", "Agency demo", "Enterprise", "Press"];
 
@@ -37,21 +38,23 @@ export function ContactForm() {
           Name
           <input className="input mt-2" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" />
         </label>
-        <label className="block text-sm text-fg">
-          Topic
-          <select className="input mt-2" value={topic} onChange={(e) => setTopic(e.target.value)}>
-            {TOPICS.map((t) => (
-              <option key={t}>{t}</option>
-            ))}
-          </select>
-        </label>
+        <div className="text-sm text-fg">
+          <span id="contact-topic-label">Topic</span>
+          <Select
+            className="mt-2 w-full"
+            aria-labelledby="contact-topic-label"
+            value={topic}
+            onChange={setTopic}
+            options={TOPICS.map((t) => ({ value: t, label: t }))}
+          />
+        </div>
       </div>
       <label className="block text-sm text-fg">
         Message <span className="text-amber">*</span>
         <textarea className="input mt-2" rows={5} value={message} onChange={(e) => setMessage(e.target.value)} />
       </label>
-      <label className="flex items-start gap-3 text-sm">
-        <input type="checkbox" className="mt-0.5 h-4 w-4 shrink-0 accent-amber" checked={ack} onChange={(e) => setAck(e.target.checked)} />
+      <label className="checkbox-row">
+        <input type="checkbox" className="checkbox" checked={ack} onChange={(e) => setAck(e.target.checked)} />
         <span>
           I have read the{" "}
           <Link href="/legal/kvkk" className="link-amber" target="_blank">

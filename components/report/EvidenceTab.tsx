@@ -18,6 +18,7 @@ import { EmptyState } from "../EmptyState";
 import { InProgress } from "./InProgress";
 import { SentimentDistribution, SourceDistribution } from "./EvidenceCharts";
 import type { FocusRequest } from "./ReportView";
+import { Select } from "../Select";
 
 const HIGHLIGHT_MS = 2000;
 
@@ -76,28 +77,32 @@ export function EvidenceTab({ bundle, focus }: { bundle: CaseBundle; focus: Focu
             onChange={(e) => set("query", e.target.value)}
           />
         </label>
-        <select aria-label="Filter by source" className="input w-auto" value={filters.source} onChange={(e) => set("source", e.target.value as EvidenceFilters["source"])}>
-          <option value="all">All sources</option>
-          {sources.map((s) => (
-            <option key={s} value={s}>
-              {SOURCE_LABEL[s]}
-            </option>
-          ))}
-        </select>
-        <select aria-label="Filter by sentiment" className="input w-auto" value={filters.sentiment} onChange={(e) => set("sentiment", e.target.value as Sentiment | "all")}>
-          <option value="all">All sentiment</option>
-          <option value="negative">Negative</option>
-          <option value="neutral">Neutral</option>
-          <option value="positive">Positive</option>
-        </select>
-        <select aria-label="Filter by tag" className="input w-auto" value={filters.tag} onChange={(e) => set("tag", e.target.value)}>
-          <option value="all">All tags</option>
-          {tags.map((t) => (
-            <option key={t.tag} value={t.tag}>
-              #{t.tag} ({t.count})
-            </option>
-          ))}
-        </select>
+        <Select
+          aria-label="Filter by source"
+          className="w-auto min-w-[10rem]"
+          value={filters.source}
+          onChange={(v) => set("source", v as EvidenceFilters["source"])}
+          options={[{ value: "all", label: "All sources" }, ...sources.map((s) => ({ value: s, label: SOURCE_LABEL[s] }))]}
+        />
+        <Select
+          aria-label="Filter by sentiment"
+          className="w-auto min-w-[10rem]"
+          value={filters.sentiment}
+          onChange={(v) => set("sentiment", v as Sentiment | "all")}
+          options={[
+            { value: "all", label: "All sentiment" },
+            { value: "negative", label: "Negative" },
+            { value: "neutral", label: "Neutral" },
+            { value: "positive", label: "Positive" },
+          ]}
+        />
+        <Select
+          aria-label="Filter by tag"
+          className="w-auto min-w-[12rem]"
+          value={filters.tag}
+          onChange={(v) => set("tag", v)}
+          options={[{ value: "all", label: "All tags" }, ...tags.map((t) => ({ value: t.tag, label: `#${t.tag} (${t.count})` }))]}
+        />
         {isFiltered(filters) && (
           <button type="button" className="text-xs text-amber hover:underline" onClick={() => setFilters(EMPTY_FILTERS)}>
             Clear filters

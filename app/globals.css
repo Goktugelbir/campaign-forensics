@@ -54,6 +54,34 @@
   .link-amber {
     @apply text-amber underline-offset-4 hover:underline;
   }
+  /* Custom checkbox: dark rounded box, amber fill + black tick when checked. */
+  .checkbox {
+    @apply relative mt-0.5 h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-ink-strong bg-ink-raised transition-all duration-150 hover:border-fg-muted;
+  }
+  .checkbox::after {
+    content: "";
+    @apply absolute inset-0 scale-50 opacity-0 transition-all duration-150;
+    background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27 fill=%27none%27 stroke=%27%23000%27 stroke-width=%272.6%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M5 10.5l3.2 3.2L15 7%27/%3E%3C/svg%3E") center / 14px no-repeat;
+  }
+  .checkbox:checked {
+    @apply border-amber bg-amber shadow-[0_0_0_4px_rgba(245,166,35,0.15)];
+  }
+  .checkbox:checked::after {
+    @apply scale-100 opacity-100;
+  }
+  .checkbox:focus-visible {
+    @apply outline-none ring-2 ring-amber ring-offset-2 ring-offset-ink;
+  }
+  .checkbox[aria-invalid="true"] {
+    @apply border-status-rejected;
+  }
+  /* Label row around a checkbox: the whole row is the click target. */
+  .checkbox-row {
+    @apply flex cursor-pointer items-start gap-3 text-sm leading-relaxed;
+  }
+  .checkbox-row:hover .checkbox:not(:checked) {
+    @apply border-fg-muted;
+  }
   .input {
     @apply w-full rounded-lg border border-ink-strong bg-ink-raised px-3.5 py-2.5 text-sm text-fg placeholder:text-fg-muted focus:border-amber focus:outline-none;
   }
@@ -149,6 +177,27 @@
 @keyframes spark-pulse {
   0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
   50% { opacity: 0.75; transform: translate(-50%, -50%) scale(0.85); }
+}
+
+/* Landing "four steps" strip (StepsMarquee): slides right-to-left, pauses on hover/focus. */
+.marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% / 3)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee { -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; }
 }
 
 /* Respect reduced-motion. The evidence flash stays: it is a colour cue, not movement. */

@@ -13,6 +13,7 @@ import {
 import { FEATURED_CASE_SLUG } from "@/lib/site";
 import type { Case } from "@/lib/types";
 import { downloadJson } from "./report/ReportHeader";
+import { Select } from "./Select";
 
 function todayIso(): string {
   const d = new Date();
@@ -70,13 +71,17 @@ export function NewCaseForm({ today = todayIso() }: { today?: string }) {
           <input id="f-campaign" className="input" value={values.campaign} onChange={(e) => update("campaign", e.target.value)} placeholder="e.g. Logo refresh" />
         </Field>
         <Field id="f-campaign_type" label="Campaign type" required error={errors.campaign_type}>
-          <select id="f-campaign_type" className="input" value={values.campaign_type} onChange={(e) => update("campaign_type", e.target.value as CaseFormValues["campaign_type"])}>
-            <option value="">Select…</option>
-            <option value="ad">Ad</option>
-            <option value="rebrand">Rebrand</option>
-            <option value="launch">Launch</option>
-            <option value="other">Other</option>
-          </select>
+          <Select
+            id="f-campaign_type"
+            value={values.campaign_type}
+            onChange={(v) => update("campaign_type", v as CaseFormValues["campaign_type"])}
+            options={[
+              { value: "ad", label: "Ad" },
+              { value: "rebrand", label: "Rebrand" },
+              { value: "launch", label: "Launch" },
+              { value: "other", label: "Other" },
+            ]}
+          />
         </Field>
         <Field id="f-launch_date" label="Launch date" required error={errors.launch_date} warning={!errors.launch_date ? warnings.launch_date : undefined}>
           <input id="f-launch_date" type="date" className="input [color-scheme:dark]" value={values.launch_date} onChange={(e) => update("launch_date", e.target.value)} />
@@ -139,11 +144,11 @@ export function NewCaseForm({ today = todayIso() }: { today?: string }) {
       </div>
 
       <div>
-        <label className="flex items-start gap-3 text-sm">
+        <label className="checkbox-row">
           <input
             id="f-authorized"
             type="checkbox"
-            className="mt-0.5 h-4 w-4 shrink-0 accent-amber"
+            className="checkbox"
             checked={values.authorized}
             onChange={(e) => update("authorized", e.target.checked)}
             aria-invalid={!!errors.authorized}
@@ -189,7 +194,7 @@ function Field({
   hint?: string;
   error?: string;
   warning?: string;
-  children: React.ReactElement<React.InputHTMLAttributes<HTMLInputElement>>;
+  children: React.ReactElement<{ "aria-invalid"?: boolean | "true" | "false"; "aria-describedby"?: string }>;
 }) {
   const describedBy = error ? `${id}-error` : warning ? `${id}-warning` : undefined;
   const child = cloneElement(children, { "aria-invalid": !!error, "aria-describedby": describedBy });

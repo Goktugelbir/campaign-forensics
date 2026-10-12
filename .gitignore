@@ -39,3 +39,7 @@ desktop.ini
 #   data/cases/**/raw/      raw Apify + fal.ai logs — the audit trail behind every claim
 #   public/cases/           generated images, video and voice-over shown in the reports
 #   docs/screenshots/       README images (regenerate with `npm run screenshots`)
+
+# ─── Local exports ─────────────────────────────────────────────
+# Screenshots for the pitch deck (regenerated on demand, not part of the app)
+presentation-screenshots/
