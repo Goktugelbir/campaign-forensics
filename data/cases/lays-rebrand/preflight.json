@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "lays-rebrand",
+  "checked_at": "2026-10-12T10:53:11.285Z",
+  "status": "passed",
+  "checks": [
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "public/cases/lays-rebrand/relaunch-v1.mp4 · 4422 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "MP4 video"
+    },
+    {
+      "id": "duration",
+      "label": "Duration",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "19.0 s (spec: 10–20 s)"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "composed from prompts/lays-rebrand/edit.json"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "Labelled as a concept · fal"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/lays-rebrand/relaunch-v1.mp4",
+      "status": "pass",
+      "detail": "prescription 01, 03"
+    },
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "public/cases/lays-rebrand/pack-v1.png · 606 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "PNG image"
+    },
+    {
+      "id": "frame",
+      "label": "Frame",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "1312×736 · 16:9"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "fal.ai request log raw/fal-pack-v1.json"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "Labelled as a concept · fal"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/lays-rebrand/pack-v1.png",
+      "status": "pass",
+      "detail": "prescription 02"
+    },
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "public/cases/lays-rebrand/kv-pour.png · 1253 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "PNG image"
+    },
+    {
+      "id": "frame",
+      "label": "Frame",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "1312×736 · 16:9"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "fal.ai request log raw/fal-kv-pour.json"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "Labelled as a concept · fal"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/lays-rebrand/kv-pour.png",
+      "status": "pass",
+      "detail": "prescription 03"
+    },
+    {
+      "id": "performance-terms",
+      "label": "No performance claims",
+      "status": "pass",
+      "detail": "No winner, ROAS, CPA, CTR, conversion or lift claims (public-only case)."
+    }
+  ]
+}

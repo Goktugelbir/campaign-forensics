@@ -7,7 +7,11 @@
       "path": "/cases/lays-rebrand/relaunch-v1.mp4",
       "prompt_used": "Edit: prompts/lays-rebrand/edit.json. Three 5 s image-to-video shots, each from its own key visual — golden potato slices tumbling in slow motion ('Only 10 potato varieties make the cut.'), chips cascading into a bowl with sparkling salt ('Sliced thin. Cooked golden. A pinch of salt.'), friends sharing chips on a rooftop at golden hour ('That crunch.') — then the glossy gold Classic pack concept with 'The crunch says it all.' and 'Classic in gold · Baked in matte'. Voiceover: 'Only ten potato varieties make the cut. Sliced thin. Cooked golden. A pinch of salt. And then... that crunch. Lay's. The crunch says it all.' Music: bright, upbeat instrumental. Supers typeset with ffmpeg; no text generated in the footage. Prompts: prompts/lays-rebrand/.",
       "tool": "fal",
-      "model": "fal-ai/kling-video/v3/standard/image-to-video + fal-ai/ideogram/v3 + fal-ai/elevenlabs/tts/eleven-v3 + fal-ai/lyria2"
+      "model": "fal-ai/kling-video/v3/standard/image-to-video + fal-ai/ideogram/v3 + fal-ai/elevenlabs/tts/eleven-v3 + fal-ai/lyria2",
+      "prescription_indexes": [
+        0,
+        2
+      ]
     },
     {
       "kind": "image",
@@ -15,7 +19,10 @@
       "path": "/cases/lays-rebrand/pack-v1.png",
       "prompt_used": "Product packaging concept, studio packshot: a single glossy, bright golden-yellow potato chip bag standing upright, front view, with shiny foil highlights, on a warm sunny yellow background with a soft shadow. On the bag: a round yellow sun emblem with radiating rays, a red ribbon banner across the emblem with the word \"Lay's\" in bold white letters, the small word \"CLASSIC\" below, and a close-up photo of golden potato chips on the lower half. Clean, premium, high contrast. No other text.",
       "tool": "fal",
-      "model": "fal-ai/ideogram/v3"
+      "model": "fal-ai/ideogram/v3",
+      "prescription_indexes": [
+        1
+      ]
     },
     {
       "kind": "image",
@@ -23,7 +30,10 @@
       "path": "/cases/lays-rebrand/kv-pour.png",
       "prompt_used": "Photograph, macro food photography: golden potato chips cascading into a white ceramic bowl in slow motion, coarse salt crystals sparkling in warm sunlight, a few chips mid-air, bright warm yellow background, glossy highlights, crisp texture, appetising, high-end commercial look.",
       "tool": "fal",
-      "model": "fal-ai/ideogram/v3"
+      "model": "fal-ai/ideogram/v3",
+      "prescription_indexes": [
+        2
+      ]
     }
   ]
 }

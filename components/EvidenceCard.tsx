@@ -9,6 +9,8 @@ import { SourceIcon } from "./SourceIcon";
 
 export const EVIDENCE_TEXT_LIMIT = 500;
 
+const TRANSLATED_FROM: Partial<Record<Evidence["lang"], string>> = { tr: "Translated from Turkish", other: "Translated" };
+
 const SENTIMENT_DOT: Record<NonNullable<Evidence["sentiment"]>, string> = {
   negative: "bg-status-rejected",
   neutral: "bg-status-uncertain",
@@ -29,8 +31,10 @@ interface Props {
  */
 export function EvidenceCard({ evidence: e, caseSlug, highlighted, compact }: Props) {
   const [expanded, setExpanded] = useState(false);
-  const { text, truncated } = truncate(e.text, EVIDENCE_TEXT_LIMIT);
-  const shown = expanded ? e.text : text;
+  // Non-English items are shown in English only; the original stays in evidence.json for the record.
+  const body = e.text_en ?? e.text;
+  const { text, truncated } = truncate(body, EVIDENCE_TEXT_LIMIT);
+  const shown = expanded ? body : text;
   const m = e.metrics ?? {};
 
   return (
@@ -50,10 +54,10 @@ export function EvidenceCard({ evidence: e, caseSlug, highlighted, compact }: Pr
           </span>
           <span aria-hidden>·</span>
           <time dateTime={e.date ?? undefined}>{formatDateLabel(e.date)}</time>
-          {e.lang !== "en" && (
+          {e.text_en && (
             <>
               <span aria-hidden>·</span>
-              <span>{e.lang}</span>
+              <span title="Translated with AI; the original is kept in the case file">{TRANSLATED_FROM[e.lang] ?? "Translated"}</span>
             </>
           )}
         </div>

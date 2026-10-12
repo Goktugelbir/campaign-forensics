@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "lays-rebrand",
+  "generated_at": "2026-10-12T10:45:00Z",
+  "source_of_truth": ["evidence.json", "diagnosis.json"],
+  "confidence_basis": "not_calibrated",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "support_evidence_ids": ["ev_016", "ev_049", "ev_026"],
+      "counter_evidence_ids": ["ev_029", "ev_038"],
+      "context_evidence_ids": ["ev_005"],
+      "missing_data": [
+        "How buyers place Lay's against 'better-for-you' brands — no survey or panel data was collected.",
+        "Sales by product line, to see whether the natural cue moved purchases in either direction."
+      ],
+      "uncertainty": "conflicting_evidence"
+    },
+    {
+      "id": "H2",
+      "support_evidence_ids": ["ev_015", "ev_055", "ev_056", "ev_057"],
+      "counter_evidence_ids": ["ev_038", "ev_034"],
+      "context_evidence_ids": ["ev_009"],
+      "missing_data": [
+        "Who the commenters are (age, purchase frequency) — profiles are removed by design, so the audience split cannot be confirmed.",
+        "Any reaction from the ~42% the research said the message was built for."
+      ],
+      "uncertainty": "insufficient_evidence"
+    },
+    {
+      "id": "H3",
+      "support_evidence_ids": ["ev_052", "ev_047"],
+      "counter_evidence_ids": ["ev_037", "ev_007", "ev_003"],
+      "context_evidence_ids": [],
+      "missing_data": [],
+      "rejection_reason": "Rejected on counter-evidence, not for lack of it: design press and commenters find the pack still distinct and identifiable (ev_007, ev_037, ev_003). The confusion people report is with Lay's own Baked line, which belongs to H5, not with competitors."
+    },
+    {
+      "id": "H4",
+      "support_evidence_ids": ["ev_015", "ev_018", "ev_048", "ev_028", "ev_030", "ev_032", "ev_050", "ev_055"],
+      "counter_evidence_ids": ["ev_038", "ev_034"],
+      "context_evidence_ids": ["ev_001"],
+      "missing_data": ["Whether the claim changed purchase intent — no survey or sales data."]
+    },
+    {
+      "id": "H5",
+      "support_evidence_ids": ["ev_020", "ev_022", "ev_023", "ev_026", "ev_045", "ev_039"],
+      "counter_evidence_ids": ["ev_021", "ev_024", "ev_053", "ev_040"],
+      "context_evidence_ids": ["ev_002", "ev_065"],
+      "missing_data": ["A shelf test of how quickly shoppers tell Classic from Baked — the confusion is reported, not measured."]
+    },
+    {
+      "id": "H6",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": ["ev_064", "ev_031", "ev_062"],
+      "context_evidence_ids": [],
+      "missing_data": ["Competitor share, pricing or launch activity in the same period — not collected."],
+      "rejection_reason": "Rejected on counter-evidence: the context people bring up is Lay's own — smaller bags and earlier pack-size cuts (ev_031, ev_062) — and category data shows Lay's still growing (ev_064). No item points to a rival's launch or message."
+    }
+  ],
+  "claims": [
+    {
+      "id": "main_cause",
+      "field": "diagnosis.main_cause",
+      "support_evidence_ids": ["ev_015", "ev_018", "ev_020", "ev_023", "ev_048", "ev_022"],
+      "counter_evidence_ids": ["ev_038", "ev_044"],
+      "uncertainty_reasons": [
+        "The sample is self-selected and Reddit-heavy (34 of 65 items); people who comment are not all buyers.",
+        "Some taste complaints may reflect the real recipe change rather than the pack (ev_017)."
+      ]
+    }
+  ]
+}

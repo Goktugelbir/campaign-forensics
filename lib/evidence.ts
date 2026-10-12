@@ -13,7 +13,7 @@ export function isFiltered(f: EvidenceFilters): boolean {
   return f.source !== "all" || f.sentiment !== "all" || f.tag !== "all" || f.query.trim() !== "";
 }
 
-/** Case-insensitive search over text, id and tags; all active filters must match. */
+/** Case-insensitive search over text (and its translation), id and tags; all active filters must match. */
 export function filterEvidence(list: Evidence[], f: EvidenceFilters): Evidence[] {
   const q = f.query.trim().toLowerCase();
   return list.filter((e) => {
@@ -21,7 +21,7 @@ export function filterEvidence(list: Evidence[], f: EvidenceFilters): Evidence[]
     if (f.sentiment !== "all" && e.sentiment !== f.sentiment) return false;
     if (f.tag !== "all" && !(e.tags ?? []).includes(f.tag)) return false;
     if (q) {
-      const hay = `${e.id} ${e.text} ${(e.tags ?? []).join(" ")}`.toLowerCase();
+      const hay = `${e.id} ${e.text} ${e.text_en ?? ""} ${(e.tags ?? []).join(" ")}`.toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;

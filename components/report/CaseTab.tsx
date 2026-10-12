@@ -5,6 +5,8 @@ import { ArrowUpRight, Maximize2 } from "lucide-react";
 import { hostOf, isImagePath } from "@/lib/assets";
 import type { CaseBundle } from "@/lib/types";
 import { Lightbox } from "../Lightbox";
+import { InvestigationContract } from "./InvestigationContract";
+import { InvestigationLog } from "./InvestigationLog";
 
 export function CaseTab({ bundle }: { bundle: CaseBundle }) {
   const c = bundle.case;
@@ -14,6 +16,7 @@ export function CaseTab({ bundle }: { bundle: CaseBundle }) {
   const links = c.assets.filter((a) => !isImagePath(a.url));
 
   return (
+    <div className="space-y-16">
     <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr]">
       <div className="space-y-10">
         <section>
@@ -55,6 +58,8 @@ export function CaseTab({ bundle }: { bundle: CaseBundle }) {
       </div>
 
       <aside className="space-y-8">
+        <InvestigationContract bundle={bundle} />
+
         <section className="card p-6">
           <p className="label-amber">Key questions</p>
           <ol className="mt-4 space-y-4">
@@ -98,6 +103,9 @@ export function CaseTab({ bundle }: { bundle: CaseBundle }) {
       </aside>
 
       {zoom && <Lightbox src={zoom.src} alt={zoom.alt} onClose={closeZoom} />}
+    </div>
+
+    <InvestigationLog bundle={bundle} />
     </div>
   );
 }

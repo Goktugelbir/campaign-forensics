@@ -1,4 +1,4 @@
-/** Card skeletons, not a spinner (Sayfa Haritası, Grup E #21). */
+/** Card skeletons, not a spinner (page map, group E #21). */
 export function ReportSkeleton() {
   const bar = "animate-pulse rounded bg-ink-raised";
   return (

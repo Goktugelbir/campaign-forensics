@@ -24,6 +24,7 @@ export function SourceDistribution({ evidence }: { evidence: Evidence[] }) {
           </li>
         ))}
       </ul>
+      <LanguageSplit evidence={evidence} />
     </figure>
   );
 }
@@ -66,5 +67,32 @@ export function SentimentDistribution({ evidence }: { evidence: Evidence[] }) {
         </div>
       )}
     </figure>
+  );
+}
+
+const LANG_NAME: Record<Evidence["lang"], string> = { en: "English", tr: "Turkish", other: "Other" };
+
+/** Items and negative share per language — shows whether reaction differs by market. */
+function LanguageSplit({ evidence }: { evidence: Evidence[] }) {
+  const groups = (Object.keys(LANG_NAME) as Evidence["lang"][])
+    .map((lang) => {
+      const items = evidence.filter((e) => e.lang === lang);
+      return { lang, n: items.length, neg: negativeShare(items) ?? 0 };
+    })
+    .filter((g) => g.n > 0);
+  if (groups.length < 2) return null;
+  return (
+    <div className="mt-5 border-t border-ink-line pt-4">
+      <p className="label">By language</p>
+      <ul className="mt-3 space-y-1.5">
+        {groups.map((g) => (
+          <li key={g.lang} className="grid grid-cols-[7.5rem_1fr_auto] items-center gap-3 text-xs">
+            <span className="text-fg-body">{LANG_NAME[g.lang]}</span>
+            <span className="font-mono tabular-nums text-fg">{g.n} items</span>
+            <span className="font-mono tabular-nums text-fg-muted">{g.neg}% negative</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

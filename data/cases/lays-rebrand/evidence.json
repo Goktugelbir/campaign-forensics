@@ -191,6 +191,7 @@
       "date": "2026-03-29",
       "lang": "tr",
       "text": "Türkiye: yeni logo ve ambalajla gelen “Tam da Lay'slik” filmi (TBWA\\Istanbul), traktörden düşen küçük bir patatesin sevgiyle büyütülüp “Tam Da Lay'slik” bir patatese dönüşmesini anlatıyor — tarladan sofraya, nostaljik bir hikâye.",
+      "text_en": "Turkey: the local ad film (TBWA\\Istanbul), launched with the new logo and packaging, follows a small potato that falls off a tractor and is lovingly raised into a perfect Lay's potato — a nostalgic farm-to-table story.",
       "sentiment": "neutral",
       "tags": [
         "advertising",
@@ -206,6 +207,7 @@
       "date": null,
       "lang": "tr",
       "text": "Yerel haber hesabı: Lay's Türkiye'de “global bir marka gibi çeviri dilinde konuşmak yerine 'bizden biri' olmayı seçti” — Ayşe Teyze karakteri, Ege şivesi.",
+      "text_en": "Local news account: in Turkey, Lay's \"chose to be 'one of us' instead of talking in the translated voice of a global brand\" — a familiar 'Auntie' character with an Aegean accent.",
       "sentiment": "positive",
       "tags": [
         "tr",
@@ -897,6 +899,7 @@
       "date": "2026-09-08",
       "lang": "tr",
       "text": "Abla seni severiz ama bize Ayşe Teyze lazım 😂",
+      "text_en": "Sis, we love you, but we need the Auntie back 😂",
       "sentiment": "neutral",
       "tags": [
         "tr",
@@ -911,6 +914,7 @@
       "date": "2026-04-03",
       "lang": "tr",
       "text": "Kaşık cips geri gelsiiiin 🙏🥹",
+      "text_en": "Bring back the spoon-shaped chips 🙏🥹",
       "sentiment": "neutral",
       "tags": [
         "tr",
@@ -925,6 +929,7 @@
       "date": "2026-03-24",
       "lang": "tr",
       "text": "Lütfen cacıklı cipsi tekrar getirir misiniz, teşekkürler.",
+      "text_en": "Could you please bring back the yoghurt-and-cucumber flavour? Thank you.",
       "sentiment": "neutral",
       "tags": [
         "tr",
@@ -939,6 +944,7 @@
       "date": "2026-03-25",
       "lang": "tr",
       "text": "Lay's zeytinyağlı cipsi geri getirme ricanız var mı?",
+      "text_en": "Lay's, any chance of bringing back the olive-oil chips?",
       "sentiment": "neutral",
       "tags": [
         "tr",
@@ -953,6 +959,7 @@
       "date": "2026-03-30",
       "lang": "tr",
       "text": "Lay's en sevdiğim cips markası.",
+      "text_en": "Lay's is my favourite chip brand.",
       "sentiment": "positive",
       "tags": [
         "tr",
@@ -967,6 +974,7 @@
       "date": "2026-04-02",
       "lang": "tr",
       "text": "Arka paketteki yazı fontunun kaldırılmasıyla ilgili firmanıza bol mesaj attım, beni aradınız, söyledim çalışanlarınıza.",
+      "text_en": "I sent your company plenty of messages about removing the lettering on the back of the pack — you called me and I told your staff.",
       "sentiment": "negative",
       "tags": [
         "tr",
@@ -982,6 +990,7 @@
       "date": null,
       "lang": "tr",
       "text": "Önceki dönem (yeniden tasarımdan önce): Lay's Baharatlı'nın gramajı 150 gramdan 130 grama düşürüldü — \"gizli zam\"; ambalaj üzerinde \"Yeni gramaj\" ibaresi.",
+      "text_en": "Earlier (before the redesign): Lay's Spicy went from 150 g to 130 g — a \"hidden price rise\"; the pack says \"New weight\".",
       "sentiment": "negative",
       "tags": [
         "shrinkflation",
@@ -997,6 +1006,7 @@
       "date": null,
       "lang": "tr",
       "text": "Lay's Fırından: \"sade olanının pakedine aldandım aldım. '%50 daha az yağlı' ibaresi ve fırın resmi ile beni kendine çekti\" — Türkiye'de fırın serisinin ambalajı \"daha sağlıklı\" sinyalini taşıyor.",
+      "text_en": "Lay's Baked (Turkey): \"I was taken in by the plain one's pack and bought it. The '50% less fat' line and the oven picture drew me in\" — in Turkey the baked line's pack carries the 'healthier' signal.",
       "sentiment": "neutral",
       "tags": [
         "baked-cue",

@@ -10,7 +10,7 @@ interface Props {
   compact?: boolean;
 }
 
-/** Icon + sentence + one action (Sayfa Haritası, Grup E #22). */
+/** Icon + sentence + one action (page map, group E #22). */
 export function EmptyState({ title, description, icon: Icon = FileSearch, action, compact }: Props) {
   return (
     <div className={`card flex flex-col items-center text-center ${compact ? "px-6 py-10" : "px-6 py-16"}`}>

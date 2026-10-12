@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Download, Link2, Printer } from "lucide-react";
+import { Download, FileText, Link2, Printer } from "lucide-react";
 import { caseCode, CAMPAIGN_TYPE_LABEL, formatDateLabel, formatDateLong } from "@/lib/format";
 import type { CaseBundle } from "@/lib/types";
 import { MockBadge, StatusBadge } from "../Badges";
@@ -58,6 +58,9 @@ export function ReportHeader({ bundle, showActions = true }: { bundle: CaseBundl
 
         {showActions && (
           <div className="no-print flex shrink-0 flex-wrap gap-2 lg:flex-nowrap">
+            <Link href={`/cases/${c.slug}/deliver`} className="btn-primary btn-sm">
+              <FileText className="h-3.5 w-3.5" aria-hidden /> Client brief
+            </Link>
             <button
               type="button"
               className="btn-ghost btn-sm"

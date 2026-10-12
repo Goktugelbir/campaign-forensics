@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "instagram-wordmark-2026",
+  "generated_at": "2026-10-12T10:45:00Z",
+  "source_of_truth": ["evidence.json", "diagnosis.json"],
+  "confidence_basis": "not_calibrated",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "support_evidence_ids": ["ev_052", "ev_048", "ev_042", "ev_045"],
+      "counter_evidence_ids": ["ev_041", "ev_046"],
+      "context_evidence_ids": ["ev_001", "ev_015"],
+      "missing_data": ["A way to separate attitudes to Meta from attitudes to the logo — no survey was run."],
+      "uncertainty": "conflicting_evidence"
+    },
+    {
+      "id": "H2",
+      "support_evidence_ids": ["ev_041", "ev_051", "ev_039", "ev_012", "ev_027", "ev_061", "ev_062"],
+      "counter_evidence_ids": ["ev_047", "ev_029"],
+      "context_evidence_ids": [],
+      "missing_data": [
+        "Commenters' age or cursive literacy — profiles are removed by design, so the 'younger users misread it' link cannot be confirmed.",
+        "A comparable sample from non-English markets (68 of 70 items are in English)."
+      ],
+      "uncertainty": "insufficient_evidence"
+    },
+    {
+      "id": "H3",
+      "support_evidence_ids": ["ev_038", "ev_035"],
+      "counter_evidence_ids": ["ev_009", "ev_014"],
+      "context_evidence_ids": ["ev_057"],
+      "missing_data": [],
+      "rejection_reason": "Rejected on counter-evidence: the mark was distinctive enough that major brands copied its style within days (ev_009) and design press notes the script survives (ev_014). Two 'generic' comments remain as minority support; the dominant complaint is legibility (H5), not sameness."
+    },
+    {
+      "id": "H4",
+      "support_evidence_ids": ["ev_024", "ev_031", "ev_023", "ev_007"],
+      "counter_evidence_ids": ["ev_030"],
+      "context_evidence_ids": ["ev_004"],
+      "missing_data": ["How many users saw the launch rationale at all — reach is not public."]
+    },
+    {
+      "id": "H5",
+      "support_evidence_ids": ["ev_007", "ev_009", "ev_003", "ev_019", "ev_025", "ev_039", "ev_055", "ev_011", "ev_033", "ev_047", "ev_059"],
+      "counter_evidence_ids": ["ev_028", "ev_053", "ev_058", "ev_062"],
+      "context_evidence_ids": [],
+      "missing_data": ["A legibility test at in-app header size — the misreading is reported, not measured (prescription 02 proposes one)."]
+    },
+    {
+      "id": "H6",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": ["ev_037", "ev_065"],
+      "context_evidence_ids": ["ev_022", "ev_066"],
+      "missing_data": ["Whether the brand posts were paid (ev_066 claims so, unverified) and whether automated accounts were involved — no such analysis exists for this launch (ev_022)."],
+      "rejection_reason": "Rejected on counter-evidence: users describe no real alternative (ev_037) and other brands joined as meme amplifiers, not rivals (ev_065). Paid or automated activity is listed as missing data, not treated as proof either way."
+    }
+  ],
+  "claims": [
+    {
+      "id": "main_cause",
+      "field": "diagnosis.main_cause",
+      "support_evidence_ids": ["ev_007", "ev_009", "ev_019", "ev_039", "ev_003", "ev_011"],
+      "counter_evidence_ids": ["ev_058", "ev_062", "ev_052"],
+      "uncertainty_reasons": [
+        "68 of 70 items are in English; other markets may read the script differently.",
+        "The misreading is reported in press and comments, not measured — no legibility test was run."
+      ]
+    }
+  ]
+}

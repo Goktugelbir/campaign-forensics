@@ -96,6 +96,28 @@ Scores use level indicators in the style of AppKit's `NSLevelIndicator` (SwiftUI
 
 There is no star rating: the evidence carries no ratings, and the app never invents data.
 
+### The evidence chain
+
+Every conclusion can be followed back to what people actually said — and every limit is stated:
+
+- **Evidence ledger** (`forensics.json`). Each hypothesis card lists the evidence that **supports** it, the evidence
+  **against** it, background **context** and the **missing data** we could not check. A hypothesis is only rejected when
+  evidence points the other way (the card says why), never because nothing was found; uncertain ones say whether the
+  evidence is thin or conflicting. The main cause shows its support, what weighs against it and why it is not certain.
+- **Investigation contract** (Case tab). Public sources only · no ad account · evidence window · sample size and
+  languages · *descriptive, not causal* · confidence is an analyst judgement, *not calibrated*.
+- **Investigation log** (Case tab). Rebuilt from `raw/`: every Apify actor with its run IDs and limits (including runs
+  that returned nothing), the diagnosis, and every fal.ai generation with time, model and duration.
+- **Why this changed** (Relaunch tab). Each produced asset names the prescription items it answers and the evidence
+  behind them.
+- **Quality gate** (Relaunch tab). The automated preflight — file present, real file type, 16:9 frame, video length
+  10–20 s, lineage (fal.ai request log or edit recipe), AI label, link to a prescription, no performance claims — then a
+  separate **human review** recorded by a person in `approval.json`. Nothing is shown as approved unless someone did.
+- **Client brief** (`/cases/<slug>/deliver`). One printable page an agency can hand over: what happened, the evidence,
+  which explanations were tested, what should change, what was produced, and what is not measured yet.
+- **English only.** Non-English evidence is shown as an AI translation, labelled as such; the original wording stays in
+  `evidence.json` for the record and never reaches a page.
+
 ### Getting around
 
 - **Header:** How it works · Sample reports · Pricing · FAQ, with the current section highlighted, plus **Start a case**.
@@ -189,14 +211,7 @@ After that, `npm start` serves the last build without any connection. The only t
 | `npm run build` / `npm start` | Build only / serve the last build |
 | `npm test` | Unit, component and data-contract tests |
 | `npm run typecheck` | TypeScript, including tests |
-| `npm run check:links [url]` | Crawls a running server from `/` and fails on any broken internal link |
-| `npm run screenshots [url]` | Regenerates `docs/screenshots/` from a running server (uses local Chrome/Edge; set `CHROME_PATH` if needed) |
-
----|---|
-| `npm run dev` | Dev server |
-| `npm run build` / `npm start` | Production build / server |
-| `npm test` | Unit, component and data-contract tests |
-| `npm run typecheck` | TypeScript, including tests |
+| `npm run validate:case [slug]` | Checks a case end to end and runs the creative preflight; writes `preflight.json` (Node 22.6+) |
 | `npm run check:links [url]` | Crawls a running server from `/` and fails on any broken internal link |
 | `npm run screenshots [url]` | Regenerates `docs/screenshots/` from a running server (uses local Chrome/Edge; set `CHROME_PATH` if needed) |
 
@@ -208,7 +223,7 @@ After that, `npm start` serves the last build without any connection. The only t
 campaign-forensics/
 ├── app/                      # routes (App Router)
 │   ├── page.tsx              # landing
-│   ├── cases/                # /cases list · /cases/[slug] report · /cases/[slug]/print
+│   ├── cases/                # /cases list · /cases/[slug] report · /deliver client brief · /print
 │   ├── new/                  # New Case form → "Investigation queued" + case.json download
 │   ├── how-it-works/ pricing/ faq/ about/ contact/
 │   ├── legal/[page]/         # one LegalPage template for all 7 legal pages
@@ -217,7 +232,7 @@ campaign-forensics/
 │   ├── report/               # ReportView, the four tabs, steps.ts (step names + questions)
 │   └── ...                   # header, footer, cards, badges, forms
 ├── content/                  # FAQ, pricing, legal markdown (all English)
-├── data/cases/<slug>/        # case · evidence · diagnosis · creative JSON (+ raw/)
+├── data/cases/<slug>/        # case · evidence · diagnosis · creative JSON, optional forensics / preflight / approval (+ raw/)
 ├── lib/                      # types.ts (data contracts), data loading, formatting, site switches
 ├── prompts/                  # versioned fal.ai prompts per case
 ├── public/
@@ -235,6 +250,7 @@ campaign-forensics/
 | `/` | Landing — full-width hero over the beam background, the four report steps, sample reports, start a case / waitlist |
 | `/cases` | Sample reports |
 | `/cases/[slug]` | Report — tab in the URL: `?tab=evidence#ev_014` |
+| `/cases/[slug]/deliver` | Client brief — one printable page that answers six questions |
 | `/cases/[slug]/print` | All four steps on one page; browser "Save as PDF" exports it |
 | `/new` | New Case form → "Investigation queued" + downloadable `case.json` draft |
 | `/how-it-works` · `/pricing` · `/faq` · `/about` · `/contact` | Product & company |
@@ -250,6 +266,13 @@ Navigation is deliberately small: the header has **How it works · Sample report
 All shapes are in [`lib/types.ts`](lib/types.ts). `tests/data.test.ts` validates **every** case folder against them:
 exactly 6 hypotheses, ≥ 2 known evidence IDs each, no usernames or profile links, `sources_summary` matches the
 evidence, every local media file exists, and no API keys in `creative.json`. Run `npm test` after each engine step.
+
+**Optional sidecars** hold relations and checks only — never new evidence text, URLs or claims — and a missing one
+leaves the report working as before: `forensics.json` (evidence ledger), `preflight.json` (written by
+`npm run validate:case`) and `approval.json` (written by a person after review). `npm run validate:case` fails when
+an evidence ID is unknown, an item is classified twice, a hypothesis is rejected without counter-evidence, a performance
+term (winner, ROAS, CPA, CTR, conversion, lift) appears in a public-only case, an asset is missing or mislabelled, or a
+case is approved while its preflight failed.
 
 Case pages are pre-rendered from the folders present at build time — **rebuild after adding a case**
 (unknown slugs return a real 404). A missing step file shows that tab as "in progress"; corrupt JSON goes to the error screen.

@@ -2,11 +2,12 @@
 
 import { Clapperboard } from "lucide-react";
 import { isImagePath, isVideoPath } from "@/lib/assets";
-import type { CaseBundle, CreativeAsset, CreativeBrief } from "@/lib/types";
+import type { CaseBundle, CreativeAsset, CreativeBrief, DiagnosisFile } from "@/lib/types";
 import { CompareSlider } from "../CompareSlider";
 import { EmptyState } from "../EmptyState";
 import { InProgress } from "./InProgress";
 import { EvidenceIdList } from "./ReportNav";
+import { PreflightPanel } from "./PreflightPanel";
 
 const BRIEF_FIELDS: { key: Exclude<keyof CreativeBrief, "scenes">; label: string }[] = [
   { key: "concept", label: "Concept" },
@@ -94,9 +95,9 @@ export function RelaunchTab({ bundle }: { bundle: CaseBundle }) {
             .filter((a) => a.kind === "video" || a.path)
             .map((a) =>
               a.kind === "video" ? (
-                <VideoAsset key={a.label + a.path} asset={a} brand={brand} />
+                <VideoAsset key={a.label + a.path} asset={a} brand={brand} prescription={d.prescription} />
               ) : (
-                <ImageAsset key={a.path} asset={a} brand={brand} />
+                <ImageAsset key={a.path} asset={a} brand={brand} prescription={d.prescription} />
               ),
             )}
           {images.length === 0 && videos.length === 0 && (
@@ -104,6 +105,8 @@ export function RelaunchTab({ bundle }: { bundle: CaseBundle }) {
           )}
         </div>
       </section>
+
+      {bundle.creative && <PreflightPanel bundle={bundle} />}
 
       {before && after && (
         <section aria-labelledby="compare">
@@ -151,7 +154,30 @@ function ConceptNote({ brand }: { brand: string }) {
   return <p className="text-xs text-fg-muted">Concept based on diagnosis — not an official {brand} design.</p>;
 }
 
-function ImageAsset({ asset, brand }: { asset: CreativeAsset; brand: string }) {
+type Prescription = DiagnosisFile["prescription"];
+
+/** Which prescription items an asset answers, and the evidence behind them. */
+function WhyThisChanged({ asset, prescription }: { asset: CreativeAsset; prescription: Prescription }) {
+  const items = (asset.prescription_indexes ?? []).map((i) => ({ i, p: prescription[i] })).filter((x) => x.p);
+  if (!items.length) return null;
+  const evidence = [...new Set(items.flatMap((x) => x.p.evidence_ids))];
+  return (
+    <div className="mt-3 space-y-2 border-t border-ink-line pt-3">
+      <p className="font-mono text-[10px] uppercase tracking-label text-amber">Why this changed</p>
+      <ul className="space-y-1.5">
+        {items.map(({ i, p }) => (
+          <li key={i} className="flex gap-2 text-xs leading-relaxed">
+            <span className="font-mono text-amber">{String(i + 1).padStart(2, "0")}</span>
+            <span className="text-fg-body">{p.change}</span>
+          </li>
+        ))}
+      </ul>
+      <EvidenceIdList ids={evidence} />
+    </div>
+  );
+}
+
+function ImageAsset({ asset, brand, prescription }: { asset: CreativeAsset; brand: string; prescription: Prescription }) {
   return (
     <figure className="card overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -163,12 +189,13 @@ function ImageAsset({ asset, brand }: { asset: CreativeAsset; brand: string }) {
           {asset.tool}
           {asset.model ? ` · ${asset.model}` : ""}
         </p>
+        <WhyThisChanged asset={asset} prescription={prescription} />
       </figcaption>
     </figure>
   );
 }
 
-function VideoAsset({ asset, brand }: { asset: CreativeAsset; brand: string }) {
+function VideoAsset({ asset, brand, prescription }: { asset: CreativeAsset; brand: string; prescription: Prescription }) {
   const playable = asset.path && isVideoPath(asset.path);
   return (
     <figure className="card overflow-hidden">
@@ -184,6 +211,7 @@ function VideoAsset({ asset, brand }: { asset: CreativeAsset; brand: string }) {
       <figcaption className="space-y-1 border-t border-ink-line px-5 py-4">
         <p className="text-sm text-fg">{asset.label}</p>
         <ConceptNote brand={brand} />
+        <WhyThisChanged asset={asset} prescription={prescription} />
       </figcaption>
     </figure>
   );

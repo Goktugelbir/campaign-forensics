@@ -49,6 +49,8 @@ export interface Evidence {
   date: string | null;
   lang: "en" | "tr" | "other";
   text: string; // anonymous, max ~500 chars
+  /** English translation of a non-English `text` (AI translation, labelled as such in the UI). */
+  text_en?: string;
   metrics?: { likes?: number; replies?: number; views?: number };
   sentiment?: Sentiment;
   tags?: string[];
@@ -110,11 +112,85 @@ export interface CreativeAsset {
   prompt_used: string;
   tool: "fal" | "manus";
   model?: string; // fal.ai model ID
+  /** Which prescription items (0-based indexes into diagnosis.prescription) this asset answers. */
+  prescription_indexes?: number[];
 }
 
 export interface CreativeFile {
   case_slug: string;
   assets: CreativeAsset[];
+}
+
+// ─── Optional sidecars ────────────────────────────────────────────────────────
+// They hold relations and checks only — never new evidence text, URLs or claims.
+// A missing sidecar leaves the report working as before.
+
+/** data/cases/<slug>/forensics.json — how each piece of evidence bears on each hypothesis. */
+export interface ForensicsFile {
+  schema_version: "1.0";
+  case_slug: string;
+  generated_at: string;
+  source_of_truth: string[];
+  /** Confidence scores are analyst judgements, not calibrated probabilities. */
+  confidence_basis: "not_calibrated";
+  hypotheses: HypothesisForensics[];
+  claims: ClaimForensics[];
+}
+
+export interface HypothesisForensics {
+  id: string; // "H1".."H6", matches diagnosis.json
+  support_evidence_ids: string[];
+  counter_evidence_ids: string[];
+  /** Background that frames the hypothesis without arguing for or against it. */
+  context_evidence_ids: string[];
+  missing_data: string[];
+  /** Uncertain hypotheses: too little evidence, or evidence pointing both ways. */
+  uncertainty?: "insufficient_evidence" | "conflicting_evidence";
+  /** Rejected hypotheses: why — always grounded in counter-evidence, never in absence of evidence. */
+  rejection_reason?: string;
+}
+
+export interface ClaimForensics {
+  id: string; // "main_cause"
+  field: string; // "diagnosis.main_cause"
+  support_evidence_ids: string[];
+  counter_evidence_ids: string[];
+  uncertainty_reasons: string[];
+}
+
+/** data/cases/<slug>/preflight.json — written by `npm run validate:case`. */
+export interface PreflightFile {
+  schema_version: "1.0";
+  case_slug: string;
+  checked_at: string;
+  status: "passed" | "failed";
+  checks: PreflightCheck[];
+}
+
+export interface PreflightCheck {
+  id: string;
+  label: string;
+  /** Asset path the check is about; absent for case-level checks. */
+  asset?: string;
+  status: "pass" | "fail" | "warn";
+  detail: string;
+}
+
+/** data/cases/<slug>/approval.json — written by a person, never generated. */
+export interface ApprovalFile {
+  schema_version: "1.0";
+  case_slug: string;
+  reviewer: string;
+  decision: "approved" | "changes_requested";
+  reviewed_at: string;
+  notes?: string;
+}
+
+/** Built at render time from data/cases/<slug>/raw (README run table + fal.ai request logs). */
+export interface InvestigationLog {
+  collection: { file: string; actor: string; runs: string[]; input: string; empty: boolean }[];
+  production: { name: string; model: string; created_at: string; seconds: number; output: string; used: boolean }[];
+  spend: string | null;
 }
 
 /** Everything the report page needs. Missing files are null, never a crash. */
@@ -123,5 +199,9 @@ export interface CaseBundle {
   evidence: EvidenceFile | null;
   diagnosis: DiagnosisFile | null;
   creative: CreativeFile | null;
+  forensics?: ForensicsFile | null;
+  preflight?: PreflightFile | null;
+  approval?: ApprovalFile | null;
+  log?: InvestigationLog | null;
   isMock: boolean;
 }

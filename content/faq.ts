@@ -1,4 +1,4 @@
-// FAQ (Sayfa Haritası, Grup D): 4 categories, 16 questions, plus a glossary.
+// FAQ (page map, group D): 4 categories, 16 questions, plus a glossary.
 // The landing page shows the first four entries flagged `featured`.
 
 export interface FaqItem {

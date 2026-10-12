@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "demo-mock",
+  "checked_at": "2026-10-12T10:53:11.154Z",
+  "status": "passed",
+  "checks": [
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/demo-mock/concept-v1.svg",
+      "status": "pass",
+      "detail": "public/cases/demo-mock/concept-v1.svg · 1 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/demo-mock/concept-v1.svg",
+      "status": "pass",
+      "detail": "SVG image"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/demo-mock/concept-v1.svg",
+      "status": "warn",
+      "detail": "mock placeholder — not generated, no lineage"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/demo-mock/concept-v1.svg",
+      "status": "warn",
+      "detail": "mock placeholder — labelled MOCK DATA"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/demo-mock/concept-v1.svg",
+      "status": "warn",
+      "detail": "not linked to a prescription item"
+    },
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "Relaunch video",
+      "status": "warn",
+      "detail": "Still in production — no file yet."
+    },
+    {
+      "id": "performance-terms",
+      "label": "No performance claims",
+      "status": "pass",
+      "detail": "No winner, ROAS, CPA, CTR, conversion or lift claims (public-only case)."
+    }
+  ]
+}

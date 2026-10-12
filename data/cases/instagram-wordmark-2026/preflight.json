@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "instagram-wordmark-2026",
+  "checked_at": "2026-10-12T10:53:11.254Z",
+  "status": "passed",
+  "checks": [
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "public/cases/instagram-wordmark-2026/relaunch-v3.mp4 · 3486 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "MP4 video"
+    },
+    {
+      "id": "duration",
+      "label": "Duration",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "19.0 s (spec: 10–20 s)"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "composed from prompts/instagram-wordmark-2026/edit-v3.json"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "Labelled as a concept · fal"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/instagram-wordmark-2026/relaunch-v3.mp4",
+      "status": "pass",
+      "detail": "prescription 04, 03"
+    },
+    {
+      "id": "exists",
+      "label": "File present",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "public/cases/instagram-wordmark-2026/wordmark-v1.png · 246 KB"
+    },
+    {
+      "id": "type",
+      "label": "File type",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "PNG image"
+    },
+    {
+      "id": "frame",
+      "label": "Frame",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "1312×736 · 16:9"
+    },
+    {
+      "id": "lineage",
+      "label": "Lineage",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "fal.ai request log raw/fal-wordmark-v1.json"
+    },
+    {
+      "id": "ai-label",
+      "label": "AI disclosure",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "Labelled as a concept · fal"
+    },
+    {
+      "id": "trace",
+      "label": "Answers the diagnosis",
+      "asset": "/cases/instagram-wordmark-2026/wordmark-v1.png",
+      "status": "pass",
+      "detail": "prescription 01, 02"
+    },
+    {
+      "id": "performance-terms",
+      "label": "No performance claims",
+      "status": "pass",
+      "detail": "No winner, ROAS, CPA, CTR, conversion or lift claims (public-only case)."
+    }
+  ]
+}

@@ -57,7 +57,7 @@ export default async function PrintPage({ params }: Props) {
                   <span className="print-accent text-amber">{e.id}</span> · {SOURCE_LABEL[e.source]} · {formatDateLabel(e.date)}
                   {e.sentiment ? ` · ${e.sentiment}` : ""}
                 </p>
-                <p className="mt-1 text-fg">“{e.text}”</p>
+                <p className="mt-1 text-fg">“{e.text_en ?? e.text}”</p>
                 <p className="mt-1 break-all text-xs text-fg-muted">{e.url}</p>
               </li>
             ))}

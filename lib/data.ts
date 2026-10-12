@@ -2,7 +2,8 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { MOCK_SLUGS, SHOW_MOCK_CASES } from "./site";
-import type { Case, CaseBundle, CreativeFile, DiagnosisFile, EvidenceFile } from "./types";
+import { readInvestigationLog } from "./investigationLog";
+import type { ApprovalFile, Case, CaseBundle, CreativeFile, DiagnosisFile, EvidenceFile, ForensicsFile, PreflightFile } from "./types";
 
 export const CASES_DIR = path.join(process.cwd(), "data", "cases");
 
@@ -33,16 +34,32 @@ export function listCaseSlugs(dir = CASES_DIR): string[] {
     .sort();
 }
 
+/**
+ * The site is English-only: translated items carry their English text in `text` too, so the
+ * original-language wording never reaches a page, the page source or a JSON download.
+ * The original stays in data/cases/<slug>/evidence.json for the record (and for validate:case).
+ */
+function englishOnly(file: EvidenceFile | null): EvidenceFile | null {
+  if (!file) return file;
+  return { ...file, evidence: file.evidence.map((e) => (e.text_en ? { ...e, text: e.text_en } : e)) };
+}
+
 export function getCaseBundle(slug: string, dir = CASES_DIR): CaseBundle | null {
   if (!SLUG.test(slug)) return null; // also blocks path traversal
   const base = path.join(dir, slug);
   const c = readJson<Case>(path.join(base, "case.json"));
   if (!c) return null;
+  const creative = readJson<CreativeFile>(path.join(base, "creative.json"));
   return {
     case: c,
-    evidence: readJson<EvidenceFile>(path.join(base, "evidence.json")),
+    evidence: englishOnly(readJson<EvidenceFile>(path.join(base, "evidence.json"))),
     diagnosis: readJson<DiagnosisFile>(path.join(base, "diagnosis.json")),
-    creative: readJson<CreativeFile>(path.join(base, "creative.json")),
+    creative,
+    // Optional sidecars — null when absent.
+    forensics: readJson<ForensicsFile>(path.join(base, "forensics.json")),
+    preflight: readJson<PreflightFile>(path.join(base, "preflight.json")),
+    approval: readJson<ApprovalFile>(path.join(base, "approval.json")),
+    log: readInvestigationLog(base, creative),
     isMock: isMockSlug(slug),
   };
 }

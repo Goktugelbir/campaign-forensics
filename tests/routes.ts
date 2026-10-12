@@ -13,7 +13,7 @@ export function routeExists(href: string): boolean {
   if (parts[0] === "legal" && parts.length === 2) return isLegalSlug(parts[1]);
   if (parts[0] === "cases" && parts.length >= 2) {
     if (!listCaseSlugs().includes(parts[1])) return false;
-    return parts.length === 2 || (parts.length === 3 && parts[2] === "print");
+    return parts.length === 2 || (parts.length === 3 && (parts[2] === "print" || parts[2] === "deliver"));
   }
   return fs.existsSync(path.join(APP, ...parts, "page.tsx"));
 }

@@ -347,7 +347,7 @@
       "url": "https://example.com/mock/youtube/watch/brand-film",
       "date": "2026-08-15",
       "lang": "en",
-      "text": "Yeni logo poster olarak çok şık ama telefonda gerçekten 'Norhwind' gibi okunuyor. Harfler birbirine yapışmış.",
+      "text": "The new logo looks great on a poster, but on a phone it really reads as 'Norhwind'. The letters run into each other.",
       "metrics": { "likes": 310, "replies": 9 },
       "sentiment": "negative",
       "tags": ["readability", "app-icon"]

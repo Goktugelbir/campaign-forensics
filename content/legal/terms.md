@@ -37,4 +37,4 @@ Paid plans are not yet active. When they are, prices, billing and refund terms w
 
 ## Governing law
 
-These terms are governed by the laws of the Republic of Türkiye. The courts of Istanbul have jurisdiction.
+These terms are governed by the laws of the Republic of Turkey. The courts of Istanbul have jurisdiction.

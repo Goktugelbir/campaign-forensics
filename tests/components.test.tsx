@@ -98,7 +98,7 @@ describe("HypothesisCard", () => {
 
   it("dims and strikes through rejected hypotheses", () => {
     const { container } = render(<HypothesisCard h={hyp({ status: "rejected", confidence: 12 })} />);
-    expect(container.querySelector("article")).toHaveClass("opacity-60");
+    expect(container.querySelector("article")).toHaveClass("opacity-70");
     expect(screen.getByRole("heading")).toHaveClass("line-through");
   });
 
