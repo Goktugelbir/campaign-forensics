@@ -38,7 +38,7 @@ export function EvidenceCard({ evidence: e, caseSlug, highlighted, compact }: Pr
       id={e.id}
       data-evidence-id={e.id}
       aria-label={`Evidence ${e.id}`}
-      className={`card scroll-mt-28 p-5 transition-colors hover:border-ink-strong ${highlighted ? "animate-flash" : ""}`}
+      className={`card scroll-mt-48 p-5 transition-colors hover:border-ink-strong ${highlighted ? "animate-flash" : ""}`}
     >
       <header className="flex flex-wrap items-center justify-between gap-2">
         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 font-mono text-[11px] uppercase tracking-label text-fg-muted">

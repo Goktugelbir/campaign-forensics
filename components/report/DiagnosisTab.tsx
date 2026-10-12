@@ -1,15 +1,13 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import { countByStatus, sortHypotheses } from "@/lib/format";
 import type { CaseBundle } from "@/lib/types";
 import { GenericCheckBadge } from "../Badges";
 import { HypothesisCard } from "../HypothesisCard";
 import { InProgress } from "./InProgress";
-import { EvidenceIdList, useReportNav } from "./ReportNav";
+import { EvidenceIdList } from "./ReportNav";
 
 export function DiagnosisTab({ bundle }: { bundle: CaseBundle }) {
-  const nav = useReportNav();
   const d = bundle.diagnosis;
   if (!d) return <InProgress step="Diagnosis" />;
 
@@ -84,18 +82,6 @@ export function DiagnosisTab({ bundle }: { bundle: CaseBundle }) {
               </li>
             ))}
           </ol>
-          <a
-            href={`/cases/${bundle.case.slug}?tab=relaunch`}
-            onClick={(e) => {
-              if (!nav || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
-              e.preventDefault();
-              nav.goToTab("relaunch");
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            className="mt-4 inline-flex items-center gap-1.5 text-sm text-amber hover:underline"
-          >
-            Go to prescription and relaunch <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-          </a>
         </div>
       </section>
     </div>

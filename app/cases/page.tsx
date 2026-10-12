@@ -1,24 +1,13 @@
 import type { Metadata } from "next";
 import { listCases } from "@/lib/data";
+import { toCaseSummary } from "@/lib/caseSummary";
 import { SectionHeading } from "@/components/SectionHeading";
-import { CaseList, type CaseSummary } from "@/components/CaseList";
-import { caseCode, firstSentence } from "@/lib/format";
+import { CaseList } from "@/components/CaseList";
 
 export const metadata: Metadata = { title: "Sample reports" };
 
 export default function CasesPage() {
-  const cases: CaseSummary[] = listCases().map((b) => ({
-    slug: b.case.slug,
-    code: caseCode(b.case.slug, b.case.case_code),
-    brand: b.case.brand,
-    campaign: b.case.campaign,
-    type: b.case.campaign_type,
-    status: b.case.status,
-    launchDate: b.case.launch_date,
-    evidenceCount: b.evidence?.evidence.length ?? 0,
-    mainCause: b.diagnosis ? firstSentence(b.diagnosis.diagnosis.main_cause) : null,
-    isMock: b.isMock,
-  }));
+  const cases = listCases().map(toCaseSummary);
 
   return (
     <div className="container-page py-14 md:py-20">
@@ -26,7 +15,7 @@ export default function CasesPage() {
         as="h1"
         label="Sample reports"
         title="Case files."
-        intro="Every investigation ends in a report: the evidence, six tested hypotheses, the diagnosis, and the produced relaunch."
+        intro="Each report reads in four steps: the case, the evidence, the diagnosis and the relaunch. Pick one to open it."
       />
       <div className="mt-12">
         <CaseList cases={cases} />

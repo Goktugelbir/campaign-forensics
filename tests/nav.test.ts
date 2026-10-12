@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { FEATURED_CASE_SLUG, FOOTER_COLUMNS, HEADER_CTA, HEADER_LINKS } from "@/lib/site";
+import { FEATURED_CASE_SLUG, FOOTER_LINKS, HEADER_CTA, HEADER_LINKS, LEGAL_LINKS } from "@/lib/site";
 import { PLANS } from "@/content/pricing";
 import { FAQ, FEATURED_FAQ } from "@/content/faq";
 import { routeExists } from "./routes";
@@ -9,7 +9,8 @@ describe("navigation never points to a missing page", () => {
   const links = [
     ...HEADER_LINKS,
     HEADER_CTA,
-    ...FOOTER_COLUMNS.flatMap((c) => c.links),
+    ...FOOTER_LINKS,
+    ...LEGAL_LINKS,
     ...PLANS.map((p) => ({ label: p.cta.label, href: p.cta.href })),
   ];
   it.each(links.map((l) => [l.label, l.href]))("%s → %s", (_label, href) => {
@@ -22,7 +23,7 @@ describe("navigation never points to a missing page", () => {
   });
 
   it("footer has the seven legal pages", () => {
-    expect(FOOTER_COLUMNS.find((c) => c.title === "Legal")!.links).toHaveLength(7);
+    expect(LEGAL_LINKS).toHaveLength(7);
   });
 
   it("the featured case exists", () => {

@@ -187,11 +187,17 @@ describe("CaseList", () => {
     mainCause: "Cause.",
     isMock: true,
   };
-  const cases = [base, { ...base, slug: "b", brand: "Beta", type: "ad" as const, status: "collecting" as const, isMock: false }];
+  const real = { isMock: false };
+  const cases = [
+    base,
+    { ...base, ...real, slug: "b", brand: "Beta", type: "ad" as const, status: "collecting" as const },
+    { ...base, ...real, slug: "c", brand: "Gamma" },
+    { ...base, ...real, slug: "d", brand: "Delta" },
+  ];
 
   it("renders cards with badges and filters by type and status", async () => {
     render(<CaseList cases={cases} />);
-    expect(screen.getAllByRole("link")).toHaveLength(2);
+    expect(screen.getAllByRole("link")).toHaveLength(4);
     expect(screen.getAllByText(/mock data/i)).toHaveLength(1);
     await userEvent.selectOptions(screen.getByRole("combobox", { name: /type/i }), "ad");
     expect(screen.getAllByRole("link")).toHaveLength(1);
@@ -199,7 +205,14 @@ describe("CaseList", () => {
     await userEvent.selectOptions(screen.getByRole("combobox", { name: /status/i }), "done");
     expect(screen.getByText(/no cases match/i)).toBeInTheDocument();
     await userEvent.click(screen.getByRole("button", { name: /clear filters/i }));
+    expect(screen.getAllByRole("link")).toHaveLength(4);
+  });
+
+  it("hides the filters while the list is short", () => {
+    render(<CaseList cases={cases.slice(0, 2)} />);
     expect(screen.getAllByRole("link")).toHaveLength(2);
+    expect(screen.queryByRole("combobox")).toBeNull();
+    expect(screen.getAllByText("Open report")).toHaveLength(2);
   });
 
   it("shows the empty state with a Start a case action", () => {

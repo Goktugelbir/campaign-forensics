@@ -3,17 +3,9 @@
 import Link from "next/link";
 import { createContext, useContext } from "react";
 
-export type ReportTab = "case" | "evidence" | "diagnosis" | "relaunch";
-export const REPORT_TABS: ReportTab[] = ["case", "evidence", "diagnosis", "relaunch"];
+import { reportHref, type ReportTab } from "./steps";
 
-export function parseTab(value: string | null | undefined): ReportTab {
-  return REPORT_TABS.includes(value as ReportTab) ? (value as ReportTab) : "case";
-}
-
-export function reportHref(slug: string, tab: ReportTab = "case", evidenceId?: string): string {
-  const q = tab === "case" ? "" : `?tab=${tab}`;
-  return `/cases/${slug}${q}${evidenceId ? `#${evidenceId}` : ""}`;
-}
+export { REPORT_TABS, parseTab, reportHref, type ReportTab } from "./steps";
 
 interface ReportNavValue {
   slug: string;

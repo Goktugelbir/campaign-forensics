@@ -1,9 +1,41 @@
+# ─── Dependencies ──────────────────────────────────────────────
 node_modules/
+
+# ─── Next.js build output ──────────────────────────────────────
 .next/
 out/
-*.tsbuildinfo
 next-env.d.ts
+*.tsbuildinfo
+
+# ─── Secrets ───────────────────────────────────────────────────
+# FAL_KEY and any other key live only in the engine's environment.
+# Copy .env.example to .env.local; never commit the real file.
 .env*
 !.env.example
+
+# ─── Tests ─────────────────────────────────────────────────────
 coverage/
+
+# ─── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Editors & OS ──────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Local agent / scratch files ───────────────────────────────
+.claude/settings.local.json
 .edit-tmp/
+
+# Kept on purpose (do not ignore):
+#   data/cases/**/raw/      raw Apify + fal.ai logs — the audit trail behind every claim
+#   public/cases/           generated images, video and voice-over shown in the reports
+#   docs/screenshots/       README images (regenerate with `npm run screenshots`)

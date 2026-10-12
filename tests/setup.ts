@@ -21,3 +21,5 @@ vi.mock("next/navigation", async () => {
 });
 
 if (!Element.prototype.scrollIntoView) Element.prototype.scrollIntoView = () => {};
+// jsdom does not implement window scrolling.
+window.scrollTo = () => {};

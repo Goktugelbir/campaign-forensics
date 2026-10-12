@@ -5,7 +5,7 @@ export const SITE = {
   name: "Campaign Forensics",
   tagline: "See why your launch backfired. With evidence.",
   footerTagline: "Find out why your launch backfired. With evidence.",
-  // Placeholder inbox on the reserved .example domain — replace before going live.
+  // Placeholder inbox on the reserved .example domain — replace with a real address if you use the contact forms.
   contactEmail: "contact@campaignforensics.example",
   builtWith: "Built with Manus, Apify and fal.ai",
   brandDisclaimer:
@@ -39,39 +39,25 @@ export const HEADER_LINKS: NavLink[] = [
 
 export const HEADER_CTA: NavLink = { label: "Start a case", href: "/new" };
 
-export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
-  {
-    title: "Product",
-    links: [
-      { label: "How it works", href: "/how-it-works" },
-      { label: "Sample reports", href: "/cases" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "Start a case", href: "/new" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { label: "About", href: "/about" },
-      { label: "Contact", href: "/contact" },
-      { label: "FAQ", href: "/faq" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Privacy Policy", href: "/legal/privacy" },
-      { label: "KVKK Notice (TR)", href: "/legal/kvkk" },
-      { label: "Cookie Policy", href: "/legal/cookies" },
-      { label: "Terms of Use", href: "/legal/terms" },
-      { label: "Responsible Data Use", href: "/legal/data-sources" },
-      { label: "Disclaimer", href: "/legal/disclaimer" },
-      { label: "Data requests", href: "/legal/data-request" },
-    ],
-  },
+/** Footer, top row: the same places as the header plus the company pages. */
+export const FOOTER_LINKS: NavLink[] = [
+  ...HEADER_LINKS,
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
-/** Shown on the About page. Fill in names / LinkedIn before going live. */
+/** Footer, bottom row: small print. */
+export const LEGAL_LINKS: NavLink[] = [
+  { label: "Privacy Policy", href: "/legal/privacy" },
+  { label: "KVKK Notice (TR)", href: "/legal/kvkk" },
+  { label: "Cookie Policy", href: "/legal/cookies" },
+  { label: "Terms of Use", href: "/legal/terms" },
+  { label: "Responsible Data Use", href: "/legal/data-sources" },
+  { label: "Disclaimer", href: "/legal/disclaimer" },
+  { label: "Data requests", href: "/legal/data-request" },
+];
+
+/** Shown on the About page. */
 export const TEAM: { name: string; role: string; linkedin?: string }[] = [
   { name: "Göktuğ", role: "Product & strategy" },
   { name: "Team member", role: "Engineering & data" },

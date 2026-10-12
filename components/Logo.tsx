@@ -1,10 +1,12 @@
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 
-export function Logo({ className = "" }: { className?: string }) {
+/** Brand mark (public/brand/logo-mark.png) + name. The mark sits on black, so it blends into any dark surface. */
+export function Logo({ className = "", showName = true }: { className?: string; showName?: boolean }) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <span aria-hidden className="h-2 w-2 rounded-full bg-amber" />
-      <span className="font-serif text-xl leading-none">{SITE.name}</span>
+    <span className={`inline-flex items-center gap-2.5 ${className}`}>
+      <Image src="/brand/logo-mark.png" alt="" width={28} height={28} priority className="h-7 w-7 mix-blend-screen" />
+      {showName && <span className="font-serif text-xl leading-none">{SITE.name}</span>}
     </span>
   );
 }

@@ -61,17 +61,22 @@ describe("ReportView header", () => {
 });
 
 describe("ReportView tabs", () => {
-  it("shows the four tabs with the evidence count and the case tab by default", () => {
+  it("shows the four numbered steps with their questions, the evidence count and the case tab by default", () => {
     renderReport();
     const tabs = screen.getAllByRole("tab");
-    expect(tabs.map((t) => t.textContent)).toEqual(["Case", "Evidence[40]", "Diagnosis", "Relaunch"]);
-    expect(screen.getByRole("tab", { name: "Case" })).toHaveAttribute("aria-selected", "true");
+    expect(tabs.map((t) => t.textContent)).toEqual([
+      "01CaseWhat happened?",
+      "02Evidence40What did people say?",
+      "03DiagnosisWhy did it backfire?",
+      "04RelaunchHow do we fix it?",
+    ]);
+    expect(screen.getByRole("tab", { name: /case/i })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByText("Key questions")).toBeInTheDocument();
   });
 
   it("pushes the tab into the URL when a tab is clicked", async () => {
     renderReport();
-    await userEvent.click(screen.getByRole("tab", { name: "Diagnosis" }));
+    await userEvent.click(screen.getByRole("tab", { name: /diagnosis/i }));
     expect(router.push).toHaveBeenCalledWith("/cases/demo-mock?tab=diagnosis", { scroll: false });
   });
 
@@ -172,7 +177,7 @@ describe("ReportView tabs", () => {
     const partial = mockBundle({ evidence: null, diagnosis: null, creative: null });
     renderReport(partial, "tab=evidence");
     expect(screen.getByText("Evidence in progress")).toBeInTheDocument();
-    expect(screen.getByRole("tab", { name: /evidence/i }).textContent).toBe("Evidence[0]");
+    expect(screen.getByRole("tab", { name: /evidence/i }).textContent).toContain("Evidence0");
     expect(screen.getByText(/Evidence collection in progress/)).toBeInTheDocument();
   });
 
@@ -183,6 +188,23 @@ describe("ReportView tabs", () => {
     unmount();
     renderReport(partial, "tab=relaunch");
     expect(screen.getByText("Relaunch in progress")).toBeInTheDocument();
+  });
+
+  it("links back to all reports and offers the next step at the bottom of each tab", async () => {
+    renderReport();
+    expect(screen.getByRole("link", { name: /all reports/i })).toHaveAttribute("href", "/cases");
+    const pager = screen.getByRole("navigation", { name: "Previous and next step" });
+    const next = within(pager).getByRole("link", { name: /next step/i });
+    expect(next).toHaveAttribute("href", "/cases/demo-mock?tab=evidence");
+    await userEvent.click(next);
+    expect(router.push).toHaveBeenCalledWith("/cases/demo-mock?tab=evidence", { scroll: false });
+  });
+
+  it("ends the last step with a Start a case prompt instead of a next step", () => {
+    renderReport(mockBundle(), "tab=relaunch");
+    const pager = screen.getByRole("navigation", { name: "Previous and next step" });
+    expect(within(pager).getByRole("link", { name: /previous/i })).toHaveAttribute("href", "/cases/demo-mock?tab=diagnosis");
+    expect(within(pager).getByRole("link", { name: /start a case/i })).toHaveAttribute("href", "/new");
   });
 
   it("always ends with the disclaimer link", () => {
