@@ -8,7 +8,7 @@ export const LEGAL_DIR = path.join(process.cwd(), "content", "legal");
 
 export const LEGAL_PAGES = [
   "privacy",
-  "kvkk",
+  "gdpr",
   "cookies",
   "terms",
   "data-sources",
@@ -21,7 +21,6 @@ export type LegalSlug = (typeof LEGAL_PAGES)[number];
 export interface LegalDoc {
   slug: LegalSlug;
   title: string;
-  lang: "en" | "tr";
   updated: string;
   summary: string;
   toc: { id: string; title: string }[];
@@ -69,7 +68,6 @@ export function getLegalDoc(slug: string, dir = LEGAL_DIR): LegalDoc | null {
   return {
     slug,
     title: meta.title ?? slug,
-    lang: meta.lang === "tr" ? "tr" : "en",
     updated: meta.updated ?? "",
     summary: meta.summary ?? "",
     toc,

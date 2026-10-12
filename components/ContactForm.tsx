@@ -28,7 +28,7 @@ export function ContactForm() {
       onSubmit={(e) => {
         e.preventDefault();
         if (!message.trim()) return setError("Write a short message first.");
-        if (!ack) return setError("Please confirm you have read the KVKK notice.");
+        if (!ack) return setError("Please confirm you have read the GDPR notice.");
         setError(null);
         window.location.href = buildContactMailto({ name, topic, message });
       }}
@@ -57,8 +57,8 @@ export function ContactForm() {
         <input type="checkbox" className="checkbox" checked={ack} onChange={(e) => setAck(e.target.checked)} />
         <span>
           I have read the{" "}
-          <Link href="/legal/kvkk" className="link-amber" target="_blank">
-            KVKK notice
+          <Link href="/legal/gdpr" className="link-amber" target="_blank">
+            GDPR notice
           </Link>
           .
         </span>

@@ -2,7 +2,7 @@
 title: Privacy Policy
 lang: en
 updated: 2026-10-12
-summary: What personal data Campaign Forensics handles, why, who processes it with us, and how to exercise your rights. Turkish data subjects should also read the KVKK Notice.
+summary: What personal data Campaign Forensics handles, why, who processes it with us, and how to exercise your rights. The GDPR Notice sets out the legal bases and your rights in full.
 ---
 
 ## Who we are
@@ -27,7 +27,7 @@ We use a small number of processors: our hosting provider, **Apify** (collecting
 
 ## International transfers
 
-These services operate servers outside Türkiye. Transfers are assessed under Article 9 of the Turkish Personal Data Protection Law (KVKK) and, where applicable, the GDPR.
+Some of these services process data outside the European Economic Area, including in the United States. Such transfers rely on an adequacy decision of the European Commission or on its Standard Contractual Clauses (Articles 45–46 GDPR). Details are in the [GDPR Notice](/legal/gdpr).
 
 ## How long we keep it
 
@@ -41,7 +41,7 @@ Access to raw data is limited to the people running the investigation. API keys 
 
 ## Your rights
 
-You can ask what data we hold about you, have it corrected or deleted, object to its use, or have a piece of evidence removed from a report. Use the [Data requests](/legal/data-request) page. We answer within 30 days at the latest.
+You can ask what data we hold about you, have it corrected or deleted, object to its use, or have a piece of evidence removed from a report. Use the [Data requests](/legal/data-request) page. We answer within one month. You can also complain to a data protection supervisory authority in the EU — see the [GDPR Notice](/legal/gdpr).
 
 ## Changes
 

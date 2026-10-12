@@ -4,7 +4,7 @@ import { headingId } from "@/lib/text";
 describe("headingId", () => {
   it("folds Turkish characters and punctuation", () => {
     expect(headingId("Veri sorumlusunun kimliği")).toBe("veri-sorumlusunun-kimligi");
-    expect(headingId("İlgili kişinin hakları (KVKK m. 11)")).toBe("ilgili-kisinin-haklari-kvkk-m-11");
+    expect(headingId("Your rights (Art. 15–21)")).toBe("your-rights-art-15-21");
     expect(headingId("Who we are")).toBe("who-we-are");
   });
 });
@@ -53,14 +53,24 @@ describe.each(LEGAL_PAGES)("legal page %s", (slug) => {
   });
 });
 
-describe("KVKK notice", () => {
-  const doc = getLegalDoc("kvkk")!;
-  it("is in Turkish", () => expect(doc.lang).toBe("tr"));
-  it("covers the five headings KVKK art. 10 requires", () => {
+describe("GDPR notice", () => {
+  const doc = getLegalDoc("gdpr")!;
+  it("covers what Articles 13 and 14 GDPR require", () => {
     const titles = doc.toc.map((t) => t.title.toLowerCase()).join(" | ");
-    for (const needle of ["veri sorumlusu", "amaç", "aktarıl", "toplama yöntemi", "hakları"]) {
+    for (const needle of ["responsible", "where it comes from", "legal basis", "receives", "transfers", "how long", "rights", "automated"]) {
       expect(titles).toContain(needle);
     }
+  });
+  it("names the legal bases, the right to object and the right to complain", () => {
+    for (const needle of ["Art. 6(1)(b)", "Art. 6(1)(f)", "Art. 6(1)(a)", "object", "supervisory authority", "Article 14(5)(b)"]) {
+      expect(doc.html).toContain(needle);
+    }
+  });
+});
+
+describe("no Turkish-language page remains", () => {
+  it.each(LEGAL_PAGES)("%s is English", (slug) => {
+    expect(getLegalDoc(slug)!.html).not.toMatch(/KVKK|Aydınlatma|kişisel/i);
   });
 });
 

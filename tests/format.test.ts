@@ -16,8 +16,7 @@ describe("formatDateLabel / formatDateLong", () => {
     expect(formatDateLabel("2026-08-14")).toBe("14 AUG 2026");
     expect(formatDateLabel("2026-08-16T23:59:00-05:00")).toBe("16 AUG 2026");
     expect(formatDateLong("2026-01-01")).toBe("1 January 2026");
-    expect(formatDateLong("2026-10-12", "tr")).toBe("12 Ekim 2026");
-    expect(formatDateLong("2026-08-14", "tr")).toBe("14 Ağustos 2026");
+    expect(formatDateLong("2026-08-14")).toBe("14 August 2026");
   });
   it("returns an em dash for null, empty or invalid values", () => {
     expect(formatDateLabel(null)).toBe("—");

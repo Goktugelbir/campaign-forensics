@@ -149,19 +149,18 @@
   }
 }
 
-/* Landing hero: the logo beam (HeroBackground). The wedge fans right from the star at 70% / 62%. */
+/* Landing hero: the logo beam (HeroBeam). A wedge pointing right from the star at --beam-x/--beam-y,
+   fading with distance in every direction so it can be rotated towards the mouse. */
 .hero-beam {
   background: conic-gradient(
-    from 0deg at 70% 62%,
-    transparent 0deg 72deg,
+    from 0deg at var(--beam-x) var(--beam-y),
+    transparent 0deg 73deg,
     rgba(245, 166, 35, 0.55) 90deg,
-    transparent 108deg 360deg
+    transparent 107deg 360deg
   );
-  -webkit-mask-image: linear-gradient(to right, transparent 69%, #000 72%, rgba(0, 0, 0, 0.6) 85%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 69%, #000 72%, rgba(0, 0, 0, 0.6) 85%, transparent 100%);
-  transform-origin: 70% 62%;
+  -webkit-mask-image: radial-gradient(circle at var(--beam-x) var(--beam-y), transparent 0, transparent 14px, #000 48px, rgba(0, 0, 0, 0.55) 380px, transparent 820px);
+  mask-image: radial-gradient(circle at var(--beam-x) var(--beam-y), transparent 0, transparent 14px, #000 48px, rgba(0, 0, 0, 0.55) 380px, transparent 820px);
   filter: blur(4px);
-  animation: beam-sweep 14s ease-in-out infinite alternate;
 }
 .hero-spark {
   filter: drop-shadow(0 0 12px rgba(245, 166, 35, 0.9));
@@ -169,10 +168,6 @@
 }
 .hero-grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27160%27 height=%27160%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E");
-}
-@keyframes beam-sweep {
-  from { transform: rotate(-6deg); }
-  to { transform: rotate(6deg); }
 }
 @keyframes spark-pulse {
   0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }

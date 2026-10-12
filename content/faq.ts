@@ -63,11 +63,11 @@ export const FAQ: { category: string; items: FaqItem[] }[] = [
       },
       {
         q: "Do you process personal data?",
-        a: "As little as possible. Only the text of public comments is kept — no usernames, profile links, profile photos or anything else that points to a person — and evidence cards link to the post, not the author. We don't build profiles or combine data about individuals across sources. The Responsible Data Use page and our KVKK notice explain the details and your rights.",
+        a: "As little as possible. Only the text of public comments is kept — no usernames, profile links, profile photos or anything else that points to a person — and evidence cards link to the post, not the author. We don't build profiles or combine data about individuals across sources. The Responsible Data Use page and our GDPR notice explain the details, the legal basis and your rights.",
       },
       {
         q: "How do I get my comment removed from a report?",
-        a: "Go to the Data requests page, choose \"Remove evidence\" and include the report link or the evidence ID shown on the card (for example ev_014). You don't need to give a reason. We remove the item from the report and from our stored data and confirm by e-mail — within 30 days at the latest, usually much sooner. Every evidence card also has a \"Report this evidence\" link that takes you straight there.",
+        a: "Go to the Data requests page, choose \"Remove evidence\" and include the report link or the evidence ID shown on the card (for example ev_014). You don't need to give a reason. We remove the item from the report and from our stored data and confirm by e-mail — within one month at the latest, usually much sooner. Every evidence card also has a \"Report this evidence\" link that takes you straight there.",
       },
       {
         q: "Do you work with the brands you analyze?",

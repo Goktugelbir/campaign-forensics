@@ -8,7 +8,7 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
  * No backend: submitting only shows a thank-you. The marketing opt-in is a
- * separate, unticked box (KVKK: information ≠ consent).
+ * separate, unticked box (GDPR Art. 7: consent must be separate and opt-in).
  */
 export function WaitlistForm() {
   const toast = useToast();
@@ -69,7 +69,7 @@ export function WaitlistForm() {
       <p className="text-xs text-fg-muted">
         By joining you acknowledge our{" "}
         <Link href="/legal/privacy" className="underline underline-offset-4 hover:text-fg">Privacy Policy</Link> and{" "}
-        <Link href="/legal/kvkk" className="underline underline-offset-4 hover:text-fg">KVKK Notice</Link>.
+        <Link href="/legal/gdpr" className="underline underline-offset-4 hover:text-fg">GDPR Notice</Link>.
       </p>
     </form>
   );

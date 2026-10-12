@@ -75,7 +75,7 @@ export const FOOTER_LINKS: NavLink[] = FOOTER_COLUMNS.flatMap((c) => c.links);
 /** Footer, legal column. */
 export const LEGAL_LINKS: NavLink[] = [
   { label: "Privacy Policy", href: "/legal/privacy" },
-  { label: "KVKK Notice (TR)", href: "/legal/kvkk" },
+  { label: "GDPR Notice", href: "/legal/gdpr" },
   { label: "Cookie Policy", href: "/legal/cookies" },
   { label: "Terms of Use", href: "/legal/terms" },
   { label: "Responsible Data Use", href: "/legal/data-sources" },

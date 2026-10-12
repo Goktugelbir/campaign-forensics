@@ -47,7 +47,7 @@ export default function AboutPage() {
       <section className="card mt-16 p-8">
         <p className="label">Origin</p>
         <p className="mt-3 font-serif text-2xl text-fg">Built at 10X Your Brand Hackathon, Istanbul — 12 October 2026.</p>
-        <p className="mt-3 text-sm">Istanbul Ignited by Slush&apos;D × Manus AI, DotsHub İstanbul.</p>
+        <p className="mt-3 text-sm">Istanbul Ignited by Slush&apos;D × Manus AI, DotsHub, Istanbul.</p>
       </section>
 
       <div className="mt-12 flex flex-wrap gap-3">

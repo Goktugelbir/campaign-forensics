@@ -52,10 +52,6 @@ export function SiteFooter() {
               Sample reports
             </Link>
           </div>
-          <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-ink-line px-3 py-1 font-mono text-[10px] uppercase tracking-label text-fg-muted">
-            <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-status-confirmed" />
-            Beta · runs locally
-          </p>
         </div>
 
         {FOOTER_COLUMNS.map((col) => (
@@ -93,13 +89,6 @@ export function SiteFooter() {
             </FooterLink>
           ))}
         </FooterColumn>
-      </div>
-
-      {/* Oversized, faded wordmark. */}
-      <div aria-hidden className="container-page relative select-none overflow-hidden">
-        <p className="translate-y-[18%] whitespace-nowrap bg-gradient-to-b from-fg/[0.14] to-transparent bg-clip-text font-serif text-[clamp(2.5rem,10.4vw,9.5rem)] leading-none tracking-tight text-transparent">
-          {SITE.name}
-        </p>
       </div>
 
       <div className="relative border-t border-ink-line">

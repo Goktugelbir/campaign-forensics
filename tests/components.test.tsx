@@ -254,7 +254,7 @@ describe("SiteFooter", () => {
     render(<SiteFooter />);
     expect(screen.getByText(/Built with Manus, Apify and fal\.ai/)).toBeInTheDocument();
     expect(screen.getByText(/not affiliated with any brand we analyze/i)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "KVKK Notice (TR)" })).toHaveAttribute("href", "/legal/kvkk");
+    expect(screen.getByRole("link", { name: "GDPR Notice" })).toHaveAttribute("href", "/legal/gdpr");
   });
 });
 

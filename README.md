@@ -216,7 +216,7 @@ campaign-forensics/
 ├── components/
 │   ├── report/               # ReportView, the four tabs, steps.ts (step names + questions)
 │   └── ...                   # header, footer, cards, badges, forms
-├── content/                  # FAQ, pricing, legal markdown (KVKK in Turkish)
+├── content/                  # FAQ, pricing, legal markdown (all English)
 ├── data/cases/<slug>/        # case · evidence · diagnosis · creative JSON (+ raw/)
 ├── lib/                      # types.ts (data contracts), data loading, formatting, site switches
 ├── prompts/                  # versioned fal.ai prompts per case
@@ -238,7 +238,7 @@ campaign-forensics/
 | `/cases/[slug]/print` | All four steps on one page; browser "Save as PDF" exports it |
 | `/new` | New Case form → "Investigation queued" + downloadable `case.json` draft |
 | `/how-it-works` · `/pricing` · `/faq` · `/about` · `/contact` | Product & company |
-| `/legal/[page]` | privacy · kvkk (Turkish) · cookies · terms · data-sources · disclaimer · data-request |
+| `/legal/[page]` | privacy · gdpr · cookies · terms · data-sources · disclaimer · data-request |
 
 Navigation is deliberately small: the header has **How it works · Sample reports · Pricing · FAQ** and one
 **Start a case** button; the footer repeats those plus About / Contact, with the legal pages in a single small row.

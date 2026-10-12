@@ -135,10 +135,10 @@ export function NewCaseForm({ today = todayIso() }: { today?: string }) {
       </Field>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <Field id="f-competitors" label="Competitors / comparison" hint="Optional · separate with commas" error={errors.competitors}>
+        <Field id="f-competitors" label="Competitors / comparison" optional help="Separate names with commas." error={errors.competitors}>
           <input id="f-competitors" className="input" value={values.competitors} onChange={(e) => update("competitors", e.target.value)} placeholder="Previous version, rival brands…" />
         </Field>
-        <Field id="f-email" label="Your e-mail for the report" hint="Optional" error={errors.email}>
+        <Field id="f-email" label="Your e-mail for the report" optional help="Only used to send this report." error={errors.email}>
           <input id="f-email" type="email" className="input" value={values.email} onChange={(e) => update("email", e.target.value)} placeholder="you@agency.com" autoComplete="email" />
         </Field>
       </div>
@@ -156,7 +156,7 @@ export function NewCaseForm({ today = todayIso() }: { today?: string }) {
           />
           <span>
             I confirm I am authorized to request this analysis and have read the{" "}
-            <Link href="/legal/kvkk" className="link-amber" target="_blank">KVKK notice</Link> and{" "}
+            <Link href="/legal/gdpr" className="link-amber" target="_blank">GDPR notice</Link> and{" "}
             <Link href="/legal/terms" className="link-amber" target="_blank">Terms</Link>. <span className="text-amber">*</span>
           </span>
         </label>
@@ -183,7 +183,8 @@ function Field({
   id,
   label,
   required,
-  hint,
+  optional,
+  help,
   error,
   warning,
   children,
@@ -191,7 +192,10 @@ function Field({
   id: string;
   label: string;
   required?: boolean;
-  hint?: string;
+  /** Small "Optional" tag on the label row — kept to one line so side-by-side fields stay aligned. */
+  optional?: boolean;
+  /** Helper text under the input. */
+  help?: string;
   error?: string;
   warning?: string;
   children: React.ReactElement<{ "aria-invalid"?: boolean | "true" | "false"; "aria-describedby"?: string }>;
@@ -200,13 +204,18 @@ function Field({
   const child = cloneElement(children, { "aria-invalid": !!error, "aria-describedby": describedBy });
   return (
     <div>
-      <label htmlFor={id} className="flex items-baseline justify-between gap-3 text-sm text-fg">
-        <span>
+      <label htmlFor={id} className="flex min-h-[1.5rem] items-center justify-between gap-3 text-sm text-fg">
+        <span className="truncate">
           {label} {required && <span className="text-amber">*</span>}
         </span>
-        {hint && <span className="text-xs text-fg-muted">{hint}</span>}
+        {optional && (
+          <span className="shrink-0 rounded-full border border-ink-line px-2 py-0.5 font-mono text-[10px] uppercase tracking-label text-fg-muted">
+            Optional
+          </span>
+        )}
       </label>
       <div className="mt-2">{child}</div>
+      {help && !error && <p className="mt-1.5 text-xs text-fg-muted">{help}</p>}
       {error && (
         <p id={`${id}-error`} className="mt-1.5 text-xs text-status-rejected">
           {error}

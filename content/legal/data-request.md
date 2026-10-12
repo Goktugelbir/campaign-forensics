@@ -25,4 +25,4 @@ The report link or the evidence ID (for example ev_014), your e-mail address, an
 
 ## Response time
 
-We respond within 30 days at the latest, as required by KVKK.
+We respond within one month, as required by Article 12(3) GDPR. For complex requests we may extend this by two further months and will tell you why within the first month.

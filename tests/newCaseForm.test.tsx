@@ -57,9 +57,9 @@ describe("NewCaseForm", () => {
     expect(screen.getByText(/in the future/i)).toBeInTheDocument();
   });
 
-  it("links to the KVKK notice and Terms", () => {
+  it("links to the GDPR notice and Terms", () => {
     render(<NewCaseForm today={TODAY} />);
-    expect(screen.getByRole("link", { name: "KVKK notice" })).toHaveAttribute("href", "/legal/kvkk");
+    expect(screen.getByRole("link", { name: "GDPR notice" })).toHaveAttribute("href", "/legal/gdpr");
     expect(screen.getByRole("link", { name: "Terms" })).toHaveAttribute("href", "/legal/terms");
   });
 

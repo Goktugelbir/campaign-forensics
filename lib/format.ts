@@ -31,17 +31,12 @@ export function formatDateLabel(iso: string | null | undefined): string {
   return `${p.d} ${MONTHS[p.m - 1]} ${p.y}`;
 }
 
-const MONTHS_LONG_TR = [
-  "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
-  "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
-];
-
-/** "2026-08-14" → "14 August 2026" (body copy); "14 Ağustos 2026" with lang "tr". */
-export function formatDateLong(iso: string | null | undefined, lang: "en" | "tr" = "en"): string {
+/** "2026-08-14" → "14 August 2026" (body copy). */
+export function formatDateLong(iso: string | null | undefined): string {
   if (!iso) return "—";
   const p = parts(iso);
   if (!p) return "—";
-  return `${p.d} ${(lang === "tr" ? MONTHS_LONG_TR : MONTHS_LONG)[p.m - 1]} ${p.y}`;
+  return `${p.d} ${MONTHS_LONG[p.m - 1]} ${p.y}`;
 }
 
 /** Truncates on a word boundary and appends "…". Never returns more than `max` chars. */
