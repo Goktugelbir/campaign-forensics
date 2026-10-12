@@ -1,6 +1,8 @@
 import { SOURCE_LABEL } from "@/lib/format";
 import type { Evidence, EvidenceSource } from "@/lib/types";
 import { countBySentiment, countBySource } from "@/lib/evidence";
+import { negativeShare } from "@/lib/scoring";
+import { BacklashMeter } from "../BacklashMeter";
 import { SourceIcon } from "../SourceIcon";
 
 /** Single-series horizontal bars: one neutral hue, value labelled on every bar. */
@@ -58,6 +60,11 @@ export function SentimentDistribution({ evidence }: { evidence: Evidence[] }) {
           </div>
         ))}
       </dl>
+      {evidence.length > 0 && (
+        <div className="mt-6 border-t border-ink-line pt-5">
+          <BacklashMeter share={negativeShare(evidence)!} />
+        </div>
+      )}
     </figure>
   );
 }

@@ -3,10 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { getCaseBundle, listCases } from "@/lib/data";
 import { toCaseSummary } from "@/lib/caseSummary";
 import { FEATURED_CASE_SLUG } from "@/lib/site";
-import { countByStatus } from "@/lib/format";
-import type { CaseBundle } from "@/lib/types";
 import { SectionHeading } from "@/components/SectionHeading";
-import { MockBadge } from "@/components/Badges";
+import { HeroBackground } from "@/components/HeroBackground";
 import { CaseCard } from "@/components/CaseCard";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { REPORT_STEPS, reportHref } from "@/components/report/steps";
@@ -18,7 +16,7 @@ export default function LandingPage() {
 
   return (
     <>
-      <Hero featured={featured} slug={slug} />
+      <Hero slug={slug} />
 
       {/* How it works = the four steps of every report, each linking to that step of the sample */}
       <section className="container-page py-24 md:py-28">
@@ -106,73 +104,35 @@ export default function LandingPage() {
   );
 }
 
-function Hero({ featured, slug }: { featured: CaseBundle | null; slug: string }) {
-  const d = featured?.diagnosis;
-  const counts = d ? countByStatus(d.hypotheses) : null;
-
+function Hero({ slug }: { slug: string }) {
   return (
-    <section className="relative overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute -top-40 right-0 h-[36rem] w-[36rem] rounded-full bg-amber/10 blur-[140px]" />
-      <div className="container-page relative grid items-center gap-14 py-20 md:py-28 lg:grid-cols-[1.1fr_1fr]">
-        <div>
-          <p className="label">Campaign Forensics · Beta</p>
-          <h1 className="heading-serif mt-6 text-6xl md:text-7xl lg:text-[84px]">
-            See why your launch backfired. <em className="text-amber">With evidence.</em>
-          </h1>
-          <p className="mt-8 max-w-xl text-base leading-relaxed md:text-lg">
-            We collect the public reaction to your campaign, test six explanations against it and show what actually went
-            wrong — then produce the fixed campaign. Every claim links to its source.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <Link href={`/cases/${slug}`} className="btn-primary">
-              See a sample report <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-            <Link href="/new" className="btn-ghost">
-              Start a case
-            </Link>
-          </div>
-          <p className="mt-10 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-label text-fg-muted">
-            <span>No ad account access</span>
-            <span aria-hidden>·</span>
-            <span>Every claim sourced</span>
-            <span aria-hidden>·</span>
-            <span>Diagnosis to creative</span>
-          </p>
-        </div>
-
-        {featured && d && counts && (
-          <Link
-            href={reportHref(slug, "diagnosis")}
-            className="card group block space-y-5 bg-ink-surface/95 p-6 shadow-[0_40px_120px_-40px_rgba(245,166,35,0.25)] transition-colors hover:border-amber/60"
-          >
-            <div className="flex items-center justify-between gap-3">
-              <p className="label">Sample diagnosis</p>
-              {featured.isMock && <MockBadge />}
-            </div>
-            <p className="heading-serif text-3xl">
-              {featured.case.brand} — {featured.case.campaign}
-            </p>
-            <div className="rounded-xl border border-amber/50 bg-amber/[0.06] p-5">
-              <p className="label-amber">Main cause</p>
-              <p className="mt-3 font-serif text-xl leading-snug text-fg">{d.diagnosis.main_cause}</p>
-            </div>
-            <p className="flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-label text-fg-body">
-              <span>{featured.evidence?.evidence.length ?? 0} evidence</span>
-              <span>
-                <span className="text-status-confirmed">●</span> {counts.confirmed} confirmed
-              </span>
-              <span>
-                <span className="text-fg-muted">●</span> {counts.uncertain} uncertain
-              </span>
-              <span>
-                <span className="text-status-rejected">●</span> {counts.rejected} rejected
-              </span>
-            </p>
-            <span className="inline-flex items-center gap-1 text-sm text-amber">
-              Open the report <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden />
-            </span>
+    // -mt-16 pulls the hero (and its background) up behind the transparent header.
+    <section className="relative -mt-16 flex min-h-[88vh] items-center overflow-hidden pt-16">
+      <HeroBackground />
+      <div className="container-page relative py-24 md:py-32">
+        <p className="label">Campaign Forensics · Beta</p>
+        <h1 className="heading-serif mt-6 max-w-5xl text-6xl md:text-8xl lg:text-[112px]">
+          See why your launch backfired. <em className="text-amber">With evidence.</em>
+        </h1>
+        <p className="mt-8 max-w-2xl text-base leading-relaxed md:text-xl">
+          We collect the public reaction to your campaign, test six explanations against it and show what actually went
+          wrong — then produce the fixed campaign. Every claim links to its source.
+        </p>
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link href={`/cases/${slug}`} className="btn-primary px-6 py-3 text-base">
+            See a sample report <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
-        )}
+          <Link href="/new" className="btn-ghost px-6 py-3 text-base">
+            Start a case
+          </Link>
+        </div>
+        <p className="mt-12 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-label text-fg-muted">
+          <span>No ad account access</span>
+          <span aria-hidden>·</span>
+          <span>Every claim sourced</span>
+          <span aria-hidden>·</span>
+          <span>Diagnosis to creative</span>
+        </p>
       </div>
     </section>
   );

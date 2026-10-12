@@ -84,6 +84,25 @@ to finish without hunting for where to go.
 
 </details>
 
+### Scoring at a glance
+
+Scores use level indicators in the style of AppKit's `NSLevelIndicator` (SwiftUI `Gauge`), each matched to its meaning
+([`components/LevelIndicator.tsx`](components/LevelIndicator.tsx)):
+
+| Score | Style | Meaning |
+|---|---|---|
+| **Backlash** — on every case card and the Evidence tab | discrete capacity, with `warningValue` 30 and `criticalValue` 50 | Share of the collected evidence that is negative. Green = low, amber = elevated (≥ 30%), red = high (≥ 50%). Both sample cases sit at *elevated* (Lay's 42%, Instagram 40%). |
+| **Confidence** — on every hypothesis | relevancy | How strongly the evidence supports that hypothesis, 0–100. |
+
+There is no star rating: the evidence carries no ratings, and the app never invents data.
+
+### Getting around
+
+- **Header:** How it works · Sample reports · Pricing · FAQ, with the current section highlighted, plus **Start a case**.
+- **Floating button** (bottom-right): the amber **+** opens three quick actions — *Start a case*, *Sample reports*,
+  *Contact us*. A **back-to-top** button joins it after 400 px of scrolling. Both sit above the safe-area inset and the
+  footer leaves room for them, so they never cover a link. `Esc` closes the menu.
+
 Links are shareable: the tab and the evidence card live in the URL, e.g.
 `/cases/lays-rebrand?tab=evidence#ev_015`.
 
@@ -213,7 +232,7 @@ campaign-forensics/
 
 | Route | Page |
 |---|---|
-| `/` | Landing — hero, the four report steps, sample reports, start a case / waitlist |
+| `/` | Landing — full-width hero over the beam background, the four report steps, sample reports, start a case / waitlist |
 | `/cases` | Sample reports |
 | `/cases/[slug]` | Report — tab in the URL: `?tab=evidence#ev_014` |
 | `/cases/[slug]/print` | All four steps on one page; browser "Save as PDF" exports it |
@@ -239,6 +258,9 @@ Case pages are pre-rendered from the folders present at build time — **rebuild
 
 - `FEATURED_CASE_SLUG` — the case behind the landing preview and "See a sample report" (now `lays-rebrand`).
 - `SHOW_MOCK_CASES` — `false` hides `demo-mock` from `/cases` (it stays reachable by URL).
+- `HERO_MEDIA` — the landing background. `null` (default) is the animated amber beam from the logo; to use your own
+  footage, put it in `public/hero/` and set `{ video: "/hero/hero.mp4", poster: "/hero/hero.jpg" }` or `{ image: "/hero/hero.jpg" }`.
+  Pick dark, slow footage — a dark overlay keeps the headline readable, and reduced-motion users see the poster.
 - `SITE.contactEmail` is a placeholder on the reserved `.example` domain (the contact and data-request forms open a pre-filled e-mail to it); `TEAM` fills the `/about` page.
 
 ---

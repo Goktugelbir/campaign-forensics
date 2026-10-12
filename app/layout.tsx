@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { FloatingActions } from "@/components/FloatingActions";
 import { ToastProvider } from "@/components/Toast";
 import { SITE } from "@/lib/site";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           <SiteFooter />
+          <FloatingActions />
         </ToastProvider>
       </body>
     </html>

@@ -13,6 +13,15 @@ export const SITE = {
   legalUpdated: "2026-10-12",
 };
 
+/**
+ * Landing hero background. `null` = the built-in animated amber light beam (no file needed).
+ * To use your own footage, drop files into public/hero/ and point to them, e.g.
+ *   { video: "/hero/hero.mp4", poster: "/hero/hero.jpg" }   // muted, looping; poster shows while loading
+ *   { image: "/hero/hero.jpg" }                               // still photo
+ * Pick dark, slow, on-theme footage; a dark overlay keeps the headline readable either way.
+ */
+export const HERO_MEDIA: { video?: string; poster?: string; image?: string } | null = null;
+
 /** Slug of the case the landing page and "See a sample report" point to. */
 export const FEATURED_CASE_SLUG = "lays-rebrand";
 

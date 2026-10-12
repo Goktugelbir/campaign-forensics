@@ -1,4 +1,5 @@
 import { caseCode, firstSentence } from "./format";
+import { negativeShare } from "./scoring";
 import type { CampaignType, CaseBundle, CaseStatus } from "./types";
 
 /** What a case card needs — small enough to pass to client components. */
@@ -13,6 +14,8 @@ export interface CaseSummary {
   evidenceCount: number;
   mainCause: string | null;
   isMock: boolean;
+  /** Backlash score: % of collected evidence that is negative (null before evidence exists). */
+  negativeShare?: number | null;
 }
 
 export function toCaseSummary(b: CaseBundle): CaseSummary {
@@ -27,5 +30,6 @@ export function toCaseSummary(b: CaseBundle): CaseSummary {
     evidenceCount: b.evidence?.evidence.length ?? 0,
     mainCause: b.diagnosis ? firstSentence(b.diagnosis.diagnosis.main_cause) : null,
     isMock: b.isMock,
+    negativeShare: negativeShare(b.evidence?.evidence),
   };
 }

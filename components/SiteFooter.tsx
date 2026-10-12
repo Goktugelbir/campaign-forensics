@@ -31,7 +31,8 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className="border-t border-ink-line">
-        <div className="container-page space-y-3 py-6 text-xs text-fg-muted">
+        {/* Extra bottom space so the floating buttons never sit on top of these links. */}
+        <div className="container-page space-y-3 pb-28 pt-6 text-xs text-fg-muted">
           <nav aria-label="Legal">
             <ul className="flex flex-wrap gap-x-5 gap-y-2">
               {LEGAL_LINKS.map((l) => (

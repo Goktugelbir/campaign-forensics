@@ -12,6 +12,8 @@ import { ToastProvider } from "@/components/Toast";
 import { buildDataRequestMailto } from "@/components/DataRequestForm";
 import { buildContactMailto } from "@/components/ContactForm";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import { setUrl } from "./navMock";
 import { SITE } from "@/lib/site";
 import { ev } from "./fixtures";
 import type { Hypothesis } from "@/lib/types";
@@ -252,5 +254,22 @@ describe("SiteFooter", () => {
     expect(screen.getByText(/Built with Manus, Apify and fal\.ai/)).toBeInTheDocument();
     expect(screen.getByText(/not affiliated with any brand we analyze/i)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "KVKK Notice (TR)" })).toHaveAttribute("href", "/legal/kvkk");
+  });
+});
+
+describe("SiteHeader", () => {
+  it("marks the current section and opens/closes the mobile menu", async () => {
+    setUrl("/cases/lays-rebrand");
+    render(<SiteHeader />);
+    const main = screen.getByRole("navigation", { name: "Main" });
+    expect(within(main).getByRole("link", { name: "Sample reports" })).toHaveAttribute("aria-current", "page");
+    expect(within(main).getByRole("link", { name: "Pricing" })).not.toHaveAttribute("aria-current");
+
+    await userEvent.click(screen.getByRole("button", { name: "Open menu" }));
+    const mobile = screen.getByRole("navigation", { name: "Mobile" });
+    expect(within(mobile).getAllByRole("link")).toHaveLength(5);
+    await userEvent.click(screen.getByRole("button", { name: "Close menu" }));
+    expect(screen.queryByRole("navigation", { name: "Mobile" })).toBeNull();
+    setUrl("/");
   });
 });

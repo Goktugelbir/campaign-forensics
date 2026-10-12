@@ -14,27 +14,51 @@ function isActive(pathname: string, href: string): boolean {
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => setOpen(false), [pathname]);
 
+  // Transparent over the top of the page (the landing hero shows through), solid once scrolled.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const solid = scrolled || open;
+
   return (
-    <header className="no-print sticky top-0 z-40 border-b border-ink-line bg-ink/85 backdrop-blur">
+    <header
+      className={`no-print sticky top-0 z-40 border-b transition-colors duration-300 ${
+        solid ? "border-ink-line bg-ink/80 backdrop-blur-md" : "border-transparent bg-transparent"
+      }`}
+    >
       <div className="container-page flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="flex items-center gap-2 text-fg" aria-label={`${SITE.name} home`}>
+        <Link href="/" className="flex items-center text-fg" aria-label={`${SITE.name} home`}>
           <Logo />
         </Link>
 
-        <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
-          {HEADER_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              aria-current={isActive(pathname, l.href) ? "page" : undefined}
-              className={`text-sm transition-colors hover:text-fg ${isActive(pathname, l.href) ? "text-fg" : "text-fg-body"}`}
-            >
-              {l.label}
-            </Link>
-          ))}
+        <nav aria-label="Main" className="hidden lg:block">
+          <ul className="flex items-center gap-1 rounded-full border border-ink-line bg-ink-surface/60 p-1 backdrop-blur">
+            {HEADER_LINKS.map((l) => {
+              const active = isActive(pathname, l.href);
+              return (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    aria-current={active ? "page" : undefined}
+                    className={`flex items-center gap-2 rounded-full px-4 py-1.5 text-sm transition-colors ${
+                      active ? "bg-ink-raised text-fg" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
+                    }`}
+                  >
+                    {active && <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-amber" />}
+                    {l.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -55,17 +79,31 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-ink-line bg-ink lg:hidden">
-          <div className="container-page flex flex-col py-3">
-            {HEADER_LINKS.map((l) => (
-              <Link key={l.href} href={l.href} className="py-2.5 text-fg">
-                {l.label}
+        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-ink-line lg:hidden">
+          <ul className="container-page flex flex-col gap-1 py-4">
+            {HEADER_LINKS.map((l) => {
+              const active = isActive(pathname, l.href);
+              return (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    aria-current={active ? "page" : undefined}
+                    className={`flex items-center justify-between rounded-xl px-4 py-3 text-base transition-colors ${
+                      active ? "bg-ink-raised text-fg" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
+                    }`}
+                  >
+                    {l.label}
+                    {active && <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-amber" />}
+                  </Link>
+                </li>
+              );
+            })}
+            <li className="mt-3">
+              <Link href={HEADER_CTA.href} className="btn-primary w-full">
+                {HEADER_CTA.label} <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
-            ))}
-            <Link href={HEADER_CTA.href} className="btn-primary mt-3 w-full">
-              {HEADER_CTA.label} <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          </div>
+            </li>
+          </ul>
         </nav>
       )}
     </header>

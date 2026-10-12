@@ -121,6 +121,36 @@
   }
 }
 
+/* Landing hero: the logo beam (HeroBackground). The wedge fans right from the star at 70% / 62%. */
+.hero-beam {
+  background: conic-gradient(
+    from 0deg at 70% 62%,
+    transparent 0deg 72deg,
+    rgba(245, 166, 35, 0.55) 90deg,
+    transparent 108deg 360deg
+  );
+  -webkit-mask-image: linear-gradient(to right, transparent 69%, #000 72%, rgba(0, 0, 0, 0.6) 85%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 69%, #000 72%, rgba(0, 0, 0, 0.6) 85%, transparent 100%);
+  transform-origin: 70% 62%;
+  filter: blur(4px);
+  animation: beam-sweep 14s ease-in-out infinite alternate;
+}
+.hero-spark {
+  filter: drop-shadow(0 0 12px rgba(245, 166, 35, 0.9));
+  animation: spark-pulse 4s ease-in-out infinite;
+}
+.hero-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27160%27 height=%27160%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E");
+}
+@keyframes beam-sweep {
+  from { transform: rotate(-6deg); }
+  to { transform: rotate(6deg); }
+}
+@keyframes spark-pulse {
+  0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.75; transform: translate(-50%, -50%) scale(0.85); }
+}
+
 /* Respect reduced-motion. The evidence flash stays: it is a colour cue, not movement. */
 @media (prefers-reduced-motion: reduce) {
   *:not(.animate-flash),
