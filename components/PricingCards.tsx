@@ -11,7 +11,7 @@ export function PricingCards() {
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-base font-medium text-fg">{p.name}</h3>
               {p.popular && (
-                <span className="rounded-md bg-amber px-2 py-0.5 font-mono text-[10px] uppercase tracking-label text-black">Most popular</span>
+                <span className="rounded-md bg-amber px-2 py-0.5 font-mono text-[10px] uppercase tracking-label text-on-amber">Most popular</span>
               )}
             </div>
             <p className="mt-5 flex items-baseline gap-1.5">

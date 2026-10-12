@@ -20,8 +20,8 @@ export function CompareSlider({ before, after }: Props) {
           <img src={before.src} alt={before.label} className="h-full w-full object-cover" draggable={false} />
         </div>
         <div aria-hidden className="pointer-events-none absolute inset-y-0 w-0.5 bg-amber" style={{ left: `${pos}%` }} />
-        <span className="label absolute left-3 top-3 rounded bg-black/70 px-2 py-1 text-fg">Before</span>
-        <span className="label absolute right-3 top-3 rounded bg-black/70 px-2 py-1 text-amber">After</span>
+        <span className="label absolute left-3 top-3 rounded bg-black/70 px-2 py-1 text-white">Before</span>
+        <span className="label absolute right-3 top-3 rounded bg-black/70 px-2 py-1 text-[#f5a623]">After</span>
         <input
           type="range"
           min={0}

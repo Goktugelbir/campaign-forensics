@@ -109,7 +109,7 @@ export function FloatingActions() {
         aria-label={open ? "Close quick actions" : "Open quick actions"}
         aria-expanded={open}
         aria-controls="quick-actions"
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-amber text-white shadow-[0_12px_32px_-8px_rgba(245,166,35,0.6)] transition-colors hover:bg-[#ffb94a]"
+        className="flex h-14 w-14 items-center justify-center hover-bright rounded-full bg-amber text-white shadow-[0_12px_32px_-8px_rgba(245,166,35,0.6)] transition-colors hover:bg-[#ffb94a]"
       >
         <Plus
           className={`h-6 w-6 drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)] transition-transform duration-200 ${open ? "rotate-45" : ""}`}

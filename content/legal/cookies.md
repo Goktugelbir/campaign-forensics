@@ -2,22 +2,22 @@
 title: Cookie Policy
 lang: en
 updated: 2026-10-12
-summary: This site sets no cookies and stores nothing else in your browser — no analytics, advertising or tracking of any kind. That is why you don't see a cookie banner.
+summary: This site sets no cookies and does no analytics, advertising or tracking of any kind. The only thing it stores in your browser is your theme choice, if you make one. That is why you don't see a cookie banner.
 ---
 
 ## What we use
 
-The site sets no cookies. The table is empty on purpose.
+The site sets no cookies. The only item it stores in your browser is your theme choice:
 
-| Name | Provider | Purpose | Duration | Type |
-| --- | --- | --- | --- | --- |
-| — | Campaign Forensics | No cookies are set | — | — |
+| Name | Where | Provider | Purpose | Duration | Type |
+| --- | --- | --- | --- | --- | --- |
+| `cf-theme` | Local storage | Campaign Forensics | Remembers whether you chose the light or dark theme (`light` or `dark`) | Until you clear it | Strictly necessary — set only when you use the theme switch |
 
 Things you might expect to need a cookie work without one: the report tab and evidence card you are looking at are kept in the page address (for example `?tab=evidence#ev_014`), and nothing you type into a form is saved by the site: the waitlist form only shows a confirmation, the New Case form builds a file that you download, and the contact and data-request forms open your own e-mail app.
 
 ## Other storage on your device
 
-EU rules (the ePrivacy Directive, Article 5(3)) cover any information stored on or read from your device, not only cookies. We don't use any of those technologies either: no local storage, session storage or IndexedDB, no tracking pixels and no device fingerprinting.
+EU rules (the ePrivacy Directive, Article 5(3)) cover any information stored on or read from your device, not only cookies. We use exactly one such item: the `cf-theme` entry above, written only when you use the theme switch in the header. It holds the word `light` or `dark`, contains nothing about you, never leaves your browser and is not read by anyone but this site. Storing a setting you asked for is strictly necessary, so it needs no consent. Apart from that: no session storage or IndexedDB, no tracking pixels and no device fingerprinting.
 
 Your browser may keep its normal cache of the pages, images and fonts it has downloaded. That cache is managed by your browser, not by us, and contains nothing about you.
 
@@ -40,7 +40,7 @@ If we ever add analytics or marketing cookies, we will ask for your consent firs
 
 ## Check it yourself
 
-You don't have to take our word for it. In most browsers, open the developer tools (F12), go to **Application** (Chrome, Edge) or **Storage** (Firefox), and look under **Cookies** and **Local storage** for this site — both are empty. The **Network** tab shows that every request goes to this site only.
+You don't have to take our word for it. In most browsers, open the developer tools (F12), go to **Application** (Chrome, Edge) or **Storage** (Firefox), and look under **Cookies** and **Local storage** for this site — there are no cookies, and local storage holds at most `cf-theme`. The **Network** tab shows that every request goes to this site only.
 
 ## Controlling cookies
 

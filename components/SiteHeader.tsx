@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { HEADER_CTA, HEADER_LINKS, SITE } from "@/lib/site";
 import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 function isActive(pathname: string, href: string): boolean {
   return pathname === href || pathname.startsWith(href + "/");
@@ -50,7 +51,7 @@ export function SiteHeader() {
                     aria-current={active ? "page" : undefined}
                     className={`flex items-center gap-2 rounded-full px-4 py-1.5 text-sm transition-colors ${
                       active
-                        ? "bg-amber font-medium text-black shadow-[0_4px_16px_-4px_rgba(245,166,35,0.6)]"
+                        ? "bg-amber font-medium text-on-amber shadow-[0_4px_16px_-4px_rgba(245,166,35,0.6)]"
                         : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
                     }`}
                   >
@@ -62,7 +63,8 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
+          <ThemeToggle />
           <Link href={HEADER_CTA.href} className="btn-primary btn-sm hidden sm:inline-flex">
             {HEADER_CTA.label} <ArrowRight className="h-3.5 w-3.5" aria-hidden />
           </Link>
@@ -90,7 +92,7 @@ export function SiteHeader() {
                     href={l.href}
                     aria-current={active ? "page" : undefined}
                     className={`flex items-center justify-between rounded-xl px-4 py-3 text-base transition-colors ${
-                      active ? "bg-amber font-medium text-black" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
+                      active ? "bg-amber font-medium text-on-amber" : "text-fg-body hover:bg-ink-raised/60 hover:text-fg"
                     }`}
                   >
                     {l.label}

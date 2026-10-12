@@ -120,7 +120,9 @@ Every conclusion can be followed back to what people actually said — and every
 
 ### Getting around
 
-- **Header:** How it works · Sample reports · Pricing · FAQ, with the current section highlighted, plus **Start a case**.
+- **Header:** How it works · Sample reports · Pricing · FAQ, with the current section highlighted, a sliding
+  **dark / light theme switch** and **Start a case**. Dark is the default; a chosen theme is remembered in the browser
+  (`cf-theme` in local storage, disclosed on the Cookie Policy) and applied before the first paint, so it never flashes.
 - **Floating button** (bottom-right): the amber **+** opens three quick actions — *Start a case*, *Sample reports*,
   *Contact us*. A **back-to-top** button joins it after 400 px of scrolling. Both sit above the safe-area inset and the
   footer leaves room for them, so they never cover a link. `Esc` closes the menu.

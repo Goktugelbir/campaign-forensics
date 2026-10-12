@@ -45,7 +45,7 @@ export function CaseTab({ bundle }: { bundle: CaseBundle }) {
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={a.url} alt={a.label} className="aspect-video w-full object-cover" />
-                    <span className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-fg opacity-0 transition-opacity group-hover:opacity-100">
+                    <span className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-black/60 text-white opacity-0 transition-opacity group-hover:opacity-100">
                       <Maximize2 className="h-3.5 w-3.5" aria-hidden />
                     </span>
                   </button>

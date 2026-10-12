@@ -141,7 +141,7 @@ export function Select({ value, onChange, options, id, placeholder = "Select…"
           id={listId}
           role="listbox"
           aria-labelledby={buttonId}
-          className="absolute left-0 z-30 mt-2 max-h-72 w-full min-w-[12rem] animate-fadein overflow-auto rounded-xl border border-ink-strong bg-ink-raised/95 p-1 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.8)] backdrop-blur"
+          className="absolute left-0 z-30 mt-2 max-h-72 w-full min-w-[12rem] animate-fadein overflow-auto rounded-xl border border-ink-strong bg-ink-raised/95 p-1 shadow-[0_24px_60px_-12px_rgb(0_0_0/0.35)] backdrop-blur"
         >
           {options.map((o, i) => {
             const isSelected = o.value === value;

@@ -5,28 +5,33 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      // Every colour is an RGB triplet in a CSS variable (app/globals.css), so the dark and light
+      // themes swap them in one place and opacity modifiers like bg-ink/80 keep working.
       colors: {
         ink: {
-          DEFAULT: "#000000", // page background
-          surface: "#0e0e0e", // cards
-          raised: "#141414",
-          line: "#222222", // 1px borders
-          strong: "#333333",
+          DEFAULT: "rgb(var(--c-ink) / <alpha-value>)", // page background
+          surface: "rgb(var(--c-ink-surface) / <alpha-value>)", // cards
+          raised: "rgb(var(--c-ink-raised) / <alpha-value>)",
+          line: "rgb(var(--c-ink-line) / <alpha-value>)", // 1px borders
+          strong: "rgb(var(--c-ink-strong) / <alpha-value>)",
         },
         fg: {
-          DEFAULT: "#ffffff", // headings
-          body: "#9a9a9a", // body copy
-          muted: "#6b6b6b",
+          DEFAULT: "rgb(var(--c-fg) / <alpha-value>)", // headings
+          body: "rgb(var(--c-fg-body) / <alpha-value>)", // body copy
+          muted: "rgb(var(--c-fg-muted) / <alpha-value>)",
         },
         amber: {
-          DEFAULT: "#f5a623", // the single accent
-          soft: "#f5a62326",
-          line: "#f5a62366",
+          // The single accent. In the light theme text and lines use a darker amber for contrast;
+          // solid fills (buttons, badges) stay bright — see .bg-amber in globals.css.
+          DEFAULT: "rgb(var(--c-amber) / <alpha-value>)",
+          soft: "rgb(var(--c-amber) / 0.15)",
+          line: "rgb(var(--c-amber) / 0.4)",
         },
+        "on-amber": "rgb(0 0 0 / <alpha-value>)", // text on a bright amber fill, both themes
         status: {
-          confirmed: "#3ecf8e",
-          uncertain: "#9a9a9a",
-          rejected: "#ef5b5b",
+          confirmed: "rgb(var(--c-confirmed) / <alpha-value>)",
+          uncertain: "rgb(var(--c-uncertain) / <alpha-value>)",
+          rejected: "rgb(var(--c-rejected) / <alpha-value>)",
         },
       },
       fontFamily: {
@@ -42,10 +47,10 @@ const config: Config = {
       },
       keyframes: {
         flash: {
-          "0%": { boxShadow: "0 0 0 0 rgba(245,166,35,0)", borderColor: "#222222" },
-          "15%": { boxShadow: "0 0 0 3px rgba(245,166,35,0.55)", borderColor: "#f5a623" },
-          "85%": { boxShadow: "0 0 0 3px rgba(245,166,35,0.35)", borderColor: "#f5a623" },
-          "100%": { boxShadow: "0 0 0 0 rgba(245,166,35,0)", borderColor: "#222222" },
+          "0%": { boxShadow: "0 0 0 0 rgba(245,166,35,0)", borderColor: "rgb(var(--c-ink-line))" },
+          "15%": { boxShadow: "0 0 0 3px rgba(245,166,35,0.55)", borderColor: "rgb(var(--c-amber))" },
+          "85%": { boxShadow: "0 0 0 3px rgba(245,166,35,0.35)", borderColor: "rgb(var(--c-amber))" },
+          "100%": { boxShadow: "0 0 0 0 rgba(245,166,35,0)", borderColor: "rgb(var(--c-ink-line))" },
         },
         fadein: {
           from: { opacity: "0", transform: "translateY(4px)" },

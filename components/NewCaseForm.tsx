@@ -83,8 +83,26 @@ export function NewCaseForm({ today = todayIso() }: { today?: string }) {
             ]}
           />
         </Field>
-        <Field id="f-launch_date" label="Launch date" required error={errors.launch_date} warning={!errors.launch_date ? warnings.launch_date : undefined}>
-          <input id="f-launch_date" type="date" className="input [color-scheme:dark]" value={values.launch_date} onChange={(e) => update("launch_date", e.target.value)} />
+        <Field
+          id="f-launch_date"
+          label="Launch date"
+          required
+          help={!errors.launch_date && !warnings.launch_date ? "Year-month-day, e.g. 2026-08-14." : undefined}
+          error={errors.launch_date}
+          warning={!errors.launch_date ? warnings.launch_date : undefined}
+        >
+          {/* A text field, not type="date": the native picker shows its placeholder in the browser's language. */}
+          <input
+            id="f-launch_date"
+            type="text"
+            inputMode="numeric"
+            placeholder="YYYY-MM-DD"
+            maxLength={10}
+            autoComplete="off"
+            className="input font-mono"
+            value={values.launch_date}
+            onChange={(e) => update("launch_date", e.target.value.trim())}
+          />
         </Field>
       </div>
 

@@ -4,7 +4,7 @@ export interface CaseFormValues {
   brand: string;
   campaign: string;
   campaign_type: CampaignType | "";
-  launch_date: string; // yyyy-mm-dd from <input type="date">
+  launch_date: string; // yyyy-mm-dd, typed into the launch date field
   urls: string[];
   claim: string;
   competitors: string;

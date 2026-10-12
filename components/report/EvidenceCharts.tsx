@@ -19,7 +19,7 @@ export function SourceDistribution({ evidence }: { evidence: Evidence[] }) {
               <SourceIcon source={r.source} />
               {SOURCE_LABEL[r.source] ?? r.source}
             </span>
-            <span className="h-2 rounded-r-[4px] bg-[#6b6b6b]" style={{ width: `${(r.count / max) * 100}%` }} />
+            <span className="h-2 rounded-r-[4px] bg-fg-muted" style={{ width: `${(r.count / max) * 100}%` }} />
             <span className="text-right font-mono text-xs tabular-nums text-fg">{r.count}</span>
           </li>
         ))}

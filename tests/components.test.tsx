@@ -306,3 +306,44 @@ describe("Checkboxes", () => {
     expect(box).toBeChecked();
   });
 });
+
+describe("ThemeToggle", () => {
+  it("slides between dark and light, sets data-theme and remembers the choice", async () => {
+    const { ThemeToggle, THEME_KEY } = await import("@/components/ThemeToggle");
+    document.documentElement.dataset.theme = "dark";
+    localStorage.clear();
+    render(<ThemeToggle />);
+    const sw = screen.getByRole("switch", { name: "Light theme" });
+    expect(sw).toHaveAttribute("aria-checked", "false");
+
+    await userEvent.click(sw);
+    expect(sw).toHaveAttribute("aria-checked", "true");
+    expect(document.documentElement.dataset.theme).toBe("light");
+    expect(localStorage.getItem(THEME_KEY)).toBe("light");
+
+    await userEvent.click(sw);
+    expect(document.documentElement.dataset.theme).toBe("dark");
+    expect(localStorage.getItem(THEME_KEY)).toBe("dark");
+  });
+
+  it("picks up a theme already applied before hydration", async () => {
+    const { ThemeToggle } = await import("@/components/ThemeToggle");
+    document.documentElement.dataset.theme = "light";
+    render(<ThemeToggle />);
+    expect(screen.getByRole("switch")).toHaveAttribute("aria-checked", "true");
+    document.documentElement.dataset.theme = "dark";
+  });
+
+  it("the head script only accepts 'light' or 'dark'", async () => {
+    const { THEME_INIT_SCRIPT, THEME_KEY } = await import("@/components/ThemeToggle");
+    document.documentElement.dataset.theme = "dark";
+    localStorage.setItem(THEME_KEY, "<script>");
+    new Function(THEME_INIT_SCRIPT)();
+    expect(document.documentElement.dataset.theme).toBe("dark");
+    localStorage.setItem(THEME_KEY, "light");
+    new Function(THEME_INIT_SCRIPT)();
+    expect(document.documentElement.dataset.theme).toBe("light");
+    document.documentElement.dataset.theme = "dark";
+    localStorage.clear();
+  });
+});

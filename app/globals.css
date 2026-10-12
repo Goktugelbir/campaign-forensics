@@ -2,9 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Themes ───────────────────────────────────────────────────────────────
+   Colours are RGB triplets used by tailwind.config.ts. Dark is the default; the theme switch
+   sets data-theme="light" on <html> (and an inline script in app/layout.tsx restores it before
+   the first paint, so there is no flash). */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --c-ink: 0 0 0;
+  --c-ink-surface: 14 14 14;
+  --c-ink-raised: 20 20 20;
+  --c-ink-line: 34 34 34;
+  --c-ink-strong: 51 51 51;
+  --c-fg: 255 255 255;
+  --c-fg-body: 154 154 154;
+  --c-fg-muted: 107 107 107;
+  --c-amber: 245 166 35;
+  --c-confirmed: 62 207 142;
+  --c-uncertain: 154 154 154;
+  --c-rejected: 239 91 91;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --c-ink: 255 255 255;
+  --c-ink-surface: 247 247 246;
+  --c-ink-raised: 239 239 237;
+  --c-ink-line: 227 227 224;
+  --c-ink-strong: 207 207 203;
+  --c-fg: 17 17 17;
+  --c-fg-body: 74 74 74;
+  --c-fg-muted: 107 107 107;
+  /* Darker amber for text and lines: 5.3:1 on white. */
+  --c-amber: 154 93 0;
+  --c-confirmed: 15 123 75;
+  --c-uncertain: 107 107 107;
+  --c-rejected: 198 40 40;
+}
+
+/* Solid amber fills stay bright in the light theme (black text on them, as in the dark theme). */
+:root[data-theme="light"] .bg-amber,
+:root[data-theme="light"] .btn-primary,
+:root[data-theme="light"] .checkbox:checked {
+  background-color: rgb(245 166 35 / var(--tw-bg-opacity, 1));
+}
+:root[data-theme="light"] .btn-primary:hover,
+:root[data-theme="light"] .bg-amber.hover-bright:hover {
+  background-color: #ffb94a;
+}
+
 @layer base {
   html {
-    color-scheme: dark;
     scroll-behavior: smooth;
   }
   body {
@@ -14,11 +62,11 @@
     @apply text-fg;
   }
   ::selection {
-    background: #f5a62355;
-    color: #fff;
+    background: rgb(245 166 35 / 0.35);
+    color: rgb(var(--c-fg));
   }
   :focus-visible {
-    outline: 2px solid #f5a623;
+    outline: 2px solid rgb(var(--c-amber));
     outline-offset: 2px;
   }
 }
@@ -205,4 +253,22 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* The logo is white and amber on black. Dark theme: "screen" drops the black. Light theme:
+   invert (hue-rotated back so the amber stays amber) and "multiply" drops the white. */
+.logo-mark {
+  mix-blend-mode: screen;
+}
+:root[data-theme="light"] .logo-mark {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: multiply;
+}
+
+/* The hero beam is light on dark; on white it reads as a soft amber glow instead. */
+:root[data-theme="light"] .hero-beam {
+  opacity: 0.55;
+}
+:root[data-theme="light"] .hero-grain {
+  display: none;
 }
