@@ -99,7 +99,7 @@ function Hero({ slug }: { slug: string }) {
     <section className="relative -mt-16 flex min-h-[88vh] items-center overflow-hidden pt-16">
       <HeroBackground />
       <div className="container-page relative py-24 md:py-32">
-        <p className="label">Campaign Forensics · Beta</p>
+        <p className="label">Campaign Forensics</p>
         <h1 className="heading-serif mt-6 max-w-5xl text-6xl md:text-8xl lg:text-[112px]">
           See why your launch backfired. <em className="text-amber">With evidence.</em>
         </h1>

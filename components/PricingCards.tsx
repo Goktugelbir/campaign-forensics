@@ -41,7 +41,7 @@ export function PricingCards() {
           </div>
         ))}
       </div>
-      <p className="mt-5 font-mono text-[11px] uppercase tracking-label text-fg-muted">Beta — prices may change</p>
+      <p className="mt-5 font-mono text-[11px] uppercase tracking-label text-fg-muted">Prices in US dollars · may change</p>
     </div>
   );
 }
